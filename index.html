@@ -1,0 +1,2008 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>漢字カード JLPT</title>
+
+  <!-- ファビコン -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iNiIgZmlsbD0iIzFhMWEyZSIvPgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMzIiIGhlaWdodD0iMiIgcng9IjEiIGZpbGw9IiNjMDM5MmIiLz4KPHRleHQgeD0iMTYiIHk9IjIzIiBmb250LWZhbWlseT0ic2VyaWYiIGZvbnQtc2l6ZT0iMjAiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiNmYWY4ZjMiIHRleHQtYW5jaG9yPSJtaWRkbGUiPua8ojwvdGV4dD4KPC9zdmc+">
+  <link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iNiIgZmlsbD0iIzFhMWEyZSIvPgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMzIiIGhlaWdodD0iMiIgcng9IjEiIGZpbGw9IiNjMDM5MmIiLz4KPHRleHQgeD0iMTYiIHk9IjIzIiBmb250LWZhbWlseT0ic2VyaWYiIGZvbnQtc2l6ZT0iMjAiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiNmYWY4ZjMiIHRleHQtYW5jaG9yPSJtaWRkbGUiPua8ojwvdGV4dD4KPC9zdmc+">
+
+  <!-- OGP / SNSシェア用サムネイル -->
+  <meta property="og:title" content="漢字カード JLPT">
+  <meta property="og:description" content="N5・N4・N3対応の漢字フラッシュカード&amp;クイズアプリ。689枚・38カテゴリ収録。">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjgwIiBoZWlnaHQ9IjQwMCIgdmlld0JveD0iMCAwIDY4MCA0MDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI2ODAiIGhlaWdodD0iNDAwIiBmaWxsPSIjMWExYTJlIi8+CjxkZWZzPgogIDxwYXR0ZXJuIGlkPSJncmlkIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgPHBhdGggZD0iTTQwIDBMMCAwTDAgNDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLXdpZHRoPSIwLjIiIG9wYWNpdHk9IjAuMDgiLz4KICA8L3BhdHRlcm4+CjwvZGVmcz4KPHJlY3Qgd2lkdGg9IjY4MCIgaGVpZ2h0PSI0MDAiIGZpbGw9InVybCgjZ3JpZCkiLz4KPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjY4MCIgaGVpZ2h0PSI0IiBmaWxsPSIjYzAzOTJiIi8+Cjx0ZXh0IHg9IjUyMCIgeT0iMzEwIiBmb250LWZhbWlseT0ic2VyaWYiIGZvbnQtc2l6ZT0iMjIwIiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjA0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj7mvKI8L3RleHQ+CjxyZWN0IHg9IjUyIiB5PSI4MCIgd2lkdGg9IjMiIGhlaWdodD0iMjQwIiBmaWxsPSIjYzAzOTJiIiByeD0iMiIvPgo8dGV4dCB4PSI3MiIgeT0iMTI4IiBmb250LWZhbWlseT0ic2VyaWYiIGZvbnQtc2l6ZT0iNDIiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiNmYWY4ZjMiIGxldHRlci1zcGFjaW5nPSI0Ij7mvKLlrZfjgqvjg7zjg4k8L3RleHQ+Cjx0ZXh0IHg9IjcyIiB5PSIxNjQiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE1IiBmaWxsPSIjOGE4NTc4IiBsZXR0ZXItc3BhY2luZz0iMiI+SkxQVCDml6XmnKzoqp7og73lipvoqabpqJPlr77nrZY8L3RleHQ+CjxyZWN0IHg9IjcyIiB5PSIxOTAiIHdpZHRoPSI0NCIgaGVpZ2h0PSIyMiIgcng9IjExIiBmaWxsPSIjMkU3RDMyIi8+Cjx0ZXh0IHg9Ijk0IiB5PSIyMDUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmb250LXdlaWdodD0iNTAwIiBmaWxsPSIjZmZmZmZmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5ONTwvdGV4dD4KPHJlY3QgeD0iMTIyIiB5PSIxOTAiIHdpZHRoPSI0NCIgaGVpZ2h0PSIyMiIgcng9IjExIiBmaWxsPSIjYzAzOTJiIi8+Cjx0ZXh0IHg9IjE0NCIgeT0iMjA1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9IjUwMCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+TjQ8L3RleHQ+CjxyZWN0IHg9IjE3MiIgeT0iMTkwIiB3aWR0aD0iNDQiIGhlaWdodD0iMjIiIHJ4PSIxMSIgZmlsbD0iIzZhMWZhMCIvPgo8dGV4dCB4PSIxOTQiIHk9IjIwNSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtd2VpZ2h0PSI1MDAiIGZpbGw9IiNmZmZmZmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPk4zPC90ZXh0Pgo8cmVjdCB4PSI3MiIgeT0iMjMyIiB3aWR0aD0iMjQwIiBoZWlnaHQ9IjEwOCIgcng9IjEyIiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjk2Ii8+Cjx0ZXh0IHg9IjE5MiIgeT0iMjY0IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZmlsbD0iIzhhODU3OCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+5LiL57ea6YOo44Gu6Kqt44G/5pa544Gv77yfPC90ZXh0Pgo8dGV4dCB4PSIxNTUiIHk9IjI5NiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTciIGZpbGw9IiMxYTFhMmUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPumnheOBi+OCiTwvdGV4dD4KPHRleHQgeD0iMjIwIiB5PSIyOTYiIGZvbnQtZmFtaWx5PSJzZXJpZiIgZm9udC1zaXplPSIxNyIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0iI2MwMzkyYiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+6YGg44GEPC90ZXh0Pgo8dGV4dCB4PSIyNjUiIHk9IjI5NiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTciIGZpbGw9IiMxYTFhMmUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPuOBruOBpzwvdGV4dD4KPGxpbmUgeDE9IjIwNCIgeTE9IjMwMCIgeDI9IjIzNiIgeTI9IjMwMCIgc3Ryb2tlPSIjYzAzOTJiIiBzdHJva2Utd2lkdGg9IjIiLz4KPHRleHQgeD0iMTkyIiB5PSIzMjQiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjExIiBmaWxsPSIjYzAzOTJiIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj7jgr/jg4Pjg5fjgZfjgabnrZTjgYjjgpLnorroqo08L3RleHQ+CjxyZWN0IHg9IjgyIiB5PSIzNDYiIHdpZHRoPSIxMDQiIGhlaWdodD0iMzAiIHJ4PSI4IiBmaWxsPSIjZmRlY2VhIi8+Cjx0ZXh0IHg9IjEzNCIgeT0iMzY1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZmlsbD0iI2MwMzkyYiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+4pyXIOS4jeato+inozwvdGV4dD4KPHJlY3QgeD0iMTk4IiB5PSIzNDYiIHdpZHRoPSIxMDQiIGhlaWdodD0iMzAiIHJ4PSI4IiBmaWxsPSIjMmQ4YTRlIi8+Cjx0ZXh0IHg9IjI1MCIgeT0iMzY1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+4pyTIOato+inozwvdGV4dD4KPHRleHQgeD0iMzY4IiB5PSIxMTUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzIiBmaWxsPSIjZmFmOGYzIj7wn5OWICDjg5Xjg6njg4Pjgrfjg6Xjgqvjg7zjg4nlrabnv5I8L3RleHQ+Cjx0ZXh0IHg9IjM2OCIgeT0iMTU4IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMyIgZmlsbD0iI2ZhZjhmMyI+4p2TICA05oqe44Kv44Kk44K644Oi44O844OJPC90ZXh0Pgo8dGV4dCB4PSIzNjgiIHk9IjIwMSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMiIGZpbGw9IiNmYWY4ZjMiPuKtkCAg6Ium5omL5ryi5a2X44KS6ZuG5Lit5b6p57+SPC90ZXh0Pgo8dGV4dCB4PSIzNjgiIHk9IjI0NCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMiIGZpbGw9IiNmYWY4ZjMiPvCfk4ogIOWtpue/kumAsuaNl+OCkuWPr+imluWMljwvdGV4dD4KPHRleHQgeD0iMzY4IiB5PSIyODciIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzIiBmaWxsPSIjZmFmOGYzIj7wn5SlICDpgKPntprlrabnv5Ljgrnjg4jjg6rjg7zjgq88L3RleHQ+Cjx0ZXh0IHg9IjM2OCIgeT0iMzMwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMyIgZmlsbD0iI2ZhZjhmMyI+8J+XgiAgTjUgLyBONCAvIE4zIOWvvuW/nDwvdGV4dD4KPHJlY3QgeD0iMzY4IiB5PSIzNTYiIHdpZHRoPSIyMjAiIGhlaWdodD0iMjgiIHJ4PSIxNCIgZmlsbD0iI2MwMzkyYiIgb3BhY2l0eT0iMC4xNSIgc3Ryb2tlPSIjYzAzOTJiIiBzdHJva2Utd2lkdGg9IjEiLz4KPHRleHQgeD0iNDc4IiB5PSIzNzQiIGZvbnQtZmFtaWx5PSJzZXJpZiIgZm9udC1zaXplPSIxMyIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0iI2MwMzkyYiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+5Y+O6Yyy5ryi5a2XIDY4OeaemiDCtyAzOOOCq+ODhuOCtOODqjwvdGV4dD4KPHJlY3QgeD0iMCIgeT0iMzk2IiB3aWR0aD0iNjgwIiBoZWlnaHQ9IjQiIGZpbGw9IiNjMDM5MmIiIG9wYWNpdHk9IjAuNCIvPgo8L3N2Zz4=">
+  <meta property="og:image:width" content="680">
+  <meta property="og:image:height" content="400">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="漢字カード JLPT">
+  <meta name="twitter:description" content="N5・N4・N3対応の漢字フラッシュカード&amp;クイズアプリ">
+  <meta name="twitter:image" content="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjgwIiBoZWlnaHQ9IjQwMCIgdmlld0JveD0iMCAwIDY4MCA0MDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI2ODAiIGhlaWdodD0iNDAwIiBmaWxsPSIjMWExYTJlIi8+CjxkZWZzPgogIDxwYXR0ZXJuIGlkPSJncmlkIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgPHBhdGggZD0iTTQwIDBMMCAwTDAgNDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLXdpZHRoPSIwLjIiIG9wYWNpdHk9IjAuMDgiLz4KICA8L3BhdHRlcm4+CjwvZGVmcz4KPHJlY3Qgd2lkdGg9IjY4MCIgaGVpZ2h0PSI0MDAiIGZpbGw9InVybCgjZ3JpZCkiLz4KPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjY4MCIgaGVpZ2h0PSI0IiBmaWxsPSIjYzAzOTJiIi8+Cjx0ZXh0IHg9IjUyMCIgeT0iMzEwIiBmb250LWZhbWlseT0ic2VyaWYiIGZvbnQtc2l6ZT0iMjIwIiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjA0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj7mvKI8L3RleHQ+CjxyZWN0IHg9IjUyIiB5PSI4MCIgd2lkdGg9IjMiIGhlaWdodD0iMjQwIiBmaWxsPSIjYzAzOTJiIiByeD0iMiIvPgo8dGV4dCB4PSI3MiIgeT0iMTI4IiBmb250LWZhbWlseT0ic2VyaWYiIGZvbnQtc2l6ZT0iNDIiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiNmYWY4ZjMiIGxldHRlci1zcGFjaW5nPSI0Ij7mvKLlrZfjgqvjg7zjg4k8L3RleHQ+Cjx0ZXh0IHg9IjcyIiB5PSIxNjQiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE1IiBmaWxsPSIjOGE4NTc4IiBsZXR0ZXItc3BhY2luZz0iMiI+SkxQVCDml6XmnKzoqp7og73lipvoqabpqJPlr77nrZY8L3RleHQ+CjxyZWN0IHg9IjcyIiB5PSIxOTAiIHdpZHRoPSI0NCIgaGVpZ2h0PSIyMiIgcng9IjExIiBmaWxsPSIjMkU3RDMyIi8+Cjx0ZXh0IHg9Ijk0IiB5PSIyMDUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmb250LXdlaWdodD0iNTAwIiBmaWxsPSIjZmZmZmZmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5ONTwvdGV4dD4KPHJlY3QgeD0iMTIyIiB5PSIxOTAiIHdpZHRoPSI0NCIgaGVpZ2h0PSIyMiIgcng9IjExIiBmaWxsPSIjYzAzOTJiIi8+Cjx0ZXh0IHg9IjE0NCIgeT0iMjA1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9IjUwMCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+TjQ8L3RleHQ+CjxyZWN0IHg9IjE3MiIgeT0iMTkwIiB3aWR0aD0iNDQiIGhlaWdodD0iMjIiIHJ4PSIxMSIgZmlsbD0iIzZhMWZhMCIvPgo8dGV4dCB4PSIxOTQiIHk9IjIwNSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtd2VpZ2h0PSI1MDAiIGZpbGw9IiNmZmZmZmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPk4zPC90ZXh0Pgo8cmVjdCB4PSI3MiIgeT0iMjMyIiB3aWR0aD0iMjQwIiBoZWlnaHQ9IjEwOCIgcng9IjEyIiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjk2Ii8+Cjx0ZXh0IHg9IjE5MiIgeT0iMjY0IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZmlsbD0iIzhhODU3OCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+5LiL57ea6YOo44Gu6Kqt44G/5pa544Gv77yfPC90ZXh0Pgo8dGV4dCB4PSIxNTUiIHk9IjI5NiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTciIGZpbGw9IiMxYTFhMmUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPumnheOBi+OCiTwvdGV4dD4KPHRleHQgeD0iMjIwIiB5PSIyOTYiIGZvbnQtZmFtaWx5PSJzZXJpZiIgZm9udC1zaXplPSIxNyIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0iI2MwMzkyYiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+6YGg44GEPC90ZXh0Pgo8dGV4dCB4PSIyNjUiIHk9IjI5NiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTciIGZpbGw9IiMxYTFhMmUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPuOBruOBpzwvdGV4dD4KPGxpbmUgeDE9IjIwNCIgeTE9IjMwMCIgeDI9IjIzNiIgeTI9IjMwMCIgc3Ryb2tlPSIjYzAzOTJiIiBzdHJva2Utd2lkdGg9IjIiLz4KPHRleHQgeD0iMTkyIiB5PSIzMjQiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjExIiBmaWxsPSIjYzAzOTJiIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj7jgr/jg4Pjg5fjgZfjgabnrZTjgYjjgpLnorroqo08L3RleHQ+CjxyZWN0IHg9IjgyIiB5PSIzNDYiIHdpZHRoPSIxMDQiIGhlaWdodD0iMzAiIHJ4PSI4IiBmaWxsPSIjZmRlY2VhIi8+Cjx0ZXh0IHg9IjEzNCIgeT0iMzY1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZmlsbD0iI2MwMzkyYiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+4pyXIOS4jeato+inozwvdGV4dD4KPHJlY3QgeD0iMTk4IiB5PSIzNDYiIHdpZHRoPSIxMDQiIGhlaWdodD0iMzAiIHJ4PSI4IiBmaWxsPSIjMmQ4YTRlIi8+Cjx0ZXh0IHg9IjI1MCIgeT0iMzY1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+4pyTIOato+inozwvdGV4dD4KPHRleHQgeD0iMzY4IiB5PSIxMTUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzIiBmaWxsPSIjZmFmOGYzIj7wn5OWICDjg5Xjg6njg4Pjgrfjg6Xjgqvjg7zjg4nlrabnv5I8L3RleHQ+Cjx0ZXh0IHg9IjM2OCIgeT0iMTU4IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMyIgZmlsbD0iI2ZhZjhmMyI+4p2TICA05oqe44Kv44Kk44K644Oi44O844OJPC90ZXh0Pgo8dGV4dCB4PSIzNjgiIHk9IjIwMSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMiIGZpbGw9IiNmYWY4ZjMiPuKtkCAg6Ium5omL5ryi5a2X44KS6ZuG5Lit5b6p57+SPC90ZXh0Pgo8dGV4dCB4PSIzNjgiIHk9IjI0NCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMiIGZpbGw9IiNmYWY4ZjMiPvCfk4ogIOWtpue/kumAsuaNl+OCkuWPr+imluWMljwvdGV4dD4KPHRleHQgeD0iMzY4IiB5PSIyODciIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzIiBmaWxsPSIjZmFmOGYzIj7wn5SlICDpgKPntprlrabnv5Ljgrnjg4jjg6rjg7zjgq88L3RleHQ+Cjx0ZXh0IHg9IjM2OCIgeT0iMzMwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMyIgZmlsbD0iI2ZhZjhmMyI+8J+XgiAgTjUgLyBONCAvIE4zIOWvvuW/nDwvdGV4dD4KPHJlY3QgeD0iMzY4IiB5PSIzNTYiIHdpZHRoPSIyMjAiIGhlaWdodD0iMjgiIHJ4PSIxNCIgZmlsbD0iI2MwMzkyYiIgb3BhY2l0eT0iMC4xNSIgc3Ryb2tlPSIjYzAzOTJiIiBzdHJva2Utd2lkdGg9IjEiLz4KPHRleHQgeD0iNDc4IiB5PSIzNzQiIGZvbnQtZmFtaWx5PSJzZXJpZiIgZm9udC1zaXplPSIxMyIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0iI2MwMzkyYiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+5Y+O6Yyy5ryi5a2XIDY4OeaemiDCtyAzOOOCq+ODhuOCtOODqjwvdGV4dD4KPHJlY3QgeD0iMCIgeT0iMzk2IiB3aWR0aD0iNjgwIiBoZWlnaHQ9IjQiIGZpbGw9IiNjMDM5MmIiIG9wYWNpdHk9IjAuNCIvPgo8L3N2Zz4=">
+
+  <!-- PWA / ホーム画面追加用 -->
+  <meta name="theme-color" content="#1a1a2e">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="漢字カード">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;}
+:root{
+  --ink:#1a1a2e;--paper:#faf8f3;--accent:#c0392b;--muted:#8a8578;
+  --card-bg:#fff;--border:#e2ddd5;--correct:#2d8a4e;--wrong:#c0392b;
+  --correct-bg:#e8f5ee;--wrong-bg:#fdecea;--weak-bg:#fff8e8;--weak:#b8860b;
+  --info-bg:#e8f0fe;--info:#1a56b0;
+  --n5:#2E7D32;--n4:#c0392b;--n3:#6a1fa0;
+}
+body{font-family:'Noto Sans JP',sans-serif;background:var(--paper);color:var(--ink);min-height:100vh;display:flex;flex-direction:column;font-size:15px;overscroll-behavior:none;}
+
+/* HEADER */
+header{display:flex;align-items:center;justify-content:space-between;padding:11px 16px;border-bottom:1px solid var(--border);background:var(--paper);position:sticky;top:0;z-index:10;}
+.app-title{font-family:'Noto Serif JP',serif;font-size:16px;font-weight:700;letter-spacing:0.05em;}
+.level-selector{display:flex;gap:5px;}
+.lv-btn{font-size:11px;padding:3px 10px;border-radius:20px;border:1px solid var(--border);background:none;cursor:pointer;font-family:'Noto Sans JP',sans-serif;font-weight:500;color:var(--muted);transition:all .2s;}
+.lv-btn.active-n5{background:var(--n5);color:#fff;border-color:var(--n5);}
+.lv-btn.active-n4{background:var(--n4);color:#fff;border-color:var(--n4);}
+.lv-btn.active-n3{background:var(--n3);color:#fff;border-color:var(--n3);}
+
+/* MODE TABS */
+.mode-bar{display:flex;border-bottom:1px solid var(--border);background:var(--paper);position:sticky;top:50px;z-index:9;}
+.mode-btn{flex:1;padding:9px 4px;font-size:11px;border:none;background:none;cursor:pointer;color:var(--muted);font-family:'Noto Sans JP',sans-serif;border-bottom:2px solid transparent;transition:all .2s;display:flex;flex-direction:column;align-items:center;gap:2px;}
+.mode-btn.active{color:var(--accent);border-bottom-color:var(--accent);}
+.mode-icon{font-size:15px;}
+
+/* PROGRESS */
+.prog-wrap{padding:7px 16px 0;}
+.prog-track{height:3px;background:var(--border);border-radius:2px;overflow:hidden;}
+.prog-fill{height:100%;background:var(--accent);border-radius:2px;transition:width .4s;}
+.prog-label{font-size:11px;color:var(--muted);margin-top:4px;display:flex;justify-content:space-between;}
+
+/* RESUME BANNER */
+.resume-banner{margin:8px 16px 0;background:var(--info-bg);border:1px solid #b3c8f0;border-radius:12px;padding:9px 12px;display:flex;align-items:center;justify-content:space-between;gap:10px;}
+.resume-text{font-size:12px;color:var(--info);line-height:1.5;}
+.resume-btn{font-size:11px;background:var(--info);color:#fff;border:none;border-radius:8px;padding:5px 10px;cursor:pointer;font-family:'Noto Sans JP',sans-serif;white-space:nowrap;font-weight:500;}
+
+/* CATEGORY TABS */
+.cat-tabs{display:flex;gap:6px;padding:8px 16px;overflow-x:auto;scrollbar-width:none;}
+.cat-tabs::-webkit-scrollbar{display:none}
+.cat-tab{flex-shrink:0;font-size:11px;padding:4px 11px;border-radius:20px;border:1px solid var(--border);background:var(--card-bg);color:var(--muted);cursor:pointer;font-family:'Noto Sans JP',sans-serif;transition:all .2s;position:relative;}
+.cat-tab.active{background:var(--ink);color:#fff;border-color:var(--ink);}
+.cat-dot{width:6px;height:6px;border-radius:50%;background:var(--correct);position:absolute;top:2px;right:2px;}
+
+/* STATS */
+.stats-row{display:flex;gap:5px;padding:0 16px 8px;}
+.stat-box{flex:1;background:var(--card-bg);border:1px solid var(--border);border-radius:10px;padding:6px 4px;text-align:center;}
+.stat-num{font-size:16px;font-weight:700;font-family:'Noto Serif JP',serif;}
+.stat-lbl{font-size:10px;color:var(--muted);margin-top:1px;}
+.c-ok{color:var(--correct)}.c-ng{color:var(--wrong)}.c-wk{color:var(--weak)}
+
+main{flex:1;padding:0 16px 100px;}
+
+/* FLASH CARD */
+.card-scene{width:100%;perspective:1000px;margin-bottom:12px;}
+.card-wrap{width:100%;height:260px;position:relative;transform-style:preserve-3d;transition:transform .6s cubic-bezier(.4,0,.2,1);cursor:pointer;}
+.card-wrap.flipped{transform:rotateY(180deg);}
+.card-face{position:absolute;inset:0;border-radius:16px;border:1px solid var(--border);background:var(--card-bg);backface-visibility:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:18px;}
+.card-back{transform:rotateY(180deg);background:var(--ink);color:#fff;border-color:var(--ink);}
+.hint-sm{font-size:11px;color:var(--muted);letter-spacing:.06em;}
+.weak-flag{position:absolute;top:11px;right:11px;font-size:15px;}
+.answered-flag{position:absolute;top:11px;left:11px;font-size:12px;padding:2px 7px;border-radius:10px;}
+.af-ok{background:var(--correct-bg);color:var(--correct);}
+.af-ng{background:var(--wrong-bg);color:var(--wrong);}
+.sentence-display{font-size:18px;line-height:1.9;text-align:center;color:var(--ink);margin-bottom:6px;word-break:break-all;}
+.sentence-display .target, #q-kanji .target{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:4px;color:var(--accent);font-weight:700;}
+.kanji-label{font-size:11px;color:var(--muted);text-align:center;}
+.back-sentence{font-size:14px;line-height:1.9;text-align:center;color:rgba(255,255,255,.85);margin-bottom:8px;word-break:break-all;}
+.back-sentence .target-reading{color:#ffd97d;font-weight:700;border-bottom:2px solid #ffd97d;}
+.back-reading-line{font-size:24px;font-weight:700;color:#fff;font-family:'Noto Serif JP',serif;margin-bottom:4px;text-align:center;letter-spacing:0.05em;}
+.back-mean{font-size:12px;color:rgba(255,255,255,.65);text-align:center;line-height:1.6;padding:0 8px;}
+
+/* BUTTONS */
+.answer-row{display:flex;gap:10px;margin-bottom:9px;}
+.abtn{flex:1;padding:14px 0;border-radius:12px;border:none;font-size:14px;font-weight:600;cursor:pointer;font-family:'Noto Sans JP',sans-serif;transition:transform .15s;}
+.abtn:active{transform:scale(.96);}
+.abtn-ng{background:var(--wrong-bg);color:var(--wrong);border:1.5px solid #f5b8b8;font-weight:600;}
+.abtn-ok{background:var(--correct);color:#fff;border:1.5px solid var(--correct);}
+.nav-row{display:flex;align-items:center;gap:10px;justify-content:center;margin-bottom:9px;}
+.nav-btn{width:44px;height:44px;border-radius:50%;border:1px solid var(--border);background:var(--card-bg);cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center;color:var(--ink);}
+.card-count{font-size:13px;color:var(--muted);min-width:54px;text-align:center;}
+.tap-hint{font-size:12px;color:var(--accent);text-align:center;margin-bottom:7px;font-weight:500;letter-spacing:0.03em;}
+.tool-row{display:flex;gap:7px;justify-content:center;margin-bottom:9px;}
+.tool-btn{font-size:11px;color:var(--muted);background:none;border:1px solid var(--border);border-radius:20px;padding:4px 13px;cursor:pointer;font-family:'Noto Sans JP',sans-serif;}
+.tool-btn.active-mode{background:var(--ink);color:#fff;border-color:var(--ink);}
+
+/* QUIZ */
+.quiz-card{background:var(--card-bg);border:1px solid var(--border);border-radius:16px;padding:20px 18px;margin-bottom:14px;text-align:center;}
+.quiz-q{font-size:13px;color:var(--muted);margin-bottom:14px;}
+.quiz-opts{display:flex;flex-direction:column;gap:8px;}
+.opt-btn{padding:13px 14px;border-radius:12px;border:1px solid var(--border);background:var(--card-bg);font-size:14px;cursor:pointer;font-family:'Noto Sans JP',sans-serif;text-align:left;transition:all .2s;font-weight:500;}
+.opt-btn.correct{background:var(--correct-bg);border-color:var(--correct);color:var(--correct);}
+.opt-btn.wrong{background:var(--wrong-bg);border-color:var(--wrong);color:var(--wrong);}
+.opt-btn:disabled{cursor:default;}
+.quiz-next{width:100%;padding:13px;border-radius:12px;border:none;background:var(--ink);color:#fff;font-size:14px;font-weight:500;cursor:pointer;font-family:'Noto Sans JP',sans-serif;margin-top:11px;}
+.quiz-feedback{font-size:13px;text-align:center;padding:10px 12px;border-radius:10px;margin-top:9px;font-weight:500;line-height:1.6;}
+.fb-ok{background:var(--correct-bg);color:var(--correct);}
+.fb-ng{background:var(--wrong-bg);color:var(--wrong);}
+
+/* WEAK */
+.weak-empty{text-align:center;padding:36px 20px;color:var(--muted);font-size:14px;line-height:1.8;}
+.weak-item{display:flex;align-items:center;gap:11px;padding:11px;background:var(--card-bg);border:1px solid var(--border);border-radius:12px;margin-bottom:7px;}
+.weak-k{font-family:'Noto Serif JP',serif;font-size:26px;font-weight:700;min-width:34px;text-align:center;}
+.weak-badge{font-size:11px;background:var(--weak-bg);color:var(--weak);border-radius:20px;padding:2px 8px;border:1px solid #f0d080;}
+.weak-start-btn{width:100%;padding:13px;border-radius:12px;border:none;background:var(--accent);color:#fff;font-size:15px;font-weight:500;cursor:pointer;font-family:'Noto Sans JP',sans-serif;margin-bottom:11px;}
+
+/* HOME */
+.streak-row{display:flex;align-items:center;gap:10px;background:var(--card-bg);border:1px solid var(--border);border-radius:12px;padding:12px;margin-bottom:12px;}
+.streak-fire{font-size:28px;}
+.streak-num{font-family:'Noto Serif JP',serif;font-size:20px;font-weight:700;color:var(--accent);}
+.streak-lbl{font-size:11px;color:var(--muted);}
+.summary-grid{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-bottom:14px;}
+.summary-card{background:var(--card-bg);border:1px solid var(--border);border-radius:12px;padding:12px 10px;text-align:center;}
+.summary-num{font-family:'Noto Serif JP',serif;font-size:22px;font-weight:700;}
+.summary-lbl{font-size:10px;color:var(--muted);margin-top:3px;}
+.cat-progress-item{background:var(--card-bg);border:1px solid var(--border);border-radius:12px;padding:11px 13px;margin-bottom:7px;}
+.cat-progress-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:7px;}
+.cat-progress-name{font-size:13px;font-weight:500;}
+.cat-progress-pct{font-size:12px;color:var(--muted);}
+.cat-progress-detail{display:flex;gap:10px;margin-top:5px;font-size:11px;color:var(--muted);}
+.session-item{background:var(--card-bg);border:1px solid var(--border);border-radius:12px;padding:11px 13px;margin-bottom:7px;}
+.session-date{font-size:11px;color:var(--muted);margin-bottom:3px;}
+.session-info{font-size:14px;font-weight:500;}
+.session-detail{font-size:12px;color:var(--muted);margin-top:2px;}
+.clear-btn{width:100%;padding:11px;border-radius:12px;border:1px solid #f0c0c0;background:var(--wrong-bg);color:var(--wrong);font-size:13px;cursor:pointer;font-family:'Noto Sans JP',sans-serif;margin-top:18px;}
+
+/* LEVEL BADGE in home */
+.lv-tag{display:inline-block;font-size:10px;padding:1px 7px;border-radius:10px;font-weight:500;margin-right:5px;vertical-align:middle;}
+.lv-tag-n5{background:#e8f5e9;color:var(--n5);}
+.lv-tag-n4{background:#fdecea;color:var(--n4);}
+.lv-tag-n3{background:#f3e5fc;color:var(--n3);}
+
+/* DONE */
+.done-wrap{display:none;flex-direction:column;align-items:center;padding:36px 16px;text-align:center;}
+.done-wrap.active{display:flex !important;}
+.done-emoji{font-size:44px;margin-bottom:11px;}
+.done-title{font-family:'Noto Serif JP',serif;font-size:20px;font-weight:700;margin-bottom:7px;}
+.done-sub{font-size:13px;color:var(--muted);line-height:1.8;margin-bottom:22px;white-space:pre-line;}
+.done-btn{width:100%;padding:13px;border-radius:12px;border:none;background:var(--ink);color:#fff;font-size:14px;font-weight:500;cursor:pointer;font-family:'Noto Sans JP',sans-serif;margin-bottom:9px;}
+.done-btn2{background:none;border:1px solid var(--border);color:var(--ink);}
+
+.section-label{font-size:11px;color:var(--muted);letter-spacing:.06em;text-transform:uppercase;margin-bottom:8px;margin-top:16px;}
+.section-label:first-child{margin-top:0;}
+</style>
+</head>
+<body>
+
+<header>
+  <span class="app-title">漢字カード</span>
+  <div class="level-selector">
+    <button class="lv-btn" id="lv-n5" onclick="selectLevel('n5')">N5</button>
+    <button class="lv-btn active-n4" id="lv-n4" onclick="selectLevel('n4')">N4</button>
+    <button class="lv-btn" id="lv-n3" onclick="selectLevel('n3')">N3</button>
+  </div>
+</header>
+
+<div class="mode-bar">
+  <button class="mode-btn active" onclick="setMode('home')" id="mode-home"><span class="mode-icon">📊</span>ホーム</button>
+  <button class="mode-btn" onclick="setMode('flash')" id="mode-flash"><span class="mode-icon">📖</span>フラッシュ</button>
+  <button class="mode-btn" onclick="setMode('quiz')" id="mode-quiz"><span class="mode-icon">❓</span>クイズ</button>
+  <button class="mode-btn" onclick="setMode('weak')" id="mode-weak"><span class="mode-icon">⭐</span>苦手<span id="weak-cnt" style="font-size:10px;"></span></button>
+</div>
+
+<!-- HOME -->
+<div id="home-section">
+  <main style="padding-top:12px;"><div id="home-body"></div></main>
+</div>
+
+<!-- FLASH -->
+<div id="flash-section" style="display:none">
+  <div id="resume-banner" style="display:none" class="resume-banner">
+    <div class="resume-text" id="resume-text">前回の続きから再開できます</div>
+    <button class="resume-btn" onclick="resumeSession()">続きから</button>
+  </div>
+  <div class="prog-wrap">
+    <div class="prog-track"><div class="prog-fill" id="pbar" style="width:0%"></div></div>
+    <div class="prog-label"><span id="plabel-l">0 / 0 枚完了</span><span id="plabel-r"></span></div>
+  </div>
+  <div class="cat-tabs" id="cat-tabs"></div>
+  <div class="stats-row">
+    <div class="stat-box"><div class="stat-num" id="s-tot">0</div><div class="stat-lbl">回答</div></div>
+    <div class="stat-box"><div class="stat-num c-ok" id="s-ok">0</div><div class="stat-lbl">正解</div></div>
+    <div class="stat-box"><div class="stat-num c-ng" id="s-ng">0</div><div class="stat-lbl">不正解</div></div>
+    <div class="stat-box"><div class="stat-num" id="s-rate">-</div><div class="stat-lbl">正解率</div></div>
+  </div>
+  <main id="flash-main">
+    <div id="study-area">
+      <div class="tool-row">
+        <button class="tool-btn" onclick="shuffleCards()">シャッフル</button>
+        <button class="tool-btn" onclick="toggleWeakOnly()" id="weak-only-btn">苦手のみ</button>
+      </div>
+      <div class="card-scene">
+        <div class="card-wrap" id="card" onclick="flipCard()">
+          <div class="card-face">
+            <span class="answered-flag" id="ans-flag" style="display:none"></span>
+            <span class="weak-flag" id="wflag" style="display:none">⭐</span>
+            <div class="hint-sm" style="margin-bottom:9px;">下線部の読み方は？</div>
+            <div class="sentence-display" id="sentence-display"></div>
+            <div class="kanji-label" id="kanji-label"></div>
+          </div>
+          <div class="card-face card-back">
+            <div class="back-sentence" id="back-sentence"></div>
+            <div class="back-reading-line" id="back-reading-line"></div>
+            <div class="back-mean" id="bmean">—</div>
+          </div>
+        </div>
+      </div>
+      <div class="tap-hint" id="tap-hint">カードをタップして答えを確認</div>
+      <div class="answer-row" id="ans-row" style="display:none">
+        <button class="abtn abtn-ng" onclick="answer(false)">❌ 不正解</button>
+        <button class="abtn abtn-ok" onclick="answer(true)">✓ 正解</button>
+      </div>
+      <div class="nav-row">
+        <button class="nav-btn" onclick="prev()">←</button>
+        <span class="card-count" id="cc">1/1</span>
+        <button class="nav-btn" onclick="next()">→</button>
+      </div>
+    </div>
+    <div class="done-wrap" id="done-flash" style="display:none">
+      <div class="done-emoji">🎉</div>
+      <div class="done-title">セット完了！</div>
+      <div class="done-sub" id="done-flash-msg"></div>
+      <button class="done-btn" onclick="startQuizForCurrentCat()">クイズに挑戦 →</button>
+      <button class="done-btn done-btn2" onclick="restartFlash()">もう一度</button>
+    </div>
+  </main>
+</div>
+
+<!-- QUIZ -->
+<div id="quiz-section" style="display:none">
+  <div class="cat-tabs" id="qcat-tabs" style="margin-top:8px;"></div>
+  <main>
+    <div id="quiz-area">
+      <div class="quiz-card">
+        <div id="q-kanji" style="font-size:17px;line-height:1.9;text-align:center;margin-bottom:5px;word-break:break-all;"></div>
+        <div class="quiz-q" id="q-question">下線部の読み方は？</div>
+        <div class="quiz-opts" id="q-opts"></div>
+        <div class="quiz-feedback" id="q-fb" style="display:none"></div>
+      </div>
+      <div class="stats-row" style="padding:0 0 9px;">
+        <div class="stat-box"><div class="stat-num" id="qs-tot">1</div><div class="stat-lbl">問目</div></div>
+        <div class="stat-box"><div class="stat-num c-ok" id="qs-ok">0</div><div class="stat-lbl">正解</div></div>
+        <div class="stat-box"><div class="stat-num c-ng" id="qs-ng">0</div><div class="stat-lbl">不正解</div></div>
+        <div class="stat-box"><div class="stat-num" id="qs-rate">-</div><div class="stat-lbl">正解率</div></div>
+      </div>
+    </div>
+    <div class="done-wrap" id="done-quiz">
+      <div class="done-emoji">🏆</div>
+      <div class="done-title">クイズ完了！</div>
+      <div class="done-sub" id="done-quiz-msg"></div>
+      <button class="done-btn" id="quiz-next-cat-btn" onclick="goNextCatFromQuiz()" style="display:none">次のカテゴリへ →</button>
+      <button class="done-btn done-btn2" onclick="restartQuiz()">もう一度</button>
+      <button class="done-btn done-btn2" onclick="setMode('weak')">苦手を復習 →</button>
+    </div>
+  </main>
+</div>
+
+<!-- WEAK -->
+<div id="weak-section" style="display:none">
+  <main style="padding-top:11px;">
+    <div id="weak-list-area"></div>
+    <div class="done-wrap" id="done-weak">
+      <div class="done-emoji">💪</div>
+      <div class="done-title">苦手克服完了！</div>
+      <div class="done-sub" id="done-weak-msg"></div>
+      <button class="done-btn" onclick="restartWeak()">もう一度復習</button>
+      <button class="done-btn done-btn2" onclick="setMode('flash')">フラッシュカードへ</button>
+    </div>
+  </main>
+</div>
+
+<script>
+// ===================== ALL DATA =====================
+const LEVELS = {
+  n5: {
+    label: 'N5',
+    color: 'var(--n5)',
+    data: {
+      "数・時間①":[
+        {k:"一",s:"りんごを__つください。",r:"ひと",tr:"りんごをひとつください。",m:"「一つ（ひとつ）」= one thing"},
+        {k:"二",s:"子供が__人います。",r:"ふた",tr:"こどもがふたりいます。",m:"「二人（ふたり）」= two people"},
+        {k:"三",s:"__時に会いましょう。",r:"さん",tr:"さんじにあいましょう。",m:"「三時（さんじ）」= three o'clock"},
+        {k:"四",s:"みかんが__つあります。",r:"よっ",tr:"みかんがよっつあります。",m:"「四つ（よっつ）」= four things"},
+        {k:"五",s:"__分待ってください。",r:"ご",tr:"ごふんまってください。",m:"「五分（ごふん）」= five minutes"},
+        {k:"六",s:"クラスに__人の留学生がいます。",r:"ろく",tr:"クラスにろくにんのりゅうがくせいがいます。",m:"「六人（ろくにん）」= six people ※「六」= ろく"},
+        {k:"七",s:"__月は暑いです。",r:"しち",tr:"しちがつはあついです。",m:"「七月（しちがつ）」= July"},
+        {k:"八",s:"__時に起きます。",r:"はち",tr:"はちじにおきます。",m:"「八時（はちじ）」= eight o'clock"},
+        {k:"九",s:"__月になりました。",r:"く",tr:"くがつになりました。",m:"「九月（くがつ）」= September"},
+        {k:"十",s:"__分後に来てください。",r:"じゅっ",tr:"じゅっぷんごにきてください。",m:"「十分（じゅっぷん）」= ten minutes"},
+        {k:"百",s:"__円のお菓子を買いました。",r:"ひゃく",tr:"ひゃくえんのおかしをかいました。",m:"「百円（ひゃくえん）」= 100 yen"},
+        {k:"千",s:"この本は__円です。",r:"せん",tr:"このほんはせんえんです。",m:"「千円（せんえん）」= 1,000 yen"},
+        {k:"万",s:"家賃は五__円です。",r:"まん",tr:"やちんはごまんえんです。",m:"「五万円（ごまんえん）」= 50,000 yen"},
+        {k:"年",s:"去__、日本へ来ました。",r:"ねん",tr:"きょねん、にほんへきました。",m:"「去年（きょねん）」= last year"},
+        {k:"月",s:"来__から新しい学校です。",r:"げつ",tr:"らいげつからあたらしいがっこうです。",m:"「来月（らいげつ）」= next month"},
+      ],
+      "数・時間②":[
+        {k:"日",s:"毎__、日本語を勉強しています。",r:"にち",tr:"まいにち、にほんごをべんきょうしています。",m:"「毎日（まいにち）」= every day"},
+        {k:"時",s:"授業は何__に始まりますか？",r:"じ",tr:"じゅぎょうはなんじにはじまりますか？",m:"「何時（なんじ）」= what time ※「時」= じ"},
+        {k:"間",s:"授業は1時__です。",r:"かん",tr:"じゅぎょうは1じかんです。",m:"「時間（じかん）」= hour ※「間」= かん"},
+        {k:"分",s:"駅まで歩いて10__です。",r:"ぷん",tr:"えきまであるいて10ぷんです。",m:"「分（ぷん）」= minutes"},
+        {k:"半",s:"待ち合わせは3時__です。",r:"はん",tr:"まちあわせは3じはんです。",m:"「時半（じはん）」= half past ※「半」= はん"},
+        {k:"今",s:"__日はいい天気ですね。",r:"きょう",tr:"きょうはいいてんきですね。",m:"「今日（きょう）」= today"},
+        {k:"毎",s:"__朝、コーヒーを飲みます。",r:"まい",tr:"まいあさ、コーヒーをのみます。",m:"「毎朝（まいあさ）」= every morning"},
+        {k:"先",s:"__週、映画を見ました。",r:"せん",tr:"せんしゅう、えいがをみました。",m:"「先週（せんしゅう）」= last week"},
+        {k:"来",s:"__週また会いましょう。",r:"らい",tr:"らいしゅうまたあいましょう。",m:"「来週（らいしゅう）」= next week"},
+        {k:"朝",s:"毎__、6時に起きます。",r:"あさ",tr:"まいあさ、ろくじにおきます。",m:"「毎朝（まいあさ）」= every morning"},
+        {k:"昼",s:"__ご飯を一緒に食べませんか？",r:"ひる",tr:"ひるごはんをいっしょにたべませんか？",m:"「昼ご飯（ひるごはん）」= lunch"},
+        {k:"夜",s:"昨日の__は寒かったですね。",r:"よる",tr:"きのうのよるはさむかったですね。",m:"「夜（よる）」= night"},
+        {k:"週",s:"来__に試験があります。",r:"しゅう",tr:"らいしゅうにしけんがあります。",m:"「週（しゅう）」= week"},
+        {k:"曜",s:"毎週月__日に授業があります。",r:"よう",tr:"まいしゅうげつようびにじゅぎょうがあります。",m:"「月曜日（げつようび）」= Monday ※「曜」= よう"},
+        {k:"去",s:"__年より日本語が上手になりました。",r:"きょ",tr:"きょねんよりにほんごがじょうずになりました。",m:"「去年（きょねん）」= last year ※「去」= きょ"},
+      ],
+      "人・体①":[
+        {k:"人",s:"あそこにいる__はだれですか？",r:"ひと",tr:"あそこにいるひとはだれですか？",m:"「人（ひと）」= person"},
+        {k:"男",s:"あの__の人は先生ですか？",r:"おとこ",tr:"あのおとこのひとはせんせいですか？",m:"「男（おとこ）」= man/male"},
+        {k:"女",s:"__の子が泣いています。",r:"おんな",tr:"おんなのこがないています。",m:"「女（おんな）」= woman/female"},
+        {k:"子",s:"あの__供は元気ですか？",r:"こ",tr:"あのこどもはげんきですか？",m:"「子供（こども）」= children"},
+        {k:"父",s:"私の__は料理が好きです。",r:"ちち",tr:"わたしのちちはりょうりがすきです。",m:"「父（ちち）」= (my) father"},
+        {k:"母",s:"__の料理はいつもおいしいです。",r:"はは",tr:"ははのりょうりはいつもおいしいです。",m:"「母（はは）」= (my) mother"},
+        {k:"友",s:"__達と公園で遊びました。",r:"とも",tr:"ともだちとこうえんであそびました。",m:"「友達（ともだち）」= friends"},
+        {k:"生",s:"学__の頃はよく図書館に行きました。",r:"せい",tr:"がくせいのころはよくとしょかんにいきました。",m:"「学生（がくせい）」= student ※「生」= せい"},
+        {k:"名",s:"お__前を教えていただけますか？",r:"な",tr:"おなまえをおしえていただけますか？",m:"「名前（なまえ）」= name"},
+        {k:"目",s:"__が痛いので、眼科へ行きます。",r:"め",tr:"めがいたいので、がんかへいきます。",m:"「目（め）」= eye(s)"},
+        {k:"耳",s:"__が遠くなってきました。",r:"みみ",tr:"みみがとおくなってきました。",m:"「耳（みみ）」= ear(s)"},
+        {k:"口",s:"__を大きく開けてください。",r:"くち",tr:"くちをおおきくあけてください。",m:"「口（くち）」= mouth"},
+        {k:"手",s:"__を洗ってから食べてください。",r:"て",tr:"てをあらってからたべてください。",m:"「手（て）」= hand(s)"},
+        {k:"足",s:"__が痛くて歩けません。",r:"あし",tr:"あしがいたくてあるけません。",m:"「足（あし）」= foot/leg"},
+        {k:"頭",s:"__が痛いので、薬を飲みました。",r:"あたま",tr:"あたまがいたいので、くすりをのみました。",m:"「頭（あたま）」= head"},
+      ],
+      "自然・場所①":[
+        {k:"山",s:"あの__は富士山ですか？",r:"やま",tr:"あのやまはふじさんですか？",m:"「山（やま）」= mountain"},
+        {k:"川",s:"__で魚を釣りました。",r:"かわ",tr:"かわでさかなをつりました。",m:"「川（かわ）」= river"},
+        {k:"木",s:"公園に大きな__があります。",r:"き",tr:"こうえんにおおきなきがあります。",m:"「木（き）」= tree"},
+        {k:"花",s:"春になると__が咲きます。",r:"はな",tr:"はるになるとはながさきます。",m:"「花（はな）」= flower"},
+        {k:"水",s:"のどが渇いたので、__を飲みました。",r:"みず",tr:"のどがかわいたので、みずをのみました。",m:"「水（みず）」= water"},
+        {k:"空",s:"今日は__がきれいですね。",r:"そら",tr:"きょうはそらがきれいですね。",m:"「空（そら）」= sky"},
+        {k:"雨",s:"今日は__が降りそうです。",r:"あめ",tr:"きょうはあめがふりそうです。",m:"「雨（あめ）」= rain"},
+        {k:"東",s:"改札は__口です。",r:"ひがし",tr:"かいさつはひがしぐちです。",m:"「東口（ひがしぐち）」= east exit"},
+        {k:"西",s:"スーパーは駅の__側にあります。",r:"にし",tr:"スーパーはえきのにしがわにあります。",m:"「西側（にしがわ）」= west side"},
+        {k:"南",s:"__の国は一年中暖かいです。",r:"みなみ",tr:"みなみのくにはいちねんじゅうあたたかいです。",m:"「南（みなみ）」= south"},
+        {k:"北",s:"冬は__の風がとても冷たいです。",r:"きた",tr:"ふゆはきたのかぜがとてもつめたいです。",m:"「北（きた）」= north"},
+        {k:"国",s:"どの__から来ましたか？",r:"くに",tr:"どのくにからきましたか？",m:"「国（くに）」= country"},
+        {k:"町",s:"この__は静かでいいですね。",r:"まち",tr:"このまちはしずかでいいですね。",m:"「町（まち）」= town"},
+        {k:"村",s:"祖父は小さな__に住んでいます。",r:"むら",tr:"そふはちいさなむらにすんでいます。",m:"「村（むら）」= village"},
+        {k:"店",s:"あの__はいつも混んでいます。",r:"みせ",tr:"あのみせはいつもこんでいます。",m:"「店（みせ）」= shop/store"},
+      ],
+      "自然・場所②":[
+        {k:"上",s:"テーブルの__に本を置いてください。",r:"うえ",tr:"テーブルのうえにほんをおいてください。",m:"「上（うえ）」= on top of"},
+        {k:"下",s:"いすの__に猫がいます。",r:"した",tr:"いすのしたにねこがいます。",m:"「下（した）」= under/below"},
+        {k:"中",s:"かばんの__に財布が入っています。",r:"なか",tr:"かばんのなかにさいふがはいっています。",m:"「中（なか）」= inside"},
+        {k:"外",s:"今日は__で食べましょう。",r:"そと",tr:"きょうはそとでたべましょう。",m:"「外（そと）」= outside"},
+        {k:"右",s:"角を__に曲がってください。",r:"みぎ",tr:"かどをみぎにまがってください。",m:"「右（みぎ）」= right"},
+        {k:"左",s:"入口は__にあります。",r:"ひだり",tr:"いりぐちはひだりにあります。",m:"「左（ひだり）」= left"},
+        {k:"前",s:"駅の__で待っています。",r:"まえ",tr:"えきのまえでまっています。",m:"「前（まえ）」= in front of"},
+        {k:"後",s:"授業の__で質問してもいいですか？",r:"あと",tr:"じゅぎょうのあとでしつもんしてもいいですか？",m:"「後で（あとで）」= after/later"},
+        {k:"火",s:"今日は__曜日ですね。",r:"か",tr:"きょうはかようびですね。",m:"「火曜（かよう）」= Tuesday (火曜日)"},
+        {k:"金",s:"今日は__曜日ですね。",r:"きん",tr:"きょうはきんようびですね。",m:"「金曜（きんよう）」= Friday (金曜日)"},
+        {k:"土",s:"今日は__曜日ですね。",r:"ど",tr:"きょうはどようびですね。",m:"「土曜（どよう）」= Saturday (土曜日)"},
+        {k:"色",s:"あなたの好きな__は何ですか？",r:"いろ",tr:"あなたのすきないろはなんですか？",m:"「色（いろ）」= color"},
+        {k:"海",s:"夏は__で泳ぎたいです。",r:"うみ",tr:"なつはうみでおよぎたいです。",m:"「海（うみ）」= sea/ocean"},
+        {k:"林",s:"駅の近くに__があります。",r:"はやし",tr:"えきのちかくにはやしがあります。",m:"「林（はやし）」= woods/grove"},
+        {k:"石",s:"川で丸い__を拾いました。",r:"いし",tr:"かわでまるいいしをひろいました。",m:"「石（いし）」= stone/rock"},
+      ],
+      "動作・日常①":[
+        {k:"食",s:"野菜を毎日たくさん__べています。",r:"た",tr:"やさいをまいにちたくさんたべています。",m:"「食べる（たべる）」= to eat ※「食」= た(べる)"},
+        {k:"飲",s:"のどが渇いたので、水を__みたいです。",r:"の",tr:"のどがかわいたので、みずをのみたいです。",m:"「飲む（のむ）」= to drink"},
+        {k:"見",s:"昨日、テレビで映画を__ました。",r:"み",tr:"きのう、テレビでえいがをみました。",m:"「見る（みる）」= to watch/see"},
+        {k:"聞",s:"音楽を__きながら歩いています。",r:"き",tr:"おんがくをききながらあるいています。",m:"「聞く（きく）」= to listen"},
+        {k:"書",s:"名前をここに__いてください。",r:"か",tr:"なまえをここにかいてください。",m:"「書く（かく）」= to write"},
+        {k:"読",s:"毎日、本を__んでいます。",r:"よ",tr:"まいにち、ほんをよんでいます。",m:"「読む（よむ）」= to read"},
+        {k:"行",s:"来週末、京都へ__くつもりです。",r:"い",tr:"らいしゅうまつ、きょうとへいくつもりです。",m:"「行く（いく）」= to go"},
+        {k:"走",s:"公園を__っています。",r:"はし",tr:"こうえんをはしっています。",m:"「走る（はしる）」= to run"},
+        {k:"帰",s:"今日は早く家に__りたいです。",r:"かえ",tr:"きょうははやくいえにかえりたいです。",m:"「帰る（かえる）」= to return home"},
+        {k:"話",s:"電話で先生と__しました。",r:"はな",tr:"でんわでせんせいとはなしました。",m:"「話す（はなす）」= to speak"},
+        {k:"起",s:"明日は6時に__きます。",r:"お",tr:"あしたは6じにおきます。",m:"「起きる（おきる）」= to wake up"},
+        {k:"寝",s:"昨日は12時に__ました。",r:"ね",tr:"きのうは12じにねました。",m:"「寝る（ねる）」= to sleep"},
+        {k:"立",s:"ここに__ってください。",r:"た",tr:"ここにたってください。",m:"「立つ（たつ）」= to stand"},
+        {k:"入",s:"ここから__ってください。",r:"はい",tr:"ここからはいってください。",m:"「入る（はいる）」= to enter"},
+        {k:"出",s:"8時に家を__ます。",r:"で",tr:"8じにいえをでます。",m:"「出る（でる）」= to leave"},
+      ],
+      "動作・日常②":[
+        {k:"買",s:"スーパーで野菜を__いました。",r:"か",tr:"スーパーでやさいをかいました。",m:"「買う（かう）」= to buy"},
+        {k:"売",s:"このお店では魚を__っています。",r:"う",tr:"このおみせではさかなをうっています。",m:"「売る（うる）」= to sell"},
+        {k:"使",s:"このアプリはどうやって__うのですか？",r:"つか",tr:"このアプリはどうやってつかうのですか？",m:"「使う（つかう）」= to use"},
+        {k:"作",s:"母が弁当を__ってくれました。",r:"つく",tr:"ははがべんとうをつくってくれました。",m:"「作る（つくる）」= to make"},
+        {k:"乗",s:"バスに__ってください。",r:"の",tr:"バスにのってください。",m:"「乗る（のる）」= to ride/board"},
+        {k:"降",s:"次の駅で__ります。",r:"お",tr:"つぎのえきでおります。",m:"「降りる（おりる）」= to get off"},
+        {k:"着",s:"新幹線が東京に__きました。",r:"つ",tr:"しんかんせんがとうきょうにつきました。",m:"「着く（つく）」= to arrive"},
+        {k:"急",s:"__いでください。遅刻しますよ。",r:"いそ",tr:"いそいでください。ちこくしますよ。",m:"「急ぐ（いそぐ）」= to hurry"},
+        {k:"待",s:"少し__ってください。",r:"ま",tr:"すこしまってください。",m:"「待つ（まつ）」= to wait"},
+        {k:"持",s:"重い荷物を__ってあげましょうか？",r:"も",tr:"おもいにもつをもってあげましょうか？",m:"「持つ（もつ）」= to hold/carry"},
+        {k:"洗",s:"食事の前に手を__います。",r:"あら",tr:"しょくじのまえにてをあらいます。",m:"「洗う（あらう）」= to wash"},
+        {k:"開",s:"窓を__けてもいいですか？",r:"あ",tr:"まどをあけてもいいですか？",m:"「開ける（あける）」= to open"},
+        {k:"閉",s:"ドアを__めてください。",r:"し",tr:"ドアをしめてください。",m:"「閉める（しめる）」= to close"},
+        {k:"貸",s:"傘を__してもらえますか？",r:"か",tr:"かさをかしてもらえますか？",m:"「貸す（かす）」= to lend"},
+        {k:"借",s:"図書館で本を__りました。",r:"か",tr:"としょかんでほんをかりました。",m:"「借りる（かりる）」= to borrow"},
+      ],
+      "形容詞・様子①":[
+        {k:"大",s:"この荷物は__きくて持てません。",r:"おお",tr:"このにもつはおおきくてもてません。",m:"「大きい（おおきい）」= big"},
+        {k:"小",s:"このかばんは__さくていいですね。",r:"ちい",tr:"このかばんはちいさくていいですね。",m:"「小さい（ちいさい）」= small"},
+        {k:"高",s:"このレストランは少し__いですね。",r:"たか",tr:"このレストランはすこしたかいですね。",m:"「高い（たかい）」= expensive/tall"},
+        {k:"安",s:"このお店はとても__いですよ！",r:"やす",tr:"このおみせはとてもやすいですよ！",m:"「安い（やすい）」= cheap"},
+        {k:"新",s:"__しいスマホを買いました。",r:"あたら",tr:"あたらしいスマホをかいました。",m:"「新しい（あたらしい）」= new"},
+        {k:"古",s:"この建物はとても__いですね。",r:"ふる",tr:"このたてものはとてもふるいですね。",m:"「古い（ふるい）」= old"},
+        {k:"長",s:"この映画は__すぎて眠くなりました。",r:"なが",tr:"このえいがはながすぎてねむくなりました。",m:"「長い（ながい）」= long"},
+        {k:"多",s:"宿題が__くて大変です。",r:"おお",tr:"しゅくだいがおおくてたいへんです。",m:"「多い（おおい）」= many/a lot"},
+        {k:"少",s:"__し待ってください。",r:"すこ",tr:"すこしまってください。",m:"「少し（すこし）」= a little"},
+        {k:"白",s:"__いシャツを着ています。",r:"しろ",tr:"しろいシャツをきています。",m:"「白い（しろい）」= white"},
+        {k:"黒",s:"__い猫が庭にいます。",r:"くろ",tr:"くろいねこがにわにいます。",m:"「黒い（くろい）」= black"},
+        {k:"赤",s:"信号が__になりました。",r:"あか",tr:"しんごうがあかになりました。",m:"「赤（あか）」= red"},
+        {k:"青",s:"__い空がきれいですね。",r:"あお",tr:"あおいそらがきれいですね。",m:"「青い（あおい）」= blue/green"},
+        {k:"好",s:"日本語の勉強が__きです。",r:"す",tr:"にほんごのべんきょうがすきです。",m:"「好き（すき）」= like"},
+        {k:"元",s:"お__気ですか？",r:"げん",tr:"おげんきですか？",m:"「元気（げんき）」= healthy/energetic"},
+      ],
+    }
+  },
+  n4: {
+    label: 'N4',
+    color: 'var(--n4)',
+    data: {
+      "時間・日付":[
+        {k:"時",s:"今は何__ですか？",r:"じ",tr:"いまはなんじですか？",m:"「何時（なんじ）」= what time ※「時」= じ"},
+        {k:"間",s:"授業は1時__です。",r:"かん",tr:"じゅぎょうは1じかんです。",m:"「時間（じかん）」= hour ※「間」= かん"},
+        {k:"週",s:"来__に試験があります。",r:"しゅう",tr:"らいしゅうにしけんがあります。",m:"「来週（らいしゅう）」= next week"},
+        {k:"年",s:"去__、日本へ来ました。",r:"ねん",tr:"きょねん、にほんへきました。",m:"「去年（きょねん）」= last year"},
+        {k:"月",s:"来__から新しい仕事が始まります。",r:"げつ",tr:"らいげつからあたらしいしごとがはじまります。",m:"「来月（らいげつ）」= next month"},
+        {k:"日",s:"毎__、日本語を勉強しています。",r:"にち",tr:"まいにち、にほんごをべんきょうしています。",m:"「毎日（まいにち）」= every day"},
+        {k:"曜",s:"毎週月__日に授業があります。",r:"よう",tr:"まいしゅうげつようびにじゅぎょうがあります。",m:"「月曜日（げつようび）」= Monday ※「曜」= よう"},
+        {k:"朝",s:"毎__、6時に起きます。",r:"あさ",tr:"まいあさ、ろくじにおきます。",m:"「毎朝（まいあさ）」= every morning"},
+        {k:"昼",s:"__ご飯を一緒に食べませんか？",r:"ひる",tr:"ひるごはんをいっしょにたべませんか？",m:"「昼ご飯（ひるごはん）」= lunch"},
+        {k:"夜",s:"昨日の__は寒かったですね。",r:"よる",tr:"きのうのよるはさむかったですね。",m:"「夜（よる）」= night"},
+        {k:"今",s:"__日はいい天気ですね。",r:"きょう",tr:"きょうはいいてんきですね。",m:"「今日（きょう）」= today"},
+        {k:"毎",s:"__週、図書館で勉強します。",r:"まい",tr:"まいしゅう、としょかんでべんきょうします。",m:"「毎週（まいしゅう）」= every week"},
+        {k:"先",s:"__月、京都へ行きました。",r:"せん",tr:"せんげつ、きょうとへいきました。",m:"「先月（せんげつ）」= last month"},
+        {k:"去",s:"__年より日本語が上手になりました。",r:"きょ",tr:"きょねんよりにほんごがじょうずになりました。",m:"「去年（きょねん）」= last year ※「去」= きょ"},
+        {k:"来",s:"__年、N3を受けるつもりです。",r:"らい",tr:"らいねん、N3をうけるつもりです。",m:"「来年（らいねん）」= next year"},
+      ],
+      "場所・方向":[
+        {k:"駅",s:"次の__で降りてください。",r:"えき",tr:"つぎのえきでおりてください。",m:"「駅（えき）」= station"},
+        {k:"右",s:"角を__に曲がってください。",r:"みぎ",tr:"かどをみぎにまがってください。",m:"「右（みぎ）」= right"},
+        {k:"左",s:"入口は__にあります。",r:"ひだり",tr:"いりぐちはひだりにあります。",m:"「左（ひだり）」= left"},
+        {k:"前",s:"駅の__で待っています。",r:"まえ",tr:"えきのまえでまっています。",m:"「前（まえ）」= in front of"},
+        {k:"後",s:"授業の__で質問してもいいですか？",r:"あと",tr:"じゅぎょうのあとでしつもんしてもいいですか？",m:"「後で（あとで）」= after/later"},
+        {k:"上",s:"テーブルの__に本を置いてください。",r:"うえ",tr:"テーブルのうえにほんをおいてください。",m:"「上（うえ）」= on top of"},
+        {k:"下",s:"いすの__に猫がいます。",r:"した",tr:"いすのしたにねこがいます。",m:"「下（した）」= under/below"},
+        {k:"中",s:"かばんの__に財布が入っています。",r:"なか",tr:"かばんのなかにさいふがはいっています。",m:"「中（なか）」= inside"},
+        {k:"外",s:"今日は__で食べましょう。",r:"そと",tr:"きょうはそとでたべましょう。",m:"「外（そと）」= outside"},
+        {k:"近",s:"この__くにコンビニはありますか？",r:"ちか",tr:"このちかくにコンビニはありますか？",m:"「近く（ちかく）」= nearby"},
+        {k:"遠",s:"駅から__いので、バスで行きます。",r:"とお",tr:"えきからとおいので、バスでいきます。",m:"「遠い（とおい）」= far"},
+        {k:"東",s:"改札は__口です。",r:"ひがし",tr:"かいさつはひがしぐちです。",m:"「東口（ひがしぐち）」= east exit"},
+        {k:"西",s:"スーパーは駅の__側にあります。",r:"にし",tr:"スーパーはえきのにしがわにあります。",m:"「西側（にしがわ）」= west side ※「西」= にし"},
+        {k:"南",s:"__の国は一年中暖かいです。",r:"みなみ",tr:"みなみのくにはいちねんじゅうあたたかいです。",m:"「南（みなみ）」= south"},
+        {k:"北",s:"冬は__の風がとても冷たいです。",r:"きた",tr:"ふゆはきたのかぜがとてもつめたいです。",m:"「北（きた）」= north"},
+      ],
+      "人・家族":[
+        {k:"父",s:"私の__は料理が得意です。",r:"ちち",tr:"わたしのちちはりょうりがとくいです。",m:"「父（ちち）」= (my) father"},
+        {k:"母",s:"__の料理はいつもおいしいです。",r:"はは",tr:"ははのりょうりはいつもおいしいです。",m:"「母（はは）」= (my) mother"},
+        {k:"兄",s:"__はサッカーが好きです。",r:"あに",tr:"あにはサッカーがすきです。",m:"「兄（あに）」= older brother"},
+        {k:"姉",s:"__は会社員です。",r:"あね",tr:"あねはかいしゃいんです。",m:"「姉（あね）」= older sister"},
+        {k:"弟",s:"__はまだ小学生です。",r:"おとうと",tr:"おとうとはまだしょうがくせいです。",m:"「弟（おとうと）」= younger brother"},
+        {k:"妹",s:"__の誕生日プレゼントを買いました。",r:"いもうと",tr:"いもうとのたんじょうびプレゼントをかいました。",m:"「妹（いもうと）」= younger sister"},
+        {k:"子",s:"あの__供は元気ですか？",r:"こ",tr:"あのこどもはげんきですか？",m:"「子供（こども）」= children"},
+        {k:"友",s:"__達と公園で遊びました。",r:"とも",tr:"ともだちとこうえんであそびました。",m:"「友達（ともだち）」= friends"},
+        {k:"人",s:"あそこにいる__はだれですか？",r:"ひと",tr:"あそこにいるひとはだれですか？",m:"「人（ひと）」= person"},
+        {k:"男",s:"あの__の人は田中さんです。",r:"おとこ",tr:"あのおとこのひとはたなかさんです。",m:"「男（おとこ）」= man/male"},
+        {k:"女",s:"__の人が道を聞いています。",r:"おんな",tr:"おんなのひとがみちをきいています。",m:"「女（おんな）」= woman/female"},
+        {k:"家",s:"駅から__まで歩いて5分です。",r:"いえ",tr:"えきからいえまであるいて5ふんです。",m:"「家（いえ）」= house/home"},
+        {k:"族",s:"今年の夏、家__で旅行をします。",r:"ぞく",tr:"ことしのなつ、かぞくでりょこうをします。",m:"「家族（かぞく）」= family ※「族」= ぞく"},
+        {k:"親",s:"両__はいつも応援してくれます。",r:"しん",tr:"りょうしんはいつもおうえんしてくれます。",m:"「両親（りょうしん）」= parents ※「親」= しん"},
+        {k:"祖",s:"__母は80歳ですが、元気です。",r:"そ",tr:"そぼは80さいですが、げんきです。",m:"「祖母（そぼ）」= grandmother ※「祖」= そ"},
+      ],
+      "動作・動詞①":[
+        {k:"食",s:"一緒に夕ご飯を__べませんか？",r:"た",tr:"いっしょにゆうごはんをたべませんか？",m:"「食べる（たべる）」= to eat"},
+        {k:"飲",s:"のどが渇いたので、水を__みたいです。",r:"の",tr:"のどがかわいたので、みずをのみたいです。",m:"「飲む（のむ）」= to drink"},
+        {k:"見",s:"昨日、テレビで映画を__ました。",r:"み",tr:"きのう、テレビでえいがをみました。",m:"「見る（みる）」= to watch/see"},
+        {k:"聞",s:"音楽を__きながら歩いています。",r:"き",tr:"おんがくをききながらあるいています。",m:"「聞く（きく）」= to listen"},
+        {k:"書",s:"名前をここに__いてください。",r:"か",tr:"なまえをここにかいてください。",m:"「書く（かく）」= to write"},
+        {k:"読",s:"毎日、本を__んでいます。",r:"よ",tr:"まいにち、ほんをよんでいます。",m:"「読む（よむ）」= to read"},
+        {k:"行",s:"来週末、京都へ__くつもりです。",r:"い",tr:"らいしゅうまつ、きょうとへいくつもりです。",m:"「行く（いく）」= to go"},
+        {k:"帰",s:"今日は早く家に__りたいです。",r:"かえ",tr:"きょうははやくいえにかえりたいです。",m:"「帰る（かえる）」= to return home"},
+        {k:"話",s:"電話で先生と__しました。",r:"はな",tr:"でんわでせんせいとはなしました。",m:"「話す（はなす）」= to speak"},
+        {k:"使",s:"このアプリはどうやって__うのですか？",r:"つか",tr:"このアプリはどうやってつかうのですか？",m:"「使う（つかう）」= to use"},
+        {k:"作",s:"母が弁当を__ってくれました。",r:"つく",tr:"ははがべんとうをつくってくれました。",m:"「作る（つくる）」= to make"},
+        {k:"出",s:"8時に家を__ます。",r:"で",tr:"8じにいえをでます。",m:"「出る（でる）」= to leave"},
+        {k:"入",s:"ここから__ってください。",r:"はい",tr:"ここからはいってください。",m:"「入る（はいる）」= to enter"},
+        {k:"起",s:"明日は6時に__きなければなりません。",r:"お",tr:"あしたは6じにおきなければなりません。",m:"「起きる（おきる）」= to wake up"},
+        {k:"寝",s:"昨日は12時に__ました。",r:"ね",tr:"きのうは12じにねました。",m:"「寝る（ねる）」= to sleep"},
+      ],
+      "動作・動詞②":[
+        {k:"急",s:"__いでください。遅刻しますよ。",r:"いそ",tr:"いそいでください。ちこくしますよ。",m:"「急ぐ（いそぐ）」= to hurry"},
+        {k:"待",s:"少し__ってください。",r:"ま",tr:"すこしまってください。",m:"「待つ（まつ）」= to wait"},
+        {k:"持",s:"重い荷物を__ってあげましょうか？",r:"も",tr:"おもいにもつをもってあげましょうか？",m:"「持つ（もつ）」= to hold/carry"},
+        {k:"貸",s:"傘を__してもらえますか？",r:"か",tr:"かさをかしてもらえますか？",m:"「貸す（かす）」= to lend"},
+        {k:"借",s:"図書館で本を__りました。",r:"か",tr:"としょかんでほんをかりました。",m:"「借りる（かりる）」= to borrow"},
+        {k:"開",s:"窓を__けてもいいですか？",r:"あ",tr:"まどをあけてもいいですか？",m:"「開ける（あける）」= to open"},
+        {k:"閉",s:"ドアを__めてください。",r:"し",tr:"ドアをしめてください。",m:"「閉める（しめる）」= to close"},
+        {k:"考",s:"もう少し__えてから決めます。",r:"かんが",tr:"もうすこしかんがえてからきめます。",m:"「考える（かんがえる）」= to think/consider"},
+        {k:"思",s:"あなたはどう__いますか？",r:"おも",tr:"あなたはどうおもいますか？",m:"「思う（おもう）」= to think/feel"},
+        {k:"知",s:"この店を__っていますか？",r:"し",tr:"このみせをしっていますか？",m:"「知る（しる）」= to know"},
+        {k:"分",s:"この問題の意味が__かりません。",r:"わ",tr:"このもんだいのいみがわかりません。",m:"「分かる（わかる）」= to understand"},
+        {k:"忘",s:"傘を__れて、濡れてしまいました。",r:"わす",tr:"かさをわすれて、ぬれてしまいました。",m:"「忘れる（わすれる）」= to forget"},
+        {k:"守",s:"規則を必ず__ってください。",r:"まも",tr:"きそくをかならずまもってください。",m:"「守る（まもる）」= to obey/follow ※「守」= まも(る)"},
+        {k:"教",s:"道を__えてもらえますか？",r:"おし",tr:"みちをおしえてもらえますか？",m:"「教える（おしえる）」= to teach/tell"},
+        {k:"泳",s:"夏はプールで__ぐのが好きです。",r:"およ",tr:"なつはプールでおよぐのがすきです。",m:"「泳ぐ（およぐ）」= to swim ※「泳」= およ(ぐ)"},
+      ],
+      "動作・動詞③":[
+        {k:"乗",s:"バスに__ってください。",r:"の",tr:"バスにのってください。",m:"「乗る（のる）」= to ride/board"},
+        {k:"降",s:"次の駅で__ります。",r:"お",tr:"つぎのえきでおります。",m:"「降りる（おりる）」= to get off"},
+        {k:"着",s:"新幹線が東京に__きました。",r:"つ",tr:"しんかんせんがとうきょうにつきました。",m:"「着く（つく）」= to arrive"},
+        {k:"送",s:"駅まで__ってもらえますか？",r:"おく",tr:"えきまでおくってもらえますか？",m:"「送る（おくる）」= to send/see off"},
+        {k:"迎",s:"空港まで友達を__えに行きました。",r:"むか",tr:"くうこうまでともだちをむかえにいきました。",m:"「迎える（むかえる）」= to welcome/pick up"},
+        {k:"渡",s:"横断歩道を__ってください。",r:"わた",tr:"おうだんほどうをわたってください。",m:"「渡る（わたる）」= to cross"},
+        {k:"曲",s:"次の角を左に__がってください。",r:"ま",tr:"つぎのかどをひだりにまがってください。",m:"「曲がる（まがる）」= to turn"},
+        {k:"戻",s:"忘れ物をしたので、家に__りました。",r:"もど",tr:"わすれものをしたので、いえにもどりました。",m:"「戻る（もどる）」= to return/go back"},
+        {k:"泊",s:"京都のホテルに__まりました。",r:"と",tr:"きょうとのホテルにとまりました。",m:"「泊まる（とまる）」= to stay overnight"},
+        {k:"選",s:"どれにするか__んでください。",r:"えら",tr:"どれにするかえらんでください。",m:"「選ぶ（えらぶ）」= to choose/select"},
+        {k:"決",s:"どこへ行くか、もう__めましたか？",r:"き",tr:"どこへいくか、もうきめましたか？",m:"「決める（きめる）」= to decide"},
+        {k:"続",s:"毎日運動を__けています。",r:"つづ",tr:"まいにちうんどうをつづけています。",m:"「続ける（つづける）」= to continue"},
+        {k:"調",s:"問題の原因を__べています。",r:"しら",tr:"もんだいのげんいんをしらべています。",m:"「調べる（しらべる）」= to investigate"},
+        {k:"集",s:"切手を__めるのが趣味です。",r:"あつ",tr:"きってをあつめるのがしゅみです。",m:"「集める（あつめる）」= to collect"},
+        {k:"伝",s:"この情報をみんなに__えてください。",r:"つた",tr:"このじょうほうをみんなにつたえてください。",m:"「伝える（つたえる）」= to convey"},
+      ],
+      "形容詞①":[
+        {k:"大",s:"この荷物は__きくて持てません。",r:"おお",tr:"このにもつはおおきくてもてません。",m:"「大きい（おおきい）」= big"},
+        {k:"小",s:"このかばんは__さくていいですね。",r:"ちい",tr:"このかばんはちいさくていいですね。",m:"「小さい（ちいさい）」= small"},
+        {k:"高",s:"このレストランは少し__いですね。",r:"たか",tr:"このレストランはすこしたかいですね。",m:"「高い（たかい）」= expensive/tall"},
+        {k:"安",s:"このお店はとても__いですよ！",r:"やす",tr:"このおみせはとてもやすいですよ！",m:"「安い（やすい）」= cheap"},
+        {k:"新",s:"__しいスマホを買いました。",r:"あたら",tr:"あたらしいスマホをかいました。",m:"「新しい（あたらしい）」= new"},
+        {k:"古",s:"この建物はとても__いですね。",r:"ふる",tr:"このたてものはとてもふるいですね。",m:"「古い（ふるい）」= old"},
+        {k:"長",s:"この映画は__すぎて眠くなりました。",r:"なが",tr:"このえいがはながすぎてねむくなりました。",m:"「長い（ながい）」= long"},
+        {k:"短",s:"この動画は__いので、すぐ見られます。",r:"みじか",tr:"このどうがはみじかいので、すぐみられます。",m:"「短い（みじかい）」= short"},
+        {k:"多",s:"宿題が__くて大変です。",r:"おお",tr:"しゅくだいがおおくてたいへんです。",m:"「多い（おおい）」= many/a lot"},
+        {k:"少",s:"__し待ってください。",r:"すこ",tr:"すこしまってください。",m:"「少し（すこし）」= a little"},
+        {k:"好",s:"日本語の勉強が__きです。",r:"す",tr:"にほんごのべんきょうがすきです。",m:"「好き（すき）」= like"},
+        {k:"嫌",s:"辛い食べ物が__いなんです。",r:"きら",tr:"からいたべものがきらいなんです。",m:"「嫌い（きらい）」= dislike"},
+        {k:"忙",s:"最近、とても__しくて疲れています。",r:"いそが",tr:"さいきん、とてもいそがしくてつかれています。",m:"「忙しい（いそがしい）」= busy"},
+        {k:"暇",s:"週末は__なので、どこかへ行きたいです。",r:"ひま",tr:"しゅうまつはひまなので、どこかへいきたいです。",m:"「暇（ひま）」= free time"},
+        {k:"元",s:"お__気ですか？",r:"げん",tr:"おげんきですか？",m:"「元気（げんき）」= healthy/energetic"},
+      ],
+      "形容詞②":[
+        {k:"重",s:"このかばんは__くて持てません。",r:"おも",tr:"このかばんはおもくてもてません。",m:"「重い（おもい）」= heavy"},
+        {k:"軽",s:"このかばんは見た目より__いです。",r:"かる",tr:"このかばんはみためよりかるいです。",m:"「軽い（かるい）」= light (weight)"},
+        {k:"深",s:"この川はとても__くて危ないです。",r:"ふか",tr:"このかわはとてもふかくてあぶないです。",m:"「深い（ふかい）」= deep"},
+        {k:"広",s:"この部屋は__くて気持ちいいです。",r:"ひろ",tr:"このへやはひろくてきもちいいです。",m:"「広い（ひろい）」= wide/spacious"},
+        {k:"狭",s:"この部屋は__くて不便です。",r:"せま",tr:"このへやはせまくてふべんです。",m:"「狭い（せまい）」= narrow/small"},
+        {k:"暑",s:"今年の夏はとても__かったです。",r:"あつ",tr:"ことしのなつはとてもあつかったです。",m:"「暑い（あつい）」= hot (weather)"},
+        {k:"寒",s:"今朝はとても__かったです。",r:"さむ",tr:"けさはとてもさむかったです。",m:"「寒い（さむい）」= cold (weather)"},
+        {k:"暖",s:"春になって__かくなってきました。",r:"あたた",tr:"はるになってあたたかくなってきました。",m:"「暖かい（あたたかい）」= warm"},
+        {k:"涼",s:"夕方になって__しくなりました。",r:"すず",tr:"ゆうがたになってすずしくなりました。",m:"「涼しい（すずしい）」= cool/refreshing"},
+        {k:"丸",s:"テーブルが__いので、使いやすいです。",r:"まる",tr:"テーブルがまるいので、つかいやすいです。",m:"「丸い（まるい）」= round"},
+        {k:"強",s:"風が__くて傘が使えません。",r:"つよ",tr:"かぜがつよくてかさがつかえません。",m:"「強い（つよい）」= strong"},
+        {k:"弱",s:"体が__くて、すぐ疲れます。",r:"よわ",tr:"からだがよわくて、すぐつかれます。",m:"「弱い（よわい）」= weak"},
+        {k:"早",s:"明日は__く起きなければなりません。",r:"はや",tr:"あしたははやくおきなければなりません。",m:"「早い（はやい）」= early/fast"},
+        {k:"遅",s:"バスが__れて、授業に間に合いませんでした。",r:"おく",tr:"バスがおくれて、じゅぎょうにまにあいませんでした。",m:"「遅れる（おくれる）」= to be late"},
+        {k:"正",s:"答えが__しいかどうか確認してください。",r:"ただ",tr:"こたえがただしいかどうかかくにんしてください。",m:"「正しい（ただしい）」= correct"},
+      ],
+      "学校・勉強":[
+        {k:"学",s:"来年、大__に入りたいです。",r:"がく",tr:"らいねん、だいがくにはいりたいです。",m:"「大学（だいがく）」= university ※「学」= がく"},
+        {k:"校",s:"毎朝、学__まで歩いて行きます。",r:"こう",tr:"まいあさ、がっこうまであるいていきます。",m:"「学校（がっこう）」= school ※「校」= こう"},
+        {k:"生",s:"山田先__、質問があります。",r:"せい",tr:"やまだせんせい、しつもんがあります。",m:"「先生（せんせい）」= teacher ※「生」= せい"},
+        {k:"覚",s:"この漢字をもう__えましたか？",r:"おぼ",tr:"このかんじをもうおぼえましたか？",m:"「覚える（おぼえる）」= to memorize"},
+        {k:"室",s:"2番の教__に来てください。",r:"しつ",tr:"にばんのきょうしつにきてください。",m:"「教室（きょうしつ）」= classroom ※「室」= しつ"},
+        {k:"問",s:"この__題、わかりますか？",r:"もん",tr:"このもんだい、わかりますか？",m:"「問題（もんだい）」= problem ※「問」= もん"},
+        {k:"題",s:"宿__を忘れました。すみません。",r:"だい",tr:"しゅくだいをわすれました。すみません。",m:"「宿題（しゅくだい）」= homework ※「題」= だい"},
+        {k:"答",s:"この問題の__えは何ですか？",r:"こた",tr:"このもんだいのこたえはなんですか？",m:"「答え（こたえ）」= answer"},
+        {k:"試",s:"来週、漢字の__験があります。",r:"し",tr:"らいしゅう、かんじのしけんがあります。",m:"「試験（しけん）」= exam ※「試」= し"},
+        {k:"験",s:"海外で働いた経__があります。",r:"けん",tr:"かいがいではたらいたけいけんがあります。",m:"「経験（けいけん）」= experience ※「験」= けん"},
+        {k:"練",s:"毎朝ピアノの__習をしています。",r:"れん",tr:"まいあさピアノのれんしゅうをしています。",m:"「練習（れんしゅう）」= practice ※「練」= れん"},
+        {k:"習",s:"子供のころ、ピアノを__いました。",r:"なら",tr:"こどものころ、ピアノをならいました。",m:"「習う（ならう）」= to learn (a skill)"},
+        {k:"語",s:"母__は日本語です。",r:"ご",tr:"ぼごはにほんごです。",m:"「母語（ぼご）」= native language ※「語」= ご"},
+        {k:"文",s:"この__章の意味がわかりません。",r:"ぶん",tr:"このぶんしょうのいみがわかりません。",m:"「文章（ぶんしょう）」= text ※「文」= ぶん"},
+        {k:"字",s:"この漢__は読めますか？",r:"じ",tr:"このかんじはよめますか？",m:"「漢字（かんじ）」= kanji ※「字」= じ"},
+      ],
+      "仕事・社会":[
+        {k:"会",s:"明日、9時から__議があります。",r:"かい",tr:"あした、9じからかいぎがあります。",m:"「会議（かいぎ）」= meeting ※「会」= かい"},
+        {k:"社",s:"父は大きな会__で働いています。",r:"しゃ",tr:"ちちはおおきなかいしゃではたらいています。",m:"「会社（かいしゃ）」= company ※「社」= しゃ"},
+        {k:"員",s:"このお店の店__はとても親切です。",r:"いん",tr:"このおみせのてんいんはとてもしんせつです。",m:"「店員（てんいん）」= shop staff ※「員」= いん"},
+        {k:"仕",s:"今の__事はとても楽しいです。",r:"し",tr:"いまのしごとはとてもたのしいです。",m:"「仕事（しごと）」= job ※「仕」= し"},
+        {k:"事",s:"今日は用__があって、早く帰ります。",r:"じ",tr:"きょうはようじがあって、はやくかえります。",m:"「用事（ようじ）」= errand ※「事」= じ"},
+        {k:"電",s:"駅から__車に乗ります。",r:"でん",tr:"えきからでんしゃにのります。",m:"「電車（でんしゃ）」= train ※「電」= でん"},
+        {k:"申",s:"用件をここに__し込んでください。",r:"もう",tr:"ようけんをここにもうしこんでください。",m:"「申し込む（もうしこむ）」= to apply ※「申」= もう(し)"},
+        {k:"銀",s:"__行はあの建物の1階にあります。",r:"ぎん",tr:"ぎんこうはあのたてものの1かいにあります。",m:"「銀行（ぎんこう）」= bank ※「銀」= ぎん"},
+        {k:"店",s:"あの__はいつも混んでいます。",r:"みせ",tr:"あのみせはいつもこんでいます。",m:"「店（みせ）」= shop/store"},
+        {k:"買",s:"スーパーで野菜を__いました。",r:"か",tr:"スーパーでやさいをかいました。",m:"「買う（かう）」= to buy"},
+        {k:"売",s:"このお店では新鮮な魚を__っています。",r:"う",tr:"このおみせではしんせんなさかなをうっています。",m:"「売る（うる）」= to sell"},
+        {k:"品",s:"この商__はとても人気があります。",r:"ひん",tr:"このしょうひんはとてもにんきがあります。",m:"「商品（しょうひん）」= product ※「品」= ひん"},
+        {k:"円",s:"このケーキは350__です。",r:"えん",tr:"このケーキはさんびゃくごじゅうえんです。",m:"「円（えん）」= yen"},
+        {k:"万",s:"このパソコンは8__円でした。",r:"まん",tr:"このパソコンははちまんえんでした。",m:"「万円（まんえん）」= 10,000 yen unit ※「万」= まん"},
+        {k:"千",s:"このホテルは一泊5__円です。",r:"せん",tr:"このホテルはいっぱくごせんえんです。",m:"「千円（せんえん）」= 1,000 yen unit ※「千」= せん"},
+      ],
+      "交通・移動":[
+        {k:"道",s:"この__をまっすぐ行くと駅です。",r:"みち",tr:"このみちをまっすぐいくとえきです。",m:"「道（みち）」= road/way"},
+        {k:"橋",s:"川に大きな__がかかっています。",r:"はし",tr:"かわにおおきなはしがかかっています。",m:"「橋（はし）」= bridge"},
+        {k:"丘",s:"あの__の上から町が見渡せます。",r:"おか",tr:"あのおかのうえからまちがみわたせます。",m:"「丘（おか）」= hill"},
+        {k:"空",s:"__港まで迎えに行きます。",r:"くう",tr:"くうこうまでむかえにいきます。",m:"「空港（くうこう）」= airport ※「空」= くう"},
+        {k:"旅",s:"来月、__行をする予定です。",r:"りょ",tr:"らいつき、りょこうをするよていです。",m:"「旅行（りょこう）」= travel ※「旅」= りょ"},
+        {k:"荷",s:"重い__物を持って大変でした。",r:"に",tr:"おもいにもつをもってたいへんでした。",m:"「荷物（にもつ）」= luggage ※「荷」= に"},
+        {k:"地",s:"この__図を見てください。",r:"ち",tr:"このちずをみてください。",m:"「地図（ちず）」= map ※「地」= ち"},
+        {k:"図",s:"地__を見ながら歩きました。",r:"ず",tr:"ちずをみながらあるきました。",m:"「地図（ちず）」= map ※「図」= ず"},
+        {k:"発",s:"電車は8時に__車します。",r:"はっ",tr:"でんしゃは8じにはっしゃします。",m:"「発車（はっしゃ）」= departure ※「発」= はっ"},
+        {k:"脱",s:"家に帰ったら靴を__ぎます。",r:"ぬ",tr:"いえにかえったらくつをぬぎます。",m:"「脱ぐ（ぬぐ）」= to take off (shoes/clothes)"},
+        {k:"歩",s:"駅まで__いて10分かかります。",r:"ある",tr:"えきまであるいて10ふんかかります。",m:"「歩く（あるく）」= to walk"},
+        {k:"吹",s:"強い風が__いています。",r:"ふ",tr:"つよいかぜがふいています。",m:"「吹く（ふく）」= to blow (wind) ※「吹」= ふ(く)"},
+        {k:"通",s:"毎日この道を__って学校へ行きます。",r:"とお",tr:"まいにちこのみちをとおってがっこうへいきます。",m:"「通る（とおる）」= to pass through"},
+        {k:"速",s:"新幹線はとても__いです。",r:"はや",tr:"しんかんせんはとてもはやいです。",m:"「速い（はやい）」= fast (speed)"},
+        {k:"止",s:"赤信号では必ず__まってください。",r:"と",tr:"あかしんごうではかならずとまってください。",m:"「止まる（とまる）」= to stop"},
+      ],
+      "体・健康":[
+        {k:"病",s:"__院に行って薬をもらいました。",r:"びょう",tr:"びょういんにいってくすりをもらいました。",m:"「病院（びょういん）」= hospital ※「病」= びょう"},
+        {k:"院",s:"退__の許可が出ました。",r:"いん",tr:"たいいんのきょかがでました。",m:"「退院（たいいん）」= hospital discharge ※「院」= いん"},
+        {k:"医",s:"__者に診てもらってください。",r:"い",tr:"いしゃにみてもらってください。",m:"「医者（いしゃ）」= doctor ※「医」= い"},
+        {k:"薬",s:"この__は1日3回飲んでください。",r:"くすり",tr:"このくすりは1にち3かいのんでください。",m:"「薬（くすり）」= medicine"},
+        {k:"熱",s:"昨日から__があって、休んでいます。",r:"ねつ",tr:"きのうからねつがあって、やすんでいます。",m:"「熱（ねつ）」= fever"},
+        {k:"痛",s:"歯が__くて眠れませんでした。",r:"いた",tr:"はがいたくてねむれませんでした。",m:"「痛い（いたい）」= painful"},
+        {k:"疲",s:"仕事が忙しくて、とても__れました。",r:"つか",tr:"しごとがいそがしくて、とてもつかれました。",m:"「疲れる（つかれる）」= to get tired"},
+        {k:"休",s:"体の調子が悪いので、今日は__みます。",r:"やす",tr:"からだのちょうしがわるいので、きょうはやすみます。",m:"「休む（やすむ）」= to rest"},
+        {k:"運",s:"毎朝ジョギングをして__動しています。",r:"うん",tr:"まいあさジョギングをしてうんどうしています。",m:"「運動（うんどう）」= exercise ※「運」= うん"},
+        {k:"動",s:"体を__かすことが健康に大切です。",r:"うご",tr:"からだをうごかすことがけんこうにたいせつです。",m:"「動かす（うごかす）」= to move"},
+        {k:"健",s:"__康のために、野菜をたくさん食べます。",r:"けん",tr:"けんこうのために、やさいをたくさんたべます。",m:"「健康（けんこう）」= health ※「健」= けん"},
+        {k:"康",s:"健__でいるために、よく寝ることが大切です。",r:"こう",tr:"けんこうでいるために、よくねることがたいせつです。",m:"「健康（けんこう）」= health ※「康」= こう"},
+        {k:"洗",s:"食事の前に手を__います。",r:"あら",tr:"しょくじのまえにてをあらいます。",m:"「洗う（あらう）」= to wash"},
+        {k:"風",s:"__邪を引いて、学校を休みました。",r:"かぜ",tr:"かぜをひいて、がっこうをやすみました。",m:"「風邪（かぜ）」= cold (illness)"},
+        {k:"息",s:"深く__を吸ってからゆっくり話してください。",r:"いき",tr:"ふかくいきをすってからゆっくりはなしてください。",m:"「息（いき）」= breath"},
+      ],
+      "生活・住まい":[
+        {k:"住",s:"東京に__んで3年になります。",r:"す",tr:"とうきょうにすんで3ねんになります。",m:"「住む（すむ）」= to live/reside"},
+        {k:"部",s:"この__屋はとても広いですね。",r:"へ",tr:"このへやはとてもひろいですね。",m:"「部屋（へや）」= room ※「部」= へ ※熟字訓"},
+        {k:"屋",s:"駅の近くに本__があります。",r:"や",tr:"えきのちかくにほんやがあります。",m:"「本屋（ほんや）」= bookstore ※「屋」= や"},
+        {k:"台",s:"この__所は広くて使いやすいです。",r:"だい",tr:"このだいどころはひろくてつかいやすいです。",m:"「台所（だいどころ）」= kitchen ※「台」= だい"},
+        {k:"浴",s:"毎朝シャワーを__びてから出かけます。",r:"あ",tr:"まいあさシャワーをあびてからでかけます。",m:"「浴びる（あびる）」= to take a shower ※「浴」= あ(びる)"},
+        {k:"灯",s:"部屋の__りをつけてください。",r:"あか",tr:"へやのあかりをつけてください。",m:"「灯り（あかり）」= light/lamp ※「灯」= あか(り)"},
+        {k:"水",s:"__道の水がとてもきれいです。",r:"すい",tr:"すいどうのみずがとてもきれいです。",m:"「水道（すいどう）」= water supply ※「水」= すい"},
+        {k:"門",s:"__を閉めてから出かけてください。",r:"もん",tr:"もんをしめてからでかけてください。",m:"「門（もん）」= gate"},
+        {k:"庭",s:"__に花を植えました。",r:"にわ",tr:"にわにはなをうえました。",m:"「庭（にわ）」= garden"},
+        {k:"窓",s:"__から富士山が見えます。",r:"まど",tr:"まどからふじさんがみえます。",m:"「窓（まど）」= window"},
+        {k:"階",s:"エレベーターで3__まで行ってください。",r:"かい",tr:"エレベーターで3かいまでいってください。",m:"「階（かい）」= floor/story"},
+        {k:"引",s:"来月、新しいアパートに__っ越します。",r:"ひ",tr:"らいつき、あたらしいアパートにひっこします。",m:"「引っ越す（ひっこす）」= to move house ※「引」= ひ"},
+        {k:"物",s:"週末に買い__に行きます。",r:"もの",tr:"しゅうまつにかいものにいきます。",m:"「買い物（かいもの）」= shopping ※「物」= もの"},
+        {k:"皿",s:"__を洗うのは私の仕事です。",r:"さら",tr:"さらをあらうのはわたしのしごとです。",m:"「皿（さら）」= plate/dish"},
+        {k:"机",s:"__の上を片付けてください。",r:"つくえ",tr:"つくえのうえをかたづけてください。",m:"「机（つくえ）」= desk"},
+      ],
+      "自然・天気":[
+        {k:"天",s:"__気予報では明日は晴れです。",r:"てん",tr:"てんきよほうではあしたははれです。",m:"「天気（てんき）」= weather ※「天」= てん"},
+        {k:"気",s:"今日は__温が高いですね。",r:"き",tr:"きょうはきおんがたかいですね。",m:"「気温（きおん）」= temperature ※「気」= き"},
+        {k:"雪",s:"山の上には__が積もっています。",r:"ゆき",tr:"やまのうえにはゆきがつもっています。",m:"「雪（ゆき）」= snow"},
+        {k:"暴",s:"台風で__風が吹き荒れました。",r:"ぼう",tr:"たいふうでぼうふうがふきあれました。",m:"「暴風（ぼうふう）」= storm/violent wind ※「暴」= ぼう"},
+        {k:"晴",s:"明日は__れるといいですね。",r:"は",tr:"あしたははれるといいですね。",m:"「晴れる（はれる）」= to clear up"},
+        {k:"曇",s:"今日は__りです。",r:"くも",tr:"きょうはくもりです。",m:"「曇り（くもり）」= cloudy"},
+        {k:"春",s:"__になると、桜が咲きます。",r:"はる",tr:"はるになると、さくらがさきます。",m:"「春（はる）」= spring"},
+        {k:"夏",s:"__はとても暑くて大変です。",r:"なつ",tr:"なつはとてもあつくてたいへんです。",m:"「夏（なつ）」= summer"},
+        {k:"秋",s:"__は紅葉がきれいです。",r:"あき",tr:"あきはこうようがきれいです。",m:"「秋（あき）」= autumn"},
+        {k:"冬",s:"__はスキーが楽しいです。",r:"ふゆ",tr:"ふゆはスキーがたのしいです。",m:"「冬（ふゆ）」= winter"},
+        {k:"蒸",s:"梅雨の時期は__し暑いです。",r:"む",tr:"つゆのじきはむしあついです。",m:"「蒸し暑い（むしあつい）」= humid and hot ※「蒸」= む(し)"},
+        {k:"凍",s:"昨夜は道が__りました。",r:"こお",tr:"さくやはみちがこおりました。",m:"「凍る（こおる）」= to freeze ※「凍」= こお(る)"},
+        {k:"光",s:"朝の__が部屋に入ってきました。",r:"ひかり",tr:"あさのひかりがへやにはいってきました。",m:"「光（ひかり）」= light"},
+        {k:"草",s:"庭の__を刈りました。",r:"くさ",tr:"にわのくさをかりました。",m:"「草（くさ）」= grass/weeds"},
+        {k:"鳥",s:"公園でかわいい__を見ました。",r:"とり",tr:"こうえんでかわいいとりをみました。",m:"「鳥（とり）」= bird"},
+      ],
+      "文化・娯楽":[
+        {k:"映",s:"週末、友達と__画を見に行きます。",r:"えい",tr:"しゅうまつ、ともだちとえいがをみにいきます。",m:"「映画（えいが）」= movie ※「映」= えい"},
+        {k:"画",s:"週末に映__を見に行きました。",r:"が",tr:"しゅうまつにえいがをみにいきました。",m:"「映画（えいが）」= movie ※「画」= が"},
+        {k:"音",s:"この部屋は__が静かで集中できます。",r:"おと",tr:"このへやはおとがしずかでしゅうちゅうできます。",m:"「音（おと）」= sound"},
+        {k:"楽",s:"ピアノで__器を演奏するのが好きです。",r:"がっ",tr:"ピアノでがっきをえんそうするのがすきです。",m:"「楽器（がっき）」= musical instrument ※「楽」= がっ(き)"},
+        {k:"歌",s:"カラオケで__を歌いました。",r:"うた",tr:"カラオケでうたをうたいました。",m:"「歌（うた）」= song"},
+        {k:"絵",s:"美術館でたくさんの__を見ました。",r:"え",tr:"びじゅつかんでたくさんのえをみました。",m:"「絵（え）」= picture/painting"},
+        {k:"写",s:"この場所で__真を撮ってもいいですか？",r:"しゃ",tr:"このばしょでしゃしんをとってもいいですか？",m:"「写真（しゃしん）」= photo ※「写」= しゃ"},
+        {k:"真",s:"旅行で撮った__を見せてください。",r:"しん",tr:"りょこうでとったしゃしんをみせてください。",m:"「写真（しゃしん）」= photo ※「真」= しん"},
+        {k:"美",s:"この景色は本当に__しいですね。",r:"うつく",tr:"このけしきはほんとうにうつくしいですね。",m:"「美しい（うつくしい）」= beautiful ※「美」= うつく(しい)"},
+        {k:"術",s:"来週、手__を受ける予定です。",r:"じゅつ",tr:"らいしゅう、しゅじゅつをうけるよていです。",m:"「手術（しゅじゅつ）」= surgery/operation ※「術」= じゅつ"},
+        {k:"色",s:"好きな__を一つ選んでください。",r:"いろ",tr:"すきないろをひとつえらんでください。",m:"「色（いろ）」= color"},
+        {k:"形",s:"このケーキはハートの__をしています。",r:"かたち",tr:"このケーキはハートのかたちをしています。",m:"「形（かたち）」= shape"},
+        {k:"声",s:"先生の__は大きくてよく聞こえます。",r:"こえ",tr:"せんせいのこえはおおきくてよくきこえます。",m:"「声（こえ）」= voice"},
+        {k:"言",s:"何か__いたいことはありますか？",r:"い",tr:"なにかいいたいことはありますか？",m:"「言う（いう）」= to say ※「言」= い(う)"},
+        {k:"本",s:"この__は面白くてすぐ読んでしまいました。",r:"ほん",tr:"このほんはおもしろくてすぐよんでしまいました。",m:"「本（ほん）」= book"},
+      ],
+      "街・施設":[
+        {k:"公",s:"子供たちが__園で遊んでいます。",r:"こう",tr:"こどもたちがこうえんであそんでいます。",m:"「公園（こうえん）」= park ※「公」= こう"},
+        {k:"館",s:"この__は有名な建物です。",r:"やかた",tr:"このやかたはゆうめいなたてものです。",m:"「館（やかた）」= hall/mansion ※「館」= やかた"},
+        {k:"場",s:"この__所はとても静かです。",r:"ば",tr:"このばしょはとてもしずかです。",m:"「場所（ばしょ）」= place ※「場」= ば"},
+        {k:"局",s:"この__は24時間開いています。",r:"きょく",tr:"このきょくは24じかんあいています。",m:"「局（きょく）」= office/bureau ※「局」= きょく"},
+        {k:"郵",s:"__便で荷物を送りました。",r:"ゆう",tr:"ゆうびんでにもつをおくりました。",m:"「郵便（ゆうびん）」= mail/post ※「郵」= ゆう"},
+        {k:"便",s:"この路線はとても__利です。",r:"べん",tr:"このろせんはとてもべんりです。",m:"「便利（べんり）」= convenient ※「便」= べん"},
+        {k:"交",s:"この道は__通量が多いです。",r:"こう",tr:"このみちはこうつうりょうがおおいです。",m:"「交通（こうつう）」= traffic ※「交」= こう"},
+        {k:"番",s:"警察に電話する時は110__です。",r:"ばん",tr:"けいさつにでんわするときは110ばんです。",m:"「番（ばん）」= number ※「番」= ばん"},
+        {k:"警",s:"__察に届け出ました。",r:"けい",tr:"けいさつにとどけでました。",m:"「警察（けいさつ）」= police ※「警」= けい"},
+        {k:"消",s:"電気を__してから寝てください。",r:"け",tr:"でんきをけしてからねてください。",m:"「消す（けす）」= to turn off ※「消」= け(す)"},
+        {k:"防",s:"火災を__ぐために、定期的に点検しています。",r:"ふせ",tr:"かさいをふせぐために、ていきてきにてんけんしています。",m:"「防ぐ（ふせぐ）」= to prevent ※「防」= ふせ(ぐ)"},
+        {k:"区",s:"この__の図書館は新しくてきれいです。",r:"く",tr:"このくのとしょかんはあたらしくてきれいです。",m:"「区（く）」= ward/district"},
+        {k:"市",s:"この__には有名な観光地があります。",r:"し",tr:"このしにはゆうめいなかんこうちがあります。",m:"「市（し）」= city"},
+        {k:"県",s:"この__は温泉で有名です。",r:"けん",tr:"このけんはおんせんでゆうめいです。",m:"「県（けん）」= prefecture"},
+        {k:"都",s:"この__市は観光地として有名です。",r:"と",tr:"このとしはかんこうちとしてゆうめいです。",m:"「都市（とし）」= city ※「都」= と"},
+      ],
+      "自然・地理":[
+        {k:"島",s:"沖縄は美しい__です。",r:"しま",tr:"おきなわはうつくしいしまです。",m:"「島（しま）」= island"},
+        {k:"半",s:"この__島は観光地として有名です。",r:"はん",tr:"このはんとうはかんこうちとしてゆうめいです。",m:"「半島（はんとう）」= peninsula ※「半」= はん"},
+        {k:"国",s:"外__から来た留学生が増えています。",r:"こく",tr:"がいこくからきたりゅうがくせいがふえています。",m:"「外国（がいこく）」= foreign country ※「国」= こく"},
+        {k:"全",s:"__国から観光客が集まります。",r:"ぜん",tr:"ぜんこくからかんこうきゃくがあつまります。",m:"「全国（ぜんこく）」= whole country ※「全」= ぜん"},
+        {k:"各",s:"__自で準備してください。",r:"かく",tr:"かくじでじゅんびしてください。",m:"「各自（かくじ）」= each person ※「各」= かく"},
+        {k:"方",s:"この__面は交通が不便です。",r:"ほう",tr:"このほうめんはこうつうがふべんです。",m:"「方面（ほうめん）」= direction/area ※「方」= ほう"},
+        {k:"港",s:"船が__に着きました。",r:"みなと",tr:"ふねがみなとにつきました。",m:"「港（みなと）」= harbor/port"},
+        {k:"温",s:"冬は__泉に入りに行きます。",r:"おん",tr:"ふゆはおんせんにはいりにいきます。",m:"「温泉（おんせん）」= hot spring ※「温」= おん"},
+        {k:"泉",s:"この地域には自然の__が湧いています。",r:"いずみ",tr:"このちいきにはしぜんのいずみがわいています。",m:"「泉（いずみ）」= spring (water)"},
+        {k:"府",s:"この__は観光客が多いです。",r:"ふ",tr:"このふはかんこうきゃくがおおいです。",m:"「府（ふ）」= prefecture (大阪府など)"},
+        {k:"所",s:"ここはとても居心地の良い__です。",r:"ところ",tr:"ここはとてもいごこちのよいところです。",m:"「所（ところ）」= place"},
+        {k:"向",s:"学校は駅と反対の__にあります。",r:"むこう",tr:"がっこうはえきとはんたいのむこうにあります。",m:"「向こう（むこう）」= the other side/beyond ※「向」= むこう"},
+        {k:"側",s:"道の左__を歩いてください。",r:"がわ",tr:"みちのひだりがわをあるいてください。",m:"「左側（ひだりがわ）」= left side ※「側」= がわ"},
+        {k:"周",s:"湖の__りを散歩しました。",r:"まわ",tr:"みずうみのまわりをさんぽしました。",m:"「周り（まわり）」= surroundings/around"},
+        {k:"辺",s:"この__りは夜になると静かです。",r:"あた",tr:"このあたりはよるになるとしずかです。",m:"「辺り（あたり）」= area/around here"},
+      ],
+      "行事・社会生活":[
+        {k:"祭",s:"来月、地域のお__りがあります。",r:"まつ",tr:"らいつき、ちいきのおまつりがあります。",m:"「祭り（まつり）」= festival ※「祭」= まつ(り)"},
+        {k:"祝",s:"誕生日を__ってもらいました。",r:"いわ",tr:"たんじょうびをいわってもらいました。",m:"「祝う（いわう）」= to celebrate ※「祝」= いわ(う)"},
+        {k:"式",s:"卒業__のスピーチを練習しています。",r:"しき",tr:"そつぎょうしきのスピーチをれんしゅうしています。",m:"「卒業式（そつぎょうしき）」= graduation ceremony ※「式」= しき"},
+        {k:"礼",s:"お世話になったので、お__を言いたいです。",r:"れい",tr:"おせわになったので、おれいをいいたいです。",m:"「お礼（おれい）」= thanks/gratitude ※「礼」= れい"},
+        {k:"念",s:"10周年の記__パーティーに招待されました。",r:"ねん",tr:"10しゅうねんのきねんパーティーにしょうたいされました。",m:"「記念（きねん）」= commemoration ※「念」= ねん"},
+        {k:"記",s:"旅行の思い出を日__に書いています。",r:"き",tr:"りょこうのおもいでをにっきにかいています。",m:"「日記（にっき）」= diary ※「記」= き"},
+        {k:"服",s:"式典なので正__を着てきてください。",r:"ふく",tr:"しきてんなのでせいふくをきてきてください。",m:"「制服（せいふく）」= uniform ※「服」= ふく"},
+        {k:"役",s:"この仕事は社会の__に立っています。",r:"やく",tr:"このしごとはしゃかいのやくにたっています。",m:"「役に立つ（やくにたつ）」= to be useful ※「役」= やく"},
+        {k:"用",s:"明日は大切な__事があります。",r:"よう",tr:"あしたはたいせつなようじがあります。",m:"「用事（ようじ）」= errand ※「用」= よう"},
+        {k:"関",s:"この問題に__係していません。",r:"かん",tr:"このもんだいにかんけいしていません。",m:"「関係（かんけい）」= relationship ※「関」= かん"},
+        {k:"心",s:"環境問題に関__をもっています。",r:"しん",tr:"かんきょうもんだいにかんしんをもっています。",m:"「関心（かんしん）」= interest/concern ※「心」= しん"},
+        {k:"感",s:"映画を見て深く__動しました。",r:"かん",tr:"えいがをみてふかくかんどうしました。",m:"「感動（かんどう）」= being moved ※「感」= かん"},
+        {k:"情",s:"最新の__報を確認してください。",r:"じょう",tr:"さいしんのじょうほうをかくにんしてください。",m:"「情報（じょうほう）」= information ※「情」= じょう"},
+        {k:"意",s:"もっと__識を高める必要があります。",r:"い",tr:"もっといしきをたかめるひつようがあります。",m:"「意識（いしき）」= awareness ※「意」= い"},
+        {k:"注",s:"この薬は副作用に__意してください。",r:"ちゅう",tr:"このくすりはふくさようにちゅういしてください。",m:"「注意（ちゅうい）」= caution ※「注」= ちゅう"},
+      ],
+      "勉強・仕事②":[
+        {k:"勉",s:"もっと__強しなければなりません。",r:"べん",tr:"もっとべんきょうしなければなりません。",m:"「勉強（べんきょう）」= study ※「勉」= べん"},
+        {k:"比",s:"去年と__べると成績が上がりました。",r:"くら",tr:"きょねんとくらべるとせいせきがあがりました。",m:"「比べる（くらべる）」= to compare ※「比」= くら(べる)"},
+        {k:"味",s:"この単語の__がわかりません。",r:"いみ",tr:"このたんごのいみがわかりません。",m:"「意味（いみ）」= meaning ※「味」= み"},
+        {k:"辞",s:"わからない言葉は__書で調べます。",r:"じ",tr:"わからないことばはじしょでしらべます。",m:"「辞書（じしょ）」= dictionary ※「辞」= じ"},
+        {k:"計",s:"プロジェクトの__画を立てました。",r:"けい",tr:"プロジェクトのけいかくをたてました。",m:"「計画（けいかく）」= plan ※「計」= けい"},
+        {k:"産",s:"この地方は農__物が豊かです。",r:"さん",tr:"このちほうはのうさんぶつがゆたかです。",m:"「農産物（のうさんぶつ）」= agricultural products ※「産」= さん"},
+        {k:"業",s:"この会社の主な__種は製造です。",r:"ぎょう",tr:"このかいしゃのおもなぎょうしゅはせいぞうです。",m:"「業種（ぎょうしゅ）」= type of business ※「業」= ぎょう"},
+        {k:"管",s:"このプロジェクトを__理しています。",r:"かん",tr:"このプロジェクトをかんりしています。",m:"「管理（かんり）」= management ※「管」= かん"},
+        {k:"理",s:"問題を整__してから考えましょう。",r:"り",tr:"もんだいをせいりしてからかんがえましょう。",m:"「整理（せいり）」= organization ※「理」= り"},
+        {k:"数",s:"参加者の__を数えてください。",r:"かず",tr:"さんかしゃのかずをかぞえてください。",m:"「数（かず）」= number/count"},
+        {k:"量",s:"食事の__を減らしています。",r:"りょう",tr:"しょくじのりょうをへらしています。",m:"「量（りょう）」= amount/quantity"},
+        {k:"落",s:"試験に__第して、とても落ち込みました。",r:"らく",tr:"しけんにらくだいして、とてもおちこみました。",m:"「落第（らくだい）」= failing a grade ※「落」= らく"},
+        {k:"返",s:"借りた本を図書館に__しました。",r:"かえ",tr:"かりたほんをとしょかんにかえしました。",m:"「返す（かえす）」= to return ※「返」= かえ(す)"},
+        {k:"受",s:"来週、試験を__けます。",r:"う",tr:"らいしゅう、しけんをうけます。",m:"「受ける（うける）」= to take (exam) ※「受」= う(ける)"},
+        {k:"払",s:"授業料を__いました。",r:"はら",tr:"じゅぎょうりょうをはらいました。",m:"「払う（はらう）」= to pay ※「払」= はら(う)"},
+      ],
+      "体・感覚":[
+        {k:"頭",s:"難しい問題を考えて__が痛くなりました。",r:"あたま",tr:"むずかしいもんだいをかんがえてあたまがいたくなりました。",m:"「頭（あたま）」= head"},
+        {k:"顔",s:"彼女は笑うと__が明るくなります。",r:"かお",tr:"かのじょはわらうとかおがあかるくなります。",m:"「顔（かお）」= face"},
+        {k:"首",s:"__が痛くて上を向けません。",r:"くび",tr:"くびがいたくてうえをむけません。",m:"「首（くび）」= neck"},
+        {k:"肩",s:"荷物が重くて__が凝りました。",r:"かた",tr:"にもつがおもくてかたがこりました。",m:"「肩（かた）」= shoulder"},
+        {k:"腰",s:"重いものを持って__を痛めました。",r:"こし",tr:"おもいものをもってこしをいためました。",m:"「腰（こし）」= lower back/waist"},
+        {k:"腕",s:"__を組んで話を聞いています。",r:"うで",tr:"うでをくんではなしをきいています。",m:"「腕（うで）」= arm"},
+        {k:"指",s:"この__輪はとてもきれいです。",r:"ゆび",tr:"このゆびわはとてもきれいです。",m:"「指輪（ゆびわ）」= ring ※「指」= ゆび"},
+        {k:"皮",s:"りんごの__をむいてください。",r:"かわ",tr:"りんごのかわをむいてください。",m:"「皮（かわ）」= skin/peel"},
+        {k:"骨",s:"転んで__を折ってしまいました。",r:"ほね",tr:"ころんでほねをおってしまいました。",m:"「骨（ほね）」= bone"},
+        {k:"血",s:"怪我をして__が出ました。",r:"ち",tr:"けがをしてちがでました。",m:"「血（ち）」= blood"},
+        {k:"腹",s:"お__が空いたので、何か食べたいです。",r:"なか",tr:"おなかがすいたので、なにかたべたいです。",m:"「お腹（おなか）」= stomach/belly ※「腹」= なか"},
+        {k:"鼻",s:"花粉症で__が出ます。",r:"はな",tr:"かふんしょうではながでます。",m:"「鼻（はな）」= nose"},
+        {k:"喉",s:"__が渇いたので水を飲みました。",r:"のど",tr:"のどがかわいたのでみずをのみました。",m:"「喉（のど）」= throat"},
+        {k:"汗",s:"運動して__をたくさんかきました。",r:"あせ",tr:"うんどうしてあせをたくさんかきました。",m:"「汗（あせ）」= sweat"},
+        {k:"涙",s:"悲しい映画を見て__が出ました。",r:"なみだ",tr:"かなしいえいがをみてなみだがでました。",m:"「涙（なみだ）」= tears"},
+      ],
+    }
+  },
+  n3: {
+    label: 'N3',
+    color: 'var(--n3)',
+    data: {
+      "感情・状態":[
+        {k:"悲",s:"その知らせを聞いて、とても__しかったです。",r:"かな",tr:"そのしらせをきいて、とてもかなしかったです。",m:"「悲しい（かなしい）」= sad"},
+        {k:"嬉",s:"合格して本当に__しいです。",r:"うれ",tr:"ごうかくしてほんとうにうれしいです。",m:"「嬉しい（うれしい）」= happy/glad"},
+        {k:"怒",s:"彼は遅刻した部下に__りました。",r:"おこ",tr:"かれはちこくしたぶかにおこりました。",m:"「怒る（おこる）」= to get angry"},
+        {k:"驚",s:"突然の知らせに__きました。",r:"おどろ",tr:"とつぜんのしらせにおどろきました。",m:"「驚く（おどろく）」= to be surprised"},
+        {k:"心",s:"試験のことが__配です。",r:"しん",tr:"しけんのことがしんぱいです。",m:"「心配（しんぱい）」= worry ※「心」= しん"},
+        {k:"配",s:"一人で大丈夫か、ずっと心__していました。",r:"ぱい",tr:"ひとりでだいじょうぶか、ずっとしんぱいしていました。",m:"「心配（しんぱい）」= worry ※「配」= ぱい（連濁）"},
+        {k:"緊",s:"発表の前は__張します。",r:"きん",tr:"はっぴょうのまえはきんちょうします。",m:"「緊張（きんちょう）」= nervous ※「緊」= きん"},
+        {k:"安",s:"無事に着いたと連絡があり、__心しました。",r:"あん",tr:"ぶじについたとれんらくがあり、あんしんしました。",m:"「安心（あんしん）」= relief ※「安」= あん"},
+        {k:"満",s:"この仕事には__足しています。",r:"まん",tr:"このしごとにはまんぞくしています。",m:"「満足（まんぞく）」= satisfaction ※「満」= まん"},
+        {k:"望",s:"将来は医者になることを__んでいます。",r:"のぞ",tr:"しょうらいはいしゃになることをのぞんでいます。",m:"「望む（のぞむ）」= to wish/hope"},
+        {k:"苦",s:"外国語の勉強は__労が多いです。",r:"く",tr:"がいこくごのべんきょうはくろうがおおいです。",m:"「苦労（くろう）」= hardship ※「苦」= く"},
+        {k:"楽",s:"休日は音楽を聴いて__しみます。",r:"たの",tr:"きゅうじつはおんがくをきいてたのしみます。",m:"「楽しむ（たのしむ）」= to enjoy"},
+        {k:"恥",s:"間違えて__ずかしかったです。",r:"は",tr:"まちがえてはずかしかったです。",m:"「恥ずかしい（はずかしい）」= embarrassed"},
+        {k:"羨",s:"彼女の才能が__ましいです。",r:"うらや",tr:"かのじょのさいのうがうらやましいです。",m:"「羨ましい（うらやましい）」= envious"},
+        {k:"寂",s:"一人暮らしで、時々__しくなります。",r:"さび",tr:"ひとりぐらしで、ときどきさびしくなります。",m:"「寂しい（さびしい）」= lonely"},
+      ],
+      "社会・仕事①":[
+        {k:"働",s:"彼女は病院で__いています。",r:"はたら",tr:"かのじょはびょういんではたらいています。",m:"「働く（はたらく）」= to work"},
+        {k:"給",s:"今月の__料が上がりました。",r:"きゅう",tr:"こんつきのきゅうりょうがあがりました。",m:"「給料（きゅうりょう）」= salary ※「給」= きゅう"},
+        {k:"料",s:"この店は__金が安いです。",r:"りょう",tr:"このみせはりょうきんがやすいです。",m:"「料金（りょうきん）」= fee/charge ※「料」= りょう"},
+        {k:"税",s:"この商品には__金がかかります。",r:"ぜい",tr:"このしょうひんにはぜいきんがかかります。",m:"「税金（ぜいきん）」= tax ※「税」= ぜい"},
+        {k:"法",s:"この行為は__律違反です。",r:"ほう",tr:"このこういはほうりついはんです。",m:"「法律（ほうりつ）」= law ※「法」= ほう"},
+        {k:"規",s:"会社の__則に従ってください。",r:"き",tr:"かいしゃのきそくにしたがってください。",m:"「規則（きそく）」= rule ※「規」= き"},
+        {k:"契",s:"来月、アパートの__約をします。",r:"けい",tr:"らいつき、アパートのけいやくをします。",m:"「契約（けいやく）」= contract ※「契」= けい"},
+        {k:"約",s:"この店は__束の時間に必ず開きます。",r:"やく",tr:"このみせはやくそくのじかんにかならずあきます。",m:"「約束（やくそく）」= promise ※「約」= やく"},
+        {k:"責",s:"この失敗は私の__任です。",r:"せき",tr:"このしっぱいはわたしのせきにんです。",m:"「責任（せきにん）」= responsibility ※「責」= せき"},
+        {k:"協",s:"みんなで__力して問題を解決しました。",r:"きょう",tr:"みんなできょうりょくしてもんだいをかいけつしました。",m:"「協力（きょうりょく）」= cooperation ※「協」= きょう"},
+        {k:"努",s:"目標に向けて__力しています。",r:"ど",tr:"もくひょうにむけてどりょくしています。",m:"「努力（どりょく）」= effort ※「努」= ど"},
+        {k:"投",s:"選挙で__票しました。",r:"とう",tr:"せんきょでとうひょうしました。",m:"「投票（とうひょう）」= vote ※「投」= とう"},
+        {k:"議",s:"会__で新しい計画が決まりました。",r:"ぎ",tr:"かいぎであたらしいけいかくがきまりました。",m:"「会議（かいぎ）」= meeting ※「議」= ぎ"},
+        {k:"任",s:"このプロジェクトを__せてください。",r:"まか",tr:"このプロジェクトをまかせてください。",m:"「任せる（まかせる）」= to entrust"},
+        {k:"産",s:"この会社は食品を__業としています。",r:"さん",tr:"このかいしゃはしょくひんをさんぎょうとしています。",m:"「産業（さんぎょう）」= industry ※「産」= さん"},
+      ],
+      "社会・仕事②":[
+        {k:"営",s:"この店は夜遅くまで__業しています。",r:"えい",tr:"このみせはよるおそくまでえいぎょうしています。",m:"「営業（えいぎょう）」= business/operation ※「営」= えい"},
+        {k:"経",s:"この会社は10年の__験があります。",r:"けい",tr:"このかいしゃは10ねんのけいけんがあります。",m:"「経験（けいけん）」= experience ※「経」= けい"},
+        {k:"済",s:"支払いはもう__みましたか？",r:"す",tr:"しはらいはもうすみましたか？",m:"「済む（すむ）」= to be done/finished"},
+        {k:"計",s:"この事業の__画を立てました。",r:"けい",tr:"このじぎょうのけいかくをたてました。",m:"「計画（けいかく）」= plan ※「計」= けい"},
+        {k:"画",s:"新しい事業の計__を立てました。",r:"かく",tr:"あたらしいじぎょうのけいかくをたてました。",m:"「計画（けいかく）」= plan ※「画」= かく"},
+        {k:"管",s:"このビルの__理をしています。",r:"かん",tr:"このビルのかんりをしています。",m:"「管理（かんり）」= management ※「管」= かん"},
+        {k:"処",s:"この問題は慎重に__理する必要があります。",r:"しょ",tr:"このもんだいはしんちょうにしょりするひつようがあります。",m:"「処理（しょり）」= processing/handling ※「処」= しょ"},
+        {k:"部",s:"この__分は難しいです。",r:"ぶ",tr:"このぶぶんはむずかしいです。",m:"「部分（ぶぶん）」= part/section ※「部」= ぶ"},
+        {k:"課",s:"今月の__題は売り上げを伸ばすことです。",r:"か",tr:"こんつきのかだいはうりあげをのばすことです。",m:"「課題（かだい）」= task/issue ※「課」= か"},
+        {k:"報",s:"最新の情__を共有してください。",r:"ほう",tr:"さいしんのじょうほうをきょうゆうしてください。",m:"「情報（じょうほう）」= information ※「報」= ほう"},
+        {k:"告",s:"調査結果を__知してください。",r:"こく",tr:"ちょうさけっかをこくちしてください。",m:"「告知（こくち）」= notification ※「告」= こく"},
+        {k:"申",s:"こちらの用紙に必要事項を__し込んでください。",r:"もう",tr:"こちらのようしにひつようじこうをもうしこんでください。",m:"「申し込む（もうしこむ）」= to apply ※「申」= もう(し)"},
+        {k:"込",s:"この電車はいつも__んでいます。",r:"こ",tr:"このでんしゃはいつもこんでいます。",m:"「混む（こむ）」= to be crowded ※「込」= こ(む)"},
+        {k:"願",s:"お__いがありますが、少し時間をいただけますか？",r:"ねが",tr:"おねがいがありますが、すこしじかんをいただけますか？",m:"「お願い（おねがい）」= request/favor ※「願」= ねが(い)"},
+        {k:"断",s:"その申し出は丁寧に__りました。",r:"ことわ",tr:"そのもうしでていねいにことわりました。",m:"「断る（ことわる）」= to refuse/decline"},
+      ],
+      "生活・行動①":[
+        {k:"準",s:"発表の__備をしています。",r:"じゅん",tr:"はっぴょうのじゅんびをしています。",m:"「準備（じゅんび）」= preparation ※「準」= じゅん"},
+        {k:"備",s:"緊急時のための__えが必要です。",r:"そな",tr:"きんきゅうじのためのそなえがひつようです。",m:"「備え（そなえ）」= preparation/readiness"},
+        {k:"選",s:"どれにするか__んでください。",r:"えら",tr:"どれにするかえらんでください。",m:"「選ぶ（えらぶ）」= to choose/select"},
+        {k:"決",s:"どこへ行くか、もう__めましたか？",r:"き",tr:"どこへいくか、もうきめましたか？",m:"「決める（きめる）」= to decide"},
+        {k:"続",s:"毎日運動を__けています。",r:"つづ",tr:"まいにちうんどうをつづけています。",m:"「続ける（つづける）」= to continue"},
+        {k:"止",s:"雨が__んだら、出かけましょう。",r:"や",tr:"あめがやんだら、でかけましょう。",m:"「止む（やむ）」= to stop (rain)"},
+        {k:"調",s:"問題の原因を__べています。",r:"しら",tr:"もんだいのげんいんをしらべています。",m:"「調べる（しらべる）」= to investigate"},
+        {k:"確",s:"予約を__認してください。",r:"かく",tr:"よやくをかくにんしてください。",m:"「確認（かくにん）」= confirmation ※「確」= かく"},
+        {k:"認",s:"間違いを__めることが大切です。",r:"みと",tr:"まちがいをみとめることがたいせつです。",m:"「認める（みとめる）」= to acknowledge"},
+        {k:"比",s:"去年と__べると、ずいぶん上手になりました。",r:"くら",tr:"きょねんとくらべると、ずいぶんじょうずになりました。",m:"「比べる（くらべる）」= to compare"},
+        {k:"集",s:"切手を__めるのが趣味です。",r:"あつ",tr:"きってをあつめるのがしゅみです。",m:"「集める（あつめる）」= to collect"},
+        {k:"届",s:"荷物が無事に__きました。",r:"とど",tr:"にもつがぶじにとどきました。",m:"「届く（とどく）」= to arrive/be delivered"},
+        {k:"伝",s:"この情報をみんなに__えてください。",r:"つた",tr:"このじょうほうをみんなにつたえてください。",m:"「伝える（つたえる）」= to convey"},
+        {k:"連",s:"何かあったらすぐ__絡してください。",r:"れん",tr:"なにかあったらすぐれんらくしてください。",m:"「連絡（れんらく）」= contact ※「連」= れん"},
+        {k:"絡",s:"何かあれば、すぐに連__してください。",r:"らく",tr:"なにかあれば、すぐにれんらくしてください。",m:"「連絡（れんらく）」= contact ※「絡」= らく"},
+      ],
+      "生活・行動②":[
+        {k:"拡",s:"事業を__大するために投資しました。",r:"かく",tr:"じぎょうをかくだいするためにとうししました。",m:"「拡大（かくだい）」= expansion ※「拡」= かく"},
+        {k:"縮",s:"この素材は洗うと__みます。",r:"ちぢ",tr:"このそざいはあらうとちぢみます。",m:"「縮む（ちぢむ）」= to shrink ※「縮」= ちぢ(む)"},
+        {k:"変",s:"最近、生活が大きく__わりました。",r:"か",tr:"さいきん、せいかつがおおきくかわりました。",m:"「変わる（かわる）」= to change"},
+        {k:"化",s:"技術が急速に進__しています。",r:"か",tr:"ぎじゅつがきゅうそくにしんかしています。",m:"「進化（しんか）」= evolution/progress ※「化」= か"},
+        {k:"改",s:"サービスを__善するために努力しています。",r:"かい",tr:"サービスをかいぜんするためにどりょくしています。",m:"「改善（かいぜん）」= improvement ※「改」= かい"},
+        {k:"善",s:"この問題を改__するために話し合いました。",r:"ぜん",tr:"このもんだいをかいぜんするためにはなしあいました。",m:"「改善（かいぜん）」= improvement ※「善」= ぜん"},
+        {k:"直",s:"壊れたパソコンを__してもらいました。",r:"なお",tr:"こわれたパソコンをなおしてもらいました。",m:"「直す（なおす）」= to fix/repair"},
+        {k:"治",s:"風邪が早く__るといいですね。",r:"なお",tr:"かぜがはやくなおるといいですね。",m:"「治る（なおる）」= to recover/heal"},
+        {k:"片",s:"部屋を__付けてから出かけます。",r:"かた",tr:"へやをかたづけてからでかけます。",m:"「片付け（かたづけ）」= tidying up ※「片」= かた"},
+        {k:"整",s:"書類を__理してからファイルします。",r:"せい",tr:"しょるいをせいりしてからファイルします。",m:"「整理（せいり）」= organization ※「整」= せい"},
+        {k:"捨",s:"不要なものは__ててください。",r:"す",tr:"ふようなものはすててください。",m:"「捨てる（すてる）」= to throw away"},
+        {k:"拾",s:"公園でゴミを__いました。",r:"ひろ",tr:"こうえんでゴミをひろいました。",m:"「拾う（ひろう）」= to pick up"},
+        {k:"運",s:"この重い箱を2階まで__んでください。",r:"はこ",tr:"このおもいはこを2かいまではこんでください。",m:"「運ぶ（はこぶ）」= to carry/transport"},
+        {k:"移",s:"来月、大阪に__り住みます。",r:"うつ",tr:"らいつき、おおさかにうつりすみます。",m:"「移り住む（うつりすむ）」= to move and live ※「移」= うつ(る)"},
+        {k:"払",s:"料金を先に__ってください。",r:"はら",tr:"りょうきんをさきにはらってください。",m:"「払う（はらう）」= to pay"},
+      ],
+      "自然・環境":[
+        {k:"温",s:"__泉に入るととても気持ちいいです。",r:"おん",tr:"おんせんにはいるととてもきもちいいです。",m:"「温泉（おんせん）」= hot spring ※「温」= おん"},
+        {k:"暖",s:"春になって__かくなってきました。",r:"あたた",tr:"はるになってあたたかくなってきました。",m:"「暖かい（あたたかい）」= warm"},
+        {k:"冷",s:"冷蔵庫で__やしておいてください。",r:"ひ",tr:"れいぞうこでひやしておいてください。",m:"「冷やす（ひやす）」= to cool/chill"},
+        {k:"涼",s:"夕方になって__しくなりました。",r:"すず",tr:"ゆうがたになってすずしくなりました。",m:"「涼しい（すずしい）」= cool/refreshing"},
+        {k:"湿",s:"梅雨の時期は__度が高いです。",r:"しつ",tr:"つゆのじきはしつどがたかいです。",m:"「湿度（しつど）」= humidity ※「湿」= しつ"},
+        {k:"乾",s:"洗濯物が__いたら、取り込んでください。",r:"かわ",tr:"せんたくものがかわいたら、とりこんでください。",m:"「乾く（かわく）」= to dry"},
+        {k:"汚",s:"川が__染されています。",r:"お",tr:"かわがおせんされています。",m:"「汚染（おせん）」= pollution ※「汚」= お"},
+        {k:"清",s:"この川は水が__らかです。",r:"きよ",tr:"このかわはみずがきよらかです。",m:"「清らか（きよらか）」= clean/pure"},
+        {k:"森",s:"__の中を散歩するのが好きです。",r:"もり",tr:"もりのなかをさんぽするのがすきです。",m:"「森（もり）」= forest"},
+        {k:"砂",s:"ビーチの__はとても白いです。",r:"すな",tr:"ビーチのすなはとてもしろいです。",m:"「砂（すな）」= sand"},
+        {k:"岩",s:"海岸に大きな__があります。",r:"いわ",tr:"かいがんにおおきないわがあります。",m:"「岩（いわ）」= rock/boulder"},
+        {k:"波",s:"今日は__が高くて泳げません。",r:"なみ",tr:"きょうはなみがたかくておよげません。",m:"「波（なみ）」= wave"},
+        {k:"池",s:"公園の__に魚がいます。",r:"いけ",tr:"こうえんのいけにさかながいます。",m:"「池（いけ）」= pond"},
+        {k:"葉",s:"秋になって木の__が赤くなりました。",r:"は",tr:"あきになってきのはがあかくなりました。",m:"「葉（は）」= leaf"},
+        {k:"根",s:"この木の__はとても深いです。",r:"ね",tr:"このきのねはとてもふかいです。",m:"「根（ね）」= root"},
+      ],
+      "思考・表現":[
+        {k:"考",s:"もう少し__えてから決めます。",r:"かんが",tr:"もうすこしかんがえてからきめます。",m:"「考える（かんがえる）」= to think/consider"},
+        {k:"思",s:"あなたはどう__いますか？",r:"おも",tr:"あなたはどうおもいますか？",m:"「思う（おもう）」= to think/feel"},
+        {k:"感",s:"この映画はとても__動的でした。",r:"かん",tr:"このえいがはとてもかんどうてきでした。",m:"「感動（かんどう）」= being moved ※「感」= かん"},
+        {k:"想",s:"将来のことを__像してみてください。",r:"そう",tr:"しょうらいのことをそうぞうしてみてください。",m:"「想像（そうぞう）」= imagination ※「想」= そう"},
+        {k:"意",s:"この言葉の__味がわかりません。",r:"い",tr:"このことばのいみがわかりません。",m:"「意味（いみ）」= meaning ※「意」= い"},
+        {k:"味",s:"この料理の__はどうですか？",r:"あじ",tr:"このりょうりのあじはどうですか？",m:"「味（あじ）」= taste/flavor"},
+        {k:"理",s:"この問題の__由を説明してください。",r:"り",tr:"このもんだいのりゆうをせつめいしてください。",m:"「理由（りゆう）」= reason ※「理」= り"},
+        {k:"由",s:"欠席の理__を教えてください。",r:"ゆう",tr:"けっせきのりゆうをおしえてください。",m:"「理由（りゆう）」= reason ※「由」= ゆう"},
+        {k:"表",s:"気持ちを言葉で__現するのは難しいです。",r:"ひょう",tr:"きもちをことばでひょうげんするのはむずかしいです。",m:"「表現（ひょうげん）」= expression ※「表」= ひょう"},
+        {k:"現",s:"夢を__実にするために努力しています。",r:"げん",tr:"ゆめをげんじつにするためにどりょくしています。",m:"「現実（げんじつ）」= reality ※「現」= げん"},
+        {k:"説",s:"わかりやすく__明してください。",r:"せつ",tr:"わかりやすくせつめいしてください。",m:"「説明（せつめい）」= explanation ※「説」= せつ"},
+        {k:"述",s:"意見を__べてください。",r:"の",tr:"いけんをのべてください。",m:"「述べる（のべる）」= to state/express"},
+        {k:"批",s:"この政策に対して、多くの__判があります。",r:"ひ",tr:"このせいさくにたいして、おおくのひはんがあります。",m:"「批判（ひはん）」= criticism ※「批」= ひ"},
+        {k:"論",s:"彼の__理は正しいと思います。",r:"ろん",tr:"かれのろんりはただしいとおもいます。",m:"「論理（ろんり）」= logic ※「論」= ろん"},
+        {k:"判",s:"この__断は難しいです。",r:"はん",tr:"このはんだんはむずかしいです。",m:"「判断（はんだん）」= judgment ※「判」= はん"},
+      ],
+      "移動・場所":[
+        {k:"向",s:"出口はあちらの方__です。",r:"こう",tr:"でぐちはあちらのほうこうです。",m:"「方向（ほうこう）」= direction ※「向」= こう"},
+        {k:"側",s:"窓__の席に座りたいです。",r:"がわ",tr:"まどがわのせきにすわりたいです。",m:"「窓側（まどがわ）」= window side ※「側」= がわ"},
+        {k:"周",s:"公園の__りを走りました。",r:"まわ",tr:"こうえんのまわりをはしりました。",m:"「周り（まわり）」= surroundings/around"},
+        {k:"辺",s:"この__りに薬局はありますか？",r:"あた",tr:"このあたりにやっきょくはありますか？",m:"「辺り（あたり）」= area/around here"},
+        {k:"通",s:"毎日この道を__って学校へ行きます。",r:"とお",tr:"まいにちこのみちをとおってがっこうへいきます。",m:"「通る（とおる）」= to pass through"},
+        {k:"渡",s:"信号が青になったら横断歩道を__ります。",r:"わた",tr:"しんごうがあおになったらおうだんほどうをわたります。",m:"「渡る（わたる）」= to cross"},
+        {k:"曲",s:"次の角を左に__がってください。",r:"ま",tr:"つぎのかどをひだりにまがってください。",m:"「曲がる（まがる）」= to turn"},
+        {k:"走",s:"バスに乗り遅れそうで、__りました。",r:"はし",tr:"バスにのりおくれそうで、はしりました。",m:"「走る（はしる）」= to run"},
+        {k:"越",s:"来月、新しいアパートに引っ__します。",r:"こ",tr:"らいつき、あたらしいアパートにひっこします。",m:"「引っ越す（ひっこす）」= to move house ※「越」= こ(す)"},
+        {k:"戻",s:"忘れ物をしたので、家に__りました。",r:"もど",tr:"わすれものをしたので、いえにもどりました。",m:"「戻る（もどる）」= to return/go back"},
+        {k:"泊",s:"京都のホテルに2泊3日で__まりました。",r:"と",tr:"きょうとのホテルに2はく3にちでとまりました。",m:"「泊まる（とまる）」= to stay overnight"},
+        {k:"迎",s:"空港まで友達を__えに行きました。",r:"むか",tr:"くうこうまでともだちをむかえにいきました。",m:"「迎える（むかえる）」= to pick up/welcome"},
+        {k:"送",s:"駅まで__ってもらえますか？",r:"おく",tr:"えきまでおくってもらえますか？",m:"「送る（おくる）」= to send/see off"},
+        {k:"離",s:"故郷を__れて、東京で働いています。",r:"はな",tr:"こきょうをはなれて、とうきょうではたらいています。",m:"「離れる（はなれる）」= to leave/separate"},
+        {k:"近",s:"このカフェは駅に__くて便利です。",r:"ちか",tr:"このカフェはえきにちかくてべんりです。",m:"「近い（ちかい）」= close/nearby"},
+      ],
+      "教育・文化":[
+        {k:"卒",s:"来年、大学を__業する予定です。",r:"そつ",tr:"らいねん、だいがくをそつぎょうするよていです。",m:"「卒業（そつぎょう）」= graduation ※「卒」= そつ"},
+        {k:"業",s:"授__が終わったら、図書館で勉強します。",r:"ぎょう",tr:"じゅぎょうがおわったら、としょかんでべんきょうします。",m:"「授業（じゅぎょう）」= class/lesson ※「業」= ぎょう"},
+        {k:"研",s:"この大学は__究施設が充実しています。",r:"けん",tr:"このだいがくはけんきゅうしせつがじゅうじつしています。",m:"「研究（けんきゅう）」= research ※「研」= けん"},
+        {k:"究",s:"海洋生物の研__をしています。",r:"きゅう",tr:"かいようせいぶつのけんきゅうをしています。",m:"「研究（けんきゅう）」= research ※「究」= きゅう"},
+        {k:"専",s:"この大学の__門は経済学です。",r:"せん",tr:"このだいがくのせんもんはけいざいがくです。",m:"「専門（せんもん）」= specialty ※「専」= せん"},
+        {k:"点",s:"今回のテストは満__でした。",r:"てん",tr:"こんかいのテストはまんてんでした。",m:"「満点（まんてん）」= perfect score ※「点」= てん"},
+        {k:"成",s:"努力の結果、試験に__功しました。",r:"せい",tr:"どりょくのけっか、しけんにせいこうしました。",m:"「成功（せいこう）」= success ※「成」= せい"},
+        {k:"績",s:"今学期の成__がよくありませんでした。",r:"せき",tr:"こんがっきのせいせきがよくありませんでした。",m:"「成績（せいせき）」= grades/results ※「績」= せき"},
+        {k:"歴",s:"日本の__史はとても長いです。",r:"れき",tr:"にほんのれきしはとてもながいです。",m:"「歴史（れきし）」= history ※「歴」= れき"},
+        {k:"史",s:"歴__を学ぶことはとても大切です。",r:"し",tr:"れきしをまなぶことはとてもたいせつです。",m:"「歴史（れきし）」= history ※「史」= し"},
+        {k:"術",s:"美__館でたくさんの絵を見ました。",r:"じゅつ",tr:"びじゅつかんでたくさんのえをみました。",m:"「美術館（びじゅつかん）」= art museum ※「術」= じゅつ"},
+        {k:"芸",s:"彼女は__術的なセンスがあります。",r:"げい",tr:"かのじょはげいじゅつてきなセンスがあります。",m:"「芸術（げいじゅつ）」= art ※「芸」= げい"},
+        {k:"俗",s:"日本の風__を学ぶことが大切です。",r:"ぞく",tr:"にほんのふうぞくをまなぶことがたいせつです。",m:"「風俗（ふうぞく）」= customs/manners ※「俗」= ぞく"},
+        {k:"継",s:"親の仕事を__いでいます。",r:"つ",tr:"おやのしごとをついでいます。",m:"「継ぐ（つぐ）」= to succeed/inherit ※「継」= つ(ぐ)"},
+        {k:"統",s:"バラバラな意見を__一する必要があります。",r:"とう",tr:"バラバラないけんをとういつするひつようがあります。",m:"「統一（とういつ）」= unification ※「統」= とう"},
+      ],
+      "数量・程度":[
+        {k:"増",s:"最近、物価が__えています。",r:"ふ",tr:"さいきん、ぶっかがふえています。",m:"「増える（ふえる）」= to increase"},
+        {k:"減",s:"体重を__らすために、食事に気をつけています。",r:"へ",tr:"たいじゅうをへらすために、しょくじにきをつけています。",m:"「減らす（へらす）」= to reduce"},
+        {k:"倍",s:"去年より売り上げが2__になりました。",r:"ばい",tr:"きょねんよりうりあげが2ばいになりました。",m:"「倍（ばい）」= times/double"},
+        {k:"余",s:"時間に__裕を持って出発してください。",r:"よ",tr:"じかんによゆうをもってしゅっぱつしてください。",m:"「余裕（よゆう）」= margin/room ※「余」= よ"},
+        {k:"以",s:"__上の方はこちらへどうぞ。",r:"い",tr:"いじょうのかたはこちらへどうぞ。",m:"「以上（いじょう）」= or more ※「以」= い"},
+        {k:"超",s:"このビルは高さ100メートルを__えています。",r:"こ",tr:"このビルはたかさ100メートルをこえています。",m:"「超える（こえる）」= to exceed"},
+        {k:"全",s:"__員が集まったので、始めましょう。",r:"ぜん",tr:"ぜんいんがあつまったので、はじめましょう。",m:"「全員（ぜんいん）」= everyone ※「全」= ぜん"},
+        {k:"各",s:"__自の意見を聞かせてください。",r:"かく",tr:"かくじのいけんをきかせてください。",m:"「各自（かくじ）」= each person ※「各」= かく"},
+        {k:"数",s:"参加者の__を確認してください。",r:"かず",tr:"さんかしゃのかずをかくにんしてください。",m:"「数（かず）」= number/count"},
+        {k:"量",s:"食事の__を減らしてダイエットしています。",r:"りょう",tr:"しょくじのりょうをへらしてダイエットしています。",m:"「量（りょう）」= amount/quantity"},
+        {k:"度",s:"今日の気温は30__を超えました。",r:"ど",tr:"きょうのきおんは30どをこえました。",m:"「度（ど）」= degree"},
+        {k:"重",s:"この問題は非常に__要です。",r:"じゅう",tr:"このもんだいはひじょうにじゅうようです。",m:"「重要（じゅうよう）」= important ※「重」= じゅう"},
+        {k:"軽",s:"このかばんは見た目より__いです。",r:"かる",tr:"このかばんはみためよりかるいです。",m:"「軽い（かるい）」= light (weight)"},
+        {k:"深",s:"この川はとても__くて危ないです。",r:"ふか",tr:"このかわはとてもふかくてあぶないです。",m:"「深い（ふかい）」= deep"},
+        {k:"広",s:"この会場はとても__いですね。",r:"ひろ",tr:"このかいじょうはとてもひろいですね。",m:"「広い（ひろい）」= wide/spacious"},
+      ],
+      "身体・医療":[
+        {k:"診",s:"風邪をひいたので、病院で__察を受けました。",r:"しん",tr:"かぜをひいたので、びょういんでしんさつをうけました。",m:"「診察（しんさつ）」= medical examination ※「診」= しん"},
+        {k:"療",s:"この病気は長期間の治__が必要です。",r:"りょう",tr:"このびょうきはちょうきかんのちりょうがひつようです。",m:"「治療（ちりょう）」= treatment ※「療」= りょう"},
+        {k:"症",s:"アレルギー__状がひどくなってきました。",r:"しょう",tr:"アレルギーしょうじょうがひどくなってきました。",m:"「症状（しょうじょう）」= symptom ※「症」= しょう"},
+        {k:"炎",s:"のどが__症を起こして、熱が出ました。",r:"えん",tr:"のどがえんしょうをおこして、ねつがでました。",m:"「炎症（えんしょう）」= inflammation ※「炎」= えん"},
+        {k:"慢",s:"腰の__性的な痛みで病院に行きました。",r:"まん",tr:"こしのまんせいてきないたみでびょういんにいきました。",m:"「慢性（まんせい）」= chronic ※「慢」= まん"},
+        {k:"胃",s:"__が痛いので、食欲がありません。",r:"い",tr:"いがいたいので、しょくよくがありません。",m:"「胃（い）」= stomach"},
+        {k:"腸",s:"__の調子が悪くて、お腹が痛いです。",r:"ちょう",tr:"ちょうのちょうしがわるくて、おなかがいたいです。",m:"「腸（ちょう）」= intestines"},
+        {k:"肺",s:"たばこは__に悪いと言われています。",r:"はい",tr:"たばこははいにわるいといわれています。",m:"「肺（はい）」= lungs"},
+        {k:"筋",s:"運動のし過ぎで__肉痛になりました。",r:"きん",tr:"うんどうのしすぎできんにくつうになりました。",m:"「筋肉（きんにく）」= muscle ※「筋」= きん"},
+        {k:"骨",s:"転んで__を折ってしまいました。",r:"ほね",tr:"ころんでほねをおってしまいました。",m:"「骨（ほね）」= bone"},
+        {k:"薬",s:"医者に処方された__を毎日飲んでいます。",r:"くすり",tr:"いしゃにしょほうされたくすりをまいにちのんでいます。",m:"「薬（くすり）」= medicine"},
+        {k:"副",s:"この薬には__作用があることがあります。",r:"ふく",tr:"このくすりにはふくさようがあることがあります。",m:"「副作用（ふくさよう）」= side effect ※「副」= ふく"},
+        {k:"舌",s:"辛い物を食べたら、__がしびれました。",r:"した",tr:"からいものをたべたら、したがしびれました。",m:"「舌（した）」= tongue"},
+        {k:"肩",s:"__こりがひどいので、マッサージに行きます。",r:"かた",tr:"かたこりがひどいので、マッサージにいきます。",m:"「肩こり（かたこり）」= stiff shoulders ※「肩」= かた"},
+        {k:"腰",s:"重い荷物を持ったら、__が痛くなりました。",r:"こし",tr:"おもいにもつをもったら、こしがいたくなりました。",m:"「腰（こし）」= lower back/waist"},
+      ],
+      "ビジネス・経済":[
+        {k:"契",s:"新しい会社と__約を結びました。",r:"けい",tr:"あたらしいかいしゃとけいやくをむすびました。",m:"「契約（けいやく）」= contract ※「契」= けい"},
+        {k:"議",s:"明日、重要な会__があります。",r:"ぎ",tr:"あした、じゅうようなかいぎがあります。",m:"「会議（かいぎ）」= meeting ※「議」= ぎ"},
+        {k:"査",s:"今月中に書類の審__を終わらせてください。",r:"さ",tr:"こんげつちゅうにしょるいのしんさをおわらせてください。",m:"「審査（しんさ）」= review/screening ※「査」= さ"},
+        {k:"況",s:"市場の__状をよく分析する必要があります。",r:"きょう",tr:"しじょうのきょうじょうをよくぶんせきするひつようがあります。",m:"「況状（きょうじょう）」= situation/condition ※「況」= きょう"},
+        {k:"率",s:"この商品の利__は30%です。",r:"りつ",tr:"このしょうひんのりりつは30%です。",m:"「利率（りりつ）」= interest rate ※「率」= りつ"},
+        {k:"益",s:"会社の利__が去年より増えました。",r:"えき",tr:"かいしゃのりえきがきょねんよりふえました。",m:"「利益（りえき）」= profit ※「益」= えき"},
+        {k:"損",s:"この取引で大きな__失を出してしまいました。",r:"そん",tr:"このとりひきでおおきなそんしつをだしてしまいました。",m:"「損失（そんしつ）」= loss ※「損」= そん"},
+        {k:"費",s:"今月の生活__が予算を超えました。",r:"ひ",tr:"こんげつのせいかつひがよさんをこえました。",m:"「生活費（せいかつひ）」= living expenses ※「費」= ひ"},
+        {k:"算",s:"来年度の予__を作成しています。",r:"さん",tr:"らいねんどのよさんをさくせいしています。",m:"「予算（よさん）」= budget ※「算」= さん"},
+        {k:"資",s:"新事業のために__金を集めています。",r:"し",tr:"しんじぎょうのためにしきんをあつめています。",m:"「資金（しきん）」= funds/capital ※「資」= し"},
+        {k:"額",s:"先月の売上__が目標を超えました。",r:"がく",tr:"せんげつのうりあげがくがもくひょうをこえました。",m:"「金額（きんがく）」= amount of money ※「額」= がく"},
+        {k:"担",s:"このプロジェクトを__当することになりました。",r:"たん",tr:"このプロジェクトをたんとうすることになりました。",m:"「担当（たんとう）」= in charge of ※「担」= たん"},
+        {k:"案",s:"新しい企画__を提出しました。",r:"あん",tr:"あたらしいきかくあんをていしゅつしました。",m:"「案（あん）」= proposal/plan"},
+        {k:"件",s:"この__については、後で詳しく話し合いましょう。",r:"けん",tr:"このけんについては、あとでくわしくはなしあいましょう。",m:"「件（けん）」= matter/case"},
+        {k:"報",s:"最新の市場情__をお知らせします。",r:"ほう",tr:"さいしんのしじょうじょうほうをおしらせします。",m:"「情報（じょうほう）」= information ※「報」= ほう"},
+      ],
+      "法律・社会制度":[
+        {k:"法",s:"この行為は__律に違反しています。",r:"ほう",tr:"このこういはほうりつにいはんしています。",m:"「法律（ほうりつ）」= law ※「法」= ほう"},
+        {k:"規",s:"交通__則を必ず守ってください。",r:"き",tr:"こうつうきそくをかならずまもってください。",m:"「規則（きそく）」= rule/regulation ※「規」= き"},
+        {k:"則",s:"この学校には厳しい校__があります。",r:"そく",tr:"このがっこうにはきびしいこうそくがあります。",m:"「校則（こうそく）」= school rules ※「則」= そく"},
+        {k:"制",s:"新しい__度が来年から始まります。",r:"せい",tr:"あたらしいせいどがらいねんからはじまります。",m:"「制度（せいど）」= system/institution ※「制」= せい"},
+        {k:"限",s:"この道路は速度__があります。",r:"げん",tr:"このどうろはそくどせいげんがあります。",m:"「制限（せいげん）」= restriction ※「限」= げん"},
+        {k:"禁",s:"この区域は立ち入り__止です。",r:"きん",tr:"このくいきはたちいりきんしです。",m:"「禁止（きんし）」= prohibition ※「禁」= きん"},
+        {k:"罰",s:"交通違反をすると、__則金を払わなければなりません。",r:"ばつ",tr:"こうつういはんをすると、ばっそくきんをはらわなければなりません。",m:"「罰則（ばっそく）」= penalty ※「罰」= ばつ"},
+        {k:"罪",s:"その人は__を認めて謝罪しました。",r:"つみ",tr:"そのひとはつみをみとめてしゃざいしました。",m:"「罪（つみ）」= crime/sin"},
+        {k:"証",s:"本人__明書を持参してください。",r:"しょう",tr:"ほんにんしょうめいしょをじさんしてください。",m:"「証明書（しょうめいしょ）」= certificate ※「証」= しょう"},
+        {k:"許",s:"この業務には特別な__可が必要です。",r:"きょ",tr:"このぎょうむにはとくべつなきょかがひつようです。",m:"「許可（きょか）」= permission ※「許」= きょ"},
+        {k:"税",s:"消費__が10%に上がりました。",r:"ぜい",tr:"しょうひぜいが10%にあがりました。",m:"「消費税（しょうひぜい）」= consumption tax ※「税」= ぜい"},
+        {k:"被",s:"台風で多くの家が__害を受けました。",r:"ひ",tr:"たいふうでおおくのいえがひがいをうけました。",m:"「被害（ひがい）」= damage/harm ※「被」= ひ"},
+        {k:"反",s:"この意見に__対している人は多いです。",r:"はん",tr:"このいけんにはんたいしているひとはおおいです。",m:"「反対（はんたい）」= opposition ※「反」= はん"},
+        {k:"合",s:"この書類は条件に__致しています。",r:"ごう",tr:"このしょるいはじょうけんにごうちしています。",m:"「合致（ごうち）」= to conform ※「合」= ごう"},
+        {k:"否",s:"申請が__認されてしまいました。",r:"ひ",tr:"しんせいがひにんされてしまいました。",m:"「否認（ひにん）」= denial/rejection ※「否」= ひ"},
+      ],
+      "自然・災害":[
+        {k:"震",s:"昨夜、震度3の地__がありました。",r:"しん",tr:"さくや、しんど3のじしんがありました。",m:"「地震（じしん）」= earthquake ※「震」= しん"},
+        {k:"噴",s:"火山が__火して、灰が降りました。",r:"ふん",tr:"かざんがふんかして、はいがふりました。",m:"「噴火（ふんか）」= volcanic eruption ※「噴」= ふん"},
+        {k:"崩",s:"大雨で山が__れて道が塞がりました。",r:"くず",tr:"おおあめでやまがくずれてみちがふさがりました。",m:"「崩れる（くずれる）」= to collapse"},
+        {k:"洪",s:"川が氾濫して__水が起きました。",r:"こう",tr:"かわがはんらんしてこうずいがおきました。",m:"「洪水（こうずい）」= flood ※「洪」= こう"},
+        {k:"廃",s:"古い工場が__墟になっています。",r:"はい",tr:"ふるいこうじょうがはいきょになっています。",m:"「廃墟（はいきょ）」= ruins ※「廃」= はい"},
+        {k:"汚",s:"川の水が工場排水で__染されました。",r:"お",tr:"かわのみずがこうじょうはいすいでおせんされました。",m:"「汚染（おせん）」= pollution/contamination ※「汚」= お"},
+        {k:"護",s:"自然環境を__るために、みんなで努力しましょう。",r:"まも",tr:"しぜんかんきょうをまもるために、みんなでどりょくしましょう。",m:"「護る（まもる）」= to protect"},
+        {k:"再",s:"使い終わったペットボトルは__利用できます。",r:"さい",tr:"つかいおわったペットボトルはさいりようできます。",m:"「再利用（さいりよう）」= reuse ※「再」= さい"},
+        {k:"循",s:"資源の__環利用が大切です。",r:"じゅん",tr:"しげんのじゅんかんりようがたいせつです。",m:"「循環（じゅんかん）」= circulation/cycle ※「循」= じゅん"},
+        {k:"環",s:"環__問題について真剣に考える必要があります。",r:"かん",tr:"かんきょうもんだいについてしんけんにかんがえるひつようがあります。",m:"「環境（かんきょう）」= environment ※「環」= かん"},
+        {k:"採",s:"この地域では石炭を__掘しています。",r:"さい",tr:"このちいきではせきたんをさいくつしています。",m:"「採掘（さいくつ）」= mining/excavation ※「採」= さい"},
+        {k:"植",s:"校庭に桜の木を__えました。",r:"う",tr:"こうていにさくらのきをうえました。",m:"「植える（うえる）」= to plant"},
+        {k:"鉱",s:"この山では金__石が発見されました。",r:"こう",tr:"このやまではきんこうせきがはっけんされました。",m:"「鉱石（こうせき）」= ore/mineral ※「鉱」= こう"},
+        {k:"危",s:"一人での登山は__険なのでやめてください。",r:"き",tr:"ひとりでのとざんはきけんなのでやめてください。",m:"「危険（きけん）」= danger ※「危」= き"},
+        {k:"避",s:"台風が来るので、早めに__難してください。",r:"ひ",tr:"たいふうがくるので、はやめにひなんしてください。",m:"「避難（ひなん）」= evacuation ※「避」= ひ"},
+      ],
+      "論理・思考":[
+        {k:"論",s:"この問題について活発に議__しました。",r:"ろん",tr:"このもんだいについてかっぱつにぎろんしました。",m:"「議論（ぎろん）」= discussion/debate ※「論」= ろん"},
+        {k:"判",s:"この書類を審__してから決定します。",r:"はん",tr:"このしょるいをしんぱんしてからけっていします。",m:"「審判（しんぱん）」= judgment ※「判」= はん"},
+        {k:"評",s:"この映画は批__家から高い評価を受けました。",r:"ひょう",tr:"このえいがはひひょうかからたかいひょうかをうけました。",m:"「批評（ひひょう）」= criticism/review ※「評」= ひょう"},
+        {k:"価",s:"この商品の__値は適切だと思います。",r:"か",tr:"このしょうひんのかちはてきせつだとおもいます。",m:"「価値（かち）」= value ※「価」= か"},
+        {k:"解",s:"この問題の__決策を一緒に考えましょう。",r:"かい",tr:"このもんだいのかいけつさくをいっしょにかんがえましょう。",m:"「解決（かいけつ）」= resolution/solution ※「解」= かい"},
+        {k:"誤",s:"計算に__りがあったので、やり直しました。",r:"あやま",tr:"けいさんにあやまりがあったので、やりなおしました。",m:"「誤り（あやまり）」= error/mistake"},
+        {k:"仮",s:"__に全員が賛成した場合、どうなりますか？",r:"かり",tr:"かりにぜんいんがさんせいしたばあい、どうなりますか？",m:"「仮に（かりに）」= hypothetically/assuming"},
+        {k:"釈",s:"この文章の意味を正しく解__してください。",r:"しゃく",tr:"このぶんしょうのいみをただしくかいしゃくしてください。",m:"「解釈（かいしゃく）」= interpretation ※「釈」= しゃく"},
+        {k:"概",s:"この計画の__要を教えてください。",r:"がい",tr:"このけいかくのがいようをおしえてください。",m:"「概要（がいよう）」= summary/outline ※「概」= がい"},
+        {k:"提",s:"会議で新しいアイデアを__案しました。",r:"てい",tr:"かいぎであたらしいアイデアをていあんしました。",m:"「提案（ていあん）」= proposal ※「提」= てい"},
+        {k:"比",s:"去年と今年の結果を__較してみましょう。",r:"ひ",tr:"きょねんとことしのけっかをひかくしてみましょう。",m:"「比較（ひかく）」= comparison ※「比」= ひ"},
+        {k:"較",s:"二つの方法を__べると、どちらが良いですか？",r:"くら",tr:"ふたつのほうほうをくらべると、どちらがよいですか？",m:"「比べる（くらべる）」= to compare ※「較」= くら(べる)"},
+        {k:"明",s:"この現象についてはっきり説__できません。",r:"めい",tr:"このげんしょうについてはっきりせつめいできません。",m:"「説明（せつめい）」= explanation ※「明」= めい"},
+        {k:"述",s:"自分の考えを文章で__べてください。",r:"の",tr:"じぶんのかんがえをぶんしょうでのべてください。",m:"「述べる（のべる）」= to state/express"},
+        {k:"範",s:"この業務は私の__囲ではありません。",r:"はん",tr:"このぎょうむはわたしのはんいではありません。",m:"「範囲（はんい）」= range/scope ※「範」= はん"},
+      ],
+      "建物・設備":[
+        {k:"築",s:"この建物は100年前に建__されました。",r:"ちく",tr:"このたてものは100ねんまえにけんちくされました。",m:"「建築（けんちく）」= architecture/construction ※「築」= ちく"},
+        {k:"構",s:"この橋は特殊な__造をしています。",r:"こう",tr:"このはしはとくしゅなこうぞうをしています。",m:"「構造（こうぞう）」= structure ※「構」= こう"},
+        {k:"壊",s:"地震で建物の壁が__れました。",r:"こわ",tr:"じしんでたてもののかべがこわれました。",m:"「壊れる（こわれる）」= to break/collapse"},
+        {k:"修",s:"古い家を__繕するのに時間がかかりました。",r:"しゅう",tr:"ふるいいえをしゅうぜんするのにじかんがかかりました。",m:"「修繕（しゅうぜん）」= repair ※「修」= しゅう"},
+        {k:"装",s:"店内の__飾がとてもきれいです。",r:"そう",tr:"てんないのそうしょくがとてもきれいです。",m:"「装飾（そうしょく）」= decoration ※「装」= そう"},
+        {k:"壁",s:"部屋の__に絵を飾りました。",r:"かべ",tr:"へやのかべにえをかざりました。",m:"「壁（かべ）」= wall"},
+        {k:"床",s:"新しい家の__材は木でできています。",r:"ゆか",tr:"あたらしいいえのゆかざいはきでできています。",m:"「床（ゆか）」= floor"},
+        {k:"扉",s:"古い城の大きな__が開きました。",r:"とびら",tr:"ふるいしろのおおきなとびらがひらきました。",m:"「扉（とびら）」= door/gate"},
+        {k:"棟",s:"このマンションは3__あります。",r:"とう",tr:"このマンションは3とうあります。",m:"「棟（とう）」= building/wing (counter)"},
+        {k:"廊",s:"病院の__下を歩いていたら、先生に会いました。",r:"ろう",tr:"びょういんのろうかをあるいていたら、せんせいにあいました。",m:"「廊下（ろうか）」= corridor/hallway ※「廊」= ろう"},
+        {k:"井",s:"古い家には__戸が残っています。",r:"い",tr:"ふるいいえにはいどがのこっています。",m:"「井戸（いど）」= well ※「井」= い"},
+        {k:"均",s:"部屋の温度を__一に保つのが難しいです。",r:"きん",tr:"へやのおんどをきんいつにたもつのがむずかしいです。",m:"「均一（きんいつ）」= uniform/equal ※「均」= きん"},
+      ],
+      "交通・移動（応用）":[
+        {k:"渋",s:"朝の通勤時間は道路が__滞します。",r:"じゅう",tr:"あさのつうきんじかんはどうろがじゅうたいします。",m:"「渋滞（じゅうたい）」= traffic jam ※「渋」= じゅう"},
+        {k:"滞",s:"大型連休中は各地で交通渋__が発生しました。",r:"たい",tr:"おおがたれんきゅうちゅうはかくちでこうつうじゅうたいがはっせいしました。",m:"「渋滞（じゅうたい）」= traffic congestion ※「滞」= たい"},
+        {k:"踏",s:"信号が赤なのに__切を渡るのは危険です。",r:"ふ",tr:"しんごうがあかなのにふみきりをわたるのはきけんです。",m:"「踏切（ふみきり）」= railway crossing ※「踏」= ふ(む)"},
+        {k:"迂",s:"工事中のため、__回路をご利用ください。",r:"う",tr:"こうじちゅうのため、うかいろをごりようください。",m:"「迂回（うかい）」= detour ※「迂」= う"},
+        {k:"回",s:"この道は__り道が多くて迷いやすいです。",r:"まわ",tr:"このみちはまわりみちがおおくてまよいやすいです。",m:"「回り道（まわりみち）」= detour/roundabout way ※「回」= まわ(り)"},
+        {k:"緩",s:"この坂道は__やかなので、歩きやすいです。",r:"ゆる",tr:"このさかみちはゆるやかなので、あるきやすいです。",m:"「緩やか（ゆるやか）」= gentle/gradual"},
+        {k:"停",s:"バスが__車場に止まっています。",r:"てい",tr:"バスがていしゃじょうにとまっています。",m:"「停車場（ていしゃじょう）」= bus stop/station ※「停」= てい"},
+        {k:"徐",s:"__々に速度を落として、安全に止まりました。",r:"じょ",tr:"じょじょにそくどをおとして、あんぜんにとまりました。",m:"「徐々に（じょじょに）」= gradually ※「徐」= じょ"},
+        {k:"測",s:"この橋の長さを__定しました。",r:"そく",tr:"このはしのながさをそくていしました。",m:"「測定（そくてい）」= measurement ※「測」= そく"},
+        {k:"差",s:"二つの商品の価格の__は500円です。",r:"さ",tr:"ふたつのしょうひんのかかくのさは500えんです。",m:"「差（さ）」= difference"},
+      ],
+      "感情・人間関係（応用）":[
+        {k:"尊",s:"お互いを__重することが大切です。",r:"そん",tr:"おたがいをそんちょうすることがたいせつです。",m:"「尊重（そんちょう）」= respect ※「尊」= そん"},
+        {k:"敬",s:"先生を__う気持ちを忘れないでください。",r:"うやま",tr:"せんせいをうやまうきもちをわすれないでください。",m:"「敬う（うやまう）」= to respect"},
+        {k:"謙",s:"彼は成功しても、いつも__虚な態度です。",r:"けん",tr:"かれはせいこうしても、いつもけんきょなたいどです。",m:"「謙虚（けんきょ）」= humble/modest ※「謙」= けん"},
+        {k:"誇",s:"地元の文化を__りに思っています。",r:"ほこ",tr:"じもとのぶんかをほこりにおもっています。",m:"「誇り（ほこり）」= pride"},
+        {k:"恐",s:"高いところが__くて、震えてしまいました。",r:"こわ",tr:"たかいところがこわくて、ふるえてしまいました。",m:"「恐い（こわい）」= scary/frightening"},
+        {k:"惜",s:"チャンスを逃したのが、とても__しいです。",r:"お",tr:"チャンスをのがしたのが、とてもおしいです。",m:"「惜しい（おしい）」= regrettable/too bad"},
+        {k:"懐",s:"故郷の味を食べると__かしい気持ちになります。",r:"なつ",tr:"こきょうのあじをたべるとなつかしいきもちになります。",m:"「懐かしい（なつかしい）」= nostalgic"},
+        {k:"憎",s:"人を__むことは心に悪いです。",r:"にく",tr:"ひとをにくむことはこころにわるいです。",m:"「憎む（にくむ）」= to hate"},
+        {k:"慕",s:"子供たちが先生を__っているのが伝わります。",r:"した",tr:"こどもたちがせんせいをしたっているのがつたわります。",m:"「慕う（したう）」= to adore/look up to"},
+        {k:"励",s:"友達が落ち込んでいたので、__ましました。",r:"はげ",tr:"ともだちがおちこんでいたので、はげましました。",m:"「励ます（はげます）」= to encourage"},
+        {k:"奨",s:"優秀な学生に__学金が与えられます。",r:"しょう",tr:"ゆうしゅうながくせいにしょうがくきんがあたえられます。",m:"「奨学金（しょうがくきん）」= scholarship ※「奨」= しょう"},
+        {k:"謝",s:"失礼なことを言ってしまい、心から__ります。",r:"あやま",tr:"しつれいなことをいってしまい、こころからあやまります。",m:"「謝る（あやまる）」= to apologize"},
+      ],
+      "日常生活（応用）":[
+        {k:"利",s:"このアプリはとても使い__がいいです。",r:"り",tr:"このアプリはとてもつかいりがいいです。",m:"「使い利（つかいり）」= usability ※「利」= り"},
+        {k:"制",s:"新しい教育__度が来年から始まります。",r:"せい",tr:"あたらしいきょういくせいどがらいねんからはじまります。",m:"「制度（せいど）」= system ※「制」= せい"},
+        {k:"予",s:"旅行の__定を立てるのが楽しいです。",r:"よ",tr:"りょこうのよていをたてるのがたのしいです。",m:"「予定（よてい）」= schedule/plan ※「予」= よ"},
+        {k:"程",s:"このくらいの__度でいいと思います。",r:"てい",tr:"このくらいのていどでいいとおもいます。",m:"「程度（ていど）」= degree/extent ※「程」= てい"},
+        {k:"割",s:"このスーパーでは毎週水曜日に10%__引きになります。",r:"わり",tr:"このスーパーではまいしゅうすいようびに10%わりびきになります。",m:"「割引（わりびき）」= discount ※「割」= わり"},
+        {k:"菜",s:"健康のために毎日野__を食べています。",r:"さい",tr:"けんこうのためにまいにちやさいをたべています。",m:"「野菜（やさい）」= vegetables ※「菜」= さい"},
+        {k:"炒",s:"野菜を油で__めて、塩で味をつけました。",r:"いた",tr:"やさいをあぶらでいためて、しおでみをつけました。",m:"「炒める（いためる）」= to stir-fry"},
+        {k:"腐",s:"食べ物が__らないように、冷蔵庫に入れてください。",r:"くさ",tr:"たべものがくさらないように、れいぞうこにいれてください。",m:"「腐る（くさる）」= to go bad/rot"},
+        {k:"鮮",s:"市場で__度の高い魚を買いました。",r:"せん",tr:"いちばでせんどのたかいさかなをかいました。",m:"「鮮度（せんど）」= freshness ※「鮮」= せん"},
+        {k:"粒",s:"ご飯の__が大きくて、とても美味しいです。",r:"つぶ",tr:"ごはんのつぶがおおきくて、とてもおいしいです。",m:"「粒（つぶ）」= grain/drop"},
+      ],
+    }
+  }
+};
+// ===================== STATE =====================
+const STORAGE_KEY = 'jlpt_kanji_v2';
+let currentLevel = 'n4';
+let ALL_DATA = LEVELS.n4.data;
+let CATS = Object.keys(ALL_DATA);
+
+let mode='home', flashCat=CATS[0], flashCards=[], flashIdx=0, flashFlipped=false, isRestart=false;
+let flashAnswered=[], flashCorrect=0, flashWrong=0, weakOnlyMode=false;
+let quizCat=CATS[0], quizCards=[], quizIdx=0, quizCorrect=0, quizWrong=0, quizAnswered=false, quizAnsweredMap={};
+let weakCards=[], weakIdx=0, weakCorrect=0, weakWrong=0, weakFlipped=false, weakAnswered=[];
+let weakSet=new Set();
+let savedProgress = { weakSet:{}, catProgress:{}, sessions:[], lastSession:{}, totalStudyDays:[] };
+
+// ===================== STORAGE =====================
+function loadProgress() {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (raw) { const p = JSON.parse(raw); savedProgress = { ...savedProgress, ...p }; }
+    weakSet = new Set(savedProgress.weakSet[currentLevel] || []);
+  } catch(e) {}
+  // 長さ不一致の古いデータを全レベル・全カテゴリで一括クリア
+  try {
+    ['n5','n4','n3'].forEach(lv => {
+      // lastSession の検証
+      const ls = savedProgress.lastSession && savedProgress.lastSession[lv];
+      if (ls && ls.cat && ls.answered) {
+        const expected = ALL_DATA && ALL_DATA[ls.cat] ? ALL_DATA[ls.cat].length : 0;
+        if (ls.answered.length !== expected) {
+          savedProgress.lastSession[lv] = null;
+        }
+      }
+      // catProgress の検証
+      const cp = savedProgress.catProgress && savedProgress.catProgress[lv];
+      if (cp) {
+        Object.keys(cp).forEach(cat => {
+          const expected = ALL_DATA && ALL_DATA[cat] ? ALL_DATA[cat].length : 0;
+          if (cp[cat].answered && cp[cat].answered.length !== expected) {
+            delete cp[cat];
+          }
+        });
+      }
+    });
+    saveProgress();
+  } catch(e) {}
+}
+function saveProgress() {
+  try {
+    if (!savedProgress.weakSet) savedProgress.weakSet = {};
+    savedProgress.weakSet[currentLevel] = [...weakSet];
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(savedProgress));
+  } catch(e) {}
+}
+function saveSession(catName, modeStr, correct, wrong) {
+  const total = correct + wrong;
+  if (total === 0) return;
+  const rate = Math.round(correct / total * 100);
+  const now = new Date();
+  const dateStr = now.toLocaleDateString('ja-JP', {month:'numeric',day:'numeric',hour:'2-digit',minute:'2-digit'});
+  if (!savedProgress.sessions) savedProgress.sessions = [];
+  savedProgress.sessions.unshift({ date:dateStr, level:currentLevel, cat:catName, mode:modeStr, correct, wrong, total, rate });
+  if (savedProgress.sessions.length > 50) savedProgress.sessions = savedProgress.sessions.slice(0,50);
+  const dayStr = now.getFullYear()+'-'+String(now.getMonth()+1).padStart(2,'0')+'-'+String(now.getDate()).padStart(2,'0');
+  if (!savedProgress.totalStudyDays) savedProgress.totalStudyDays = [];
+  if (!savedProgress.totalStudyDays.includes(dayStr)) savedProgress.totalStudyDays.push(dayStr);
+  saveProgress();
+}
+function saveMidSession(cat, idx, answered, correct, wrong) {
+  if (!savedProgress.lastSession) savedProgress.lastSession = {};
+  if (idx === 0 && answered.every(a => a === null)) { savedProgress.lastSession[currentLevel] = null; }
+  else { savedProgress.lastSession[currentLevel] = { cat, idx, answered:[...answered], correct, wrong }; }
+  saveProgress();
+}
+function saveCatProgress(cat, answered, correct, wrong) {
+  if (!savedProgress.catProgress) savedProgress.catProgress = {};
+  if (!savedProgress.catProgress[currentLevel]) savedProgress.catProgress[currentLevel] = {};
+  savedProgress.catProgress[currentLevel][cat] = { answered:[...answered], correct, wrong };
+  saveProgress();
+}
+
+// ===================== LEVEL =====================
+function selectLevel(lv) {
+  currentLevel = lv;
+  ALL_DATA = LEVELS[lv].data;
+  CATS = Object.keys(ALL_DATA);
+  flashCat = CATS[0];
+  quizCat = CATS[0];
+  // Reload latest storage data and update weakSet for this level
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (raw) {
+      const p = JSON.parse(raw);
+      savedProgress = { weakSet:{}, catProgress:{}, sessions:[], lastSession:{}, totalStudyDays:[], ...p };
+    }
+  } catch(e) {}
+  weakSet = new Set(savedProgress.weakSet[currentLevel] || []);
+  // レベル切替時は続きバナーを非表示に
+  const banner = document.getElementById('resume-banner');
+  if (banner) banner.style.display = 'none';
+  ['n5','n4','n3'].forEach(l => {
+    const b = document.getElementById('lv-'+l);
+    b.className = 'lv-btn' + (l===lv ? ' active-'+l : '');
+  });
+  updateWeakCnt();
+  setMode('home');
+}
+
+// ===================== MODE =====================
+function startFlashFromHome(cat) {
+  flashCat = cat;
+  quizCat = cat;
+  setMode('flash');
+}
+
+function setMode(m) {
+  mode = m;
+  ['home','flash','quiz','weak'].forEach(x => {
+    const sec = document.getElementById(x+'-section');
+    if (sec) sec.style.display = x===m ? '' : 'none';
+    const btn = document.getElementById('mode-'+x);
+    if (btn) btn.classList.toggle('active', x===m);
+  });
+  if (m==='home')  renderHome();
+  if (m==='flash') { initFlash(flashCat || null); checkResumeBanner(); }
+  if (m==='quiz')  initQuiz();
+  if (m==='weak')  initWeak();
+  updateWeakCnt();
+}
+
+// ===================== FLASH =====================
+function buildCatTabs(id, cur, fn) {
+  const el = document.getElementById(id); el.innerHTML='';
+  CATS.forEach(c => {
+    const b = document.createElement('button');
+    b.className = 'cat-tab' + (c===cur?' active':'');
+    b.textContent = c;
+    const cp = savedProgress.catProgress && savedProgress.catProgress[currentLevel] && savedProgress.catProgress[currentLevel][c];
+    if (cp && cp.answered && cp.answered.some(a=>a!==null)) {
+      const dot = document.createElement('span'); dot.className='cat-dot'; b.appendChild(dot);
+    }
+    b.onclick = () => fn(c);
+    el.appendChild(b);
+  });
+}
+
+function checkResumeBanner() {
+  const ls = savedProgress.lastSession && savedProgress.lastSession[currentLevel];
+  const banner = document.getElementById('resume-banner');
+  if (ls && ls.cat && ls.idx > 0 && ls.answered && ls.answered.length === (ALL_DATA[ls.cat] ? ALL_DATA[ls.cat].length : 0)) {
+    const done = ls.answered.filter(a=>a!==null).length;
+    const total = ALL_DATA[ls.cat].length;
+    document.getElementById('resume-text').textContent = `「${ls.cat}」の続きから再開 (${done}/${total}枚)`;
+    banner.style.display = 'flex';
+  } else {
+    // 長さ不一致の古いデータは削除
+    if (ls && ls.cat && ls.answered && ls.answered.length !== (ALL_DATA[ls.cat] ? ALL_DATA[ls.cat].length : 0)) {
+      savedProgress.lastSession[currentLevel] = null;
+      saveProgress();
+    }
+    banner.style.display = 'none';
+  }
+}
+
+function resumeSession() {
+  const ls = savedProgress.lastSession && savedProgress.lastSession[currentLevel];
+  if (!ls) return;
+  flashCat = ls.cat;
+  flashCards = [...ALL_DATA[flashCat]];
+  // 保存データの長さが現在のカード枚数と合わない場合は無効化
+  if (!ls.answered || ls.answered.length !== flashCards.length) {
+    savedProgress.lastSession[currentLevel] = null;
+    saveProgress();
+    document.getElementById('resume-banner').style.display = 'none';
+    goFlash();
+    return;
+  }
+  flashIdx = ls.idx;
+  flashAnswered = [...ls.answered];
+  flashCorrect = ls.correct;
+  flashWrong = ls.wrong;
+  flashFlipped = false; weakOnlyMode = false;
+  document.getElementById('weak-only-btn').textContent = '苦手のみ';
+  document.getElementById('done-flash').style.display = 'none';
+  document.getElementById('study-area').style.display = '';
+  document.getElementById('card').onclick = flipCard;
+  document.getElementById('resume-banner').style.display = 'none';
+  buildCatTabs('cat-tabs', flashCat, c=>initFlash(c));
+  document.getElementById('card').classList.remove('flipped');
+  document.getElementById('ans-row').style.display = 'none';
+  document.getElementById('tap-hint').textContent = 'カードをタップして答えを確認';
+  updateFlashCard(); updateFlashStats(); updateFlashProg();
+}
+
+function initFlash(cat) {
+  if (cat) {
+    flashCat = cat;
+  } else {
+    // カテゴリ未指定の場合、未完了の最初のカテゴリを自動選択
+    const cp = savedProgress.catProgress && savedProgress.catProgress[currentLevel];
+    const firstIncomplete = CATS.find(c => {
+      const p = cp && cp[c];
+      const total = ALL_DATA[c].length;
+      const done = p && p.answered ? p.answered.filter(a=>a!==null).length : 0;
+      return done < total;
+    });
+    flashCat = firstIncomplete || CATS[0];
+  }
+  weakOnlyMode = false;
+  isRestart = false;
+  document.getElementById('weak-only-btn').textContent = '苦手のみ';
+  document.getElementById('weak-only-btn').classList.remove('active-mode');
+  flashCards = [...ALL_DATA[flashCat]];
+  flashIdx = 0; flashFlipped = false; flashCorrect = 0; flashWrong = 0;
+  flashAnswered = new Array(flashCards.length).fill(null);
+  const ls = savedProgress.lastSession && savedProgress.lastSession[currentLevel];
+  const cp = savedProgress.catProgress && savedProgress.catProgress[currentLevel] && savedProgress.catProgress[currentLevel][flashCat];
+  if (ls && ls.cat === flashCat && ls.idx > 0 && ls.answered && ls.answered.length === flashCards.length) {
+    flashIdx=ls.idx; flashAnswered=[...ls.answered]; flashCorrect=ls.correct; flashWrong=ls.wrong;
+  } else if (cp && cp.answered && cp.answered.length === flashCards.length) {
+    flashAnswered=[...cp.answered]; flashCorrect=cp.correct; flashWrong=cp.wrong;
+  }
+  buildCatTabs('cat-tabs', flashCat, c=>initFlash(c));
+  document.getElementById('card').classList.remove('flipped');
+  document.getElementById('ans-row').style.display='none';
+  document.getElementById('tap-hint').textContent='カードをタップして答えを確認';
+  updateFlashCard(); updateFlashStats(); updateFlashProg();
+  // 全問回答済みの場合は完了画面を表示
+  const allDone = flashAnswered.every(a => a !== null);
+  if (allDone) {
+    showFlashDone();
+  } else {
+    document.getElementById('done-flash').style.display = 'none';
+    document.getElementById('study-area').style.display = '';
+    document.getElementById('card').onclick = flipCard;
+  }
+}
+
+function toggleWeakOnly() {
+  if (weakSet.size===0) { alert('まだ苦手な漢字がありません！'); return; }
+  weakOnlyMode = !weakOnlyMode;
+  document.getElementById('weak-only-btn').textContent = weakOnlyMode?'全て表示':'苦手のみ';
+  document.getElementById('weak-only-btn').classList.toggle('active-mode', weakOnlyMode);
+  const base = ALL_DATA[flashCat];
+  flashCards = weakOnlyMode ? base.filter(c=>weakSet.has(c.k)) : [...base];
+  flashIdx=0; flashFlipped=false;
+  flashAnswered=new Array(flashCards.length).fill(null);
+  flashCorrect=0; flashWrong=0;
+  document.getElementById('card').classList.remove('flipped');
+  document.getElementById('ans-row').style.display='none';
+  updateFlashCard(); updateFlashStats(); updateFlashProg();
+}
+
+function buildSentenceHTML(sentence, kanji, cls, mReading) {
+  const idx = sentence.indexOf('__');
+  if (idx < 0) return sentence.replace('__', `<span class="${cls}">${kanji}</span>`);
+  // 直前の漢字
+  const prevChar = idx > 0 ? sentence[idx - 1] : '';
+  const before = (prevChar >= '\u4e00' && prevChar <= '\u9fff') ? prevChar : '';
+  // 直後の漢字
+  const nextChar = sentence.length > idx + 2 ? sentence[idx + 2] : '';
+  const afterKanji = (nextChar >= '\u4e00' && nextChar <= '\u9fff') ? nextChar : '';
+  // 直後のひらがな（mReadingの末尾と一致する分）
+  let trailingHira = '';
+  if (!afterKanji && mReading) {
+    let avail = '';
+    let i = idx + 2;
+    while (i < sentence.length) {
+      const ch = sentence[i];
+      if (ch >= '\u3041' && ch <= '\u309f') { avail += ch; i++; } else break;
+    }
+    for (let end = avail.length; end > 0; end--) {
+      const portion = avail.slice(0, end);
+      if (mReading.endsWith(portion)) { trailingHira = portion; break; }
+    }
+  }
+  const fullWord = before + kanji + afterKanji + trailingHira;
+  const start = idx - before.length;
+  const end = idx + 2 + afterKanji.length + trailingHira.length;
+  return sentence.slice(0, start) + `<span class="${cls}">${fullWord}</span>` + sentence.slice(end);
+}
+function buildReadingSentence(tr, r) {
+  const escaped = r.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+  return tr.replace(new RegExp(escaped), `<span class="target-reading">${r}</span>`);
+}
+function getHighlightedWord(sentence, kanji, mReading) {
+  const idx = sentence.indexOf('__');
+  if (idx < 0) return kanji;
+  // 直前の漢字
+  const prevChar = idx > 0 ? sentence[idx - 1] : '';
+  const before = (prevChar >= '\u4e00' && prevChar <= '\u9fff') ? prevChar : '';
+  // 直後の漢字
+  const nextCharCode = sentence.length > idx + 2 ? sentence[idx + 2] : '';
+  const afterKanji = (nextCharCode >= '\u4e00' && nextCharCode <= '\u9fff') ? nextCharCode : '';
+  // __ 直後のひらがな（mReadingの末尾と一致する分だけ取得）
+  let trailingHira = '';
+  if (!afterKanji && mReading) {
+    let avail = '';
+    let i = idx + 2;
+    while (i < sentence.length) {
+      const ch = sentence[i];
+      if (ch >= '\u3041' && ch <= '\u309f') { avail += ch; i++; } else break;
+    }
+    for (let end = avail.length; end > 0; end--) {
+      const portion = avail.slice(0, end);
+      if (mReading.endsWith(portion)) { trailingHira = portion; break; }
+    }
+  }
+  return before + kanji + afterKanji + trailingHira;
+}
+function getFullReading(sentence, kanji, r, tr, m) {
+  // mフィールドから「語（読み）」を抽出
+  const mWordMatch = m.match(/\u300c([^\uff08\uff09\u300d]+)/);
+  const mReadMatch = m.match(/\uff08([^\uff09]+)\uff09/);
+  if (!mWordMatch || !mReadMatch) return r;
+  const mWord = mWordMatch[1];
+  const mReading = mReadMatch[1];
+  // 下線部の表示語（mReadingを使って末尾ひらがなを確定）
+  const word = getHighlightedWord(sentence, kanji, mReading);
+  // 表示語の漢字部分が一致し読みがtrに含まれる場合
+  const kanjiOnly = (str) => str.replace(/[^\u4e00-\u9fff]/g, '');
+  if (kanjiOnly(mWord) === kanjiOnly(word) && tr.indexOf(mReading) >= 0) {
+    return mReading;
+  }
+  return r;
+}
+
+function updateFlashCard() {
+  const c = flashCards[flashIdx];
+  const fullR = getFullReading(c.s, c.k, c.r, c.tr, c.m);
+  document.getElementById('sentence-display').innerHTML = buildSentenceHTML(c.s, c.k, 'target', fullR);
+  const mReadMatch1 = c.m.match(/（([^）]+)）/);
+  const mR1 = mReadMatch1 ? mReadMatch1[1] : undefined;
+  document.getElementById('kanji-label').textContent = '「'+getHighlightedWord(c.s, c.k, mR1)+'」の読み方は？';
+  document.getElementById('back-sentence').innerHTML = buildReadingSentence(c.tr, fullR);
+  document.getElementById('back-reading-line').textContent = fullR;
+  document.getElementById('bmean').textContent = c.m;
+  document.getElementById('cc').textContent = (flashIdx+1)+'/'+flashCards.length;
+  document.getElementById('wflag').style.display = weakSet.has(c.k)?'':'none';
+  const af = document.getElementById('ans-flag');
+  const ans = flashAnswered[flashIdx];
+  if (ans===true) { af.style.display=''; af.className='answered-flag af-ok'; af.textContent='✓'; }
+  else if (ans===false) { af.style.display=''; af.className='answered-flag af-ng'; af.textContent='✗'; }
+  else { af.style.display='none'; }
+}
+
+function flipCard() {
+  flashFlipped = !flashFlipped;
+  document.getElementById('card').classList.toggle('flipped', flashFlipped);
+  document.getElementById('ans-row').style.display = flashFlipped?'flex':'none';
+  document.getElementById('tap-hint').textContent = flashFlipped?'正解でしたか？':'カードをタップして答えを確認';
+}
+
+function answer(ok) {
+  // 二重発火防止
+  const ansRow = document.getElementById('ans-row');
+  ansRow.style.display='none';
+  document.getElementById('card').onclick = null;
+  // ナビボタンをdisabledで無効化（iOSでもpointerEventsより確実）
+  document.querySelectorAll('.nav-btn').forEach(b => b.disabled = true);
+
+  const c = flashCards[flashIdx];
+  if (ok) weakSet.delete(c.k); else weakSet.add(c.k);
+  if (flashAnswered[flashIdx]===null) {
+    if (ok) flashCorrect++; else flashWrong++;
+    flashAnswered[flashIdx]=ok;
+  } else {
+    if (flashAnswered[flashIdx]&&!ok){flashCorrect--;flashWrong++;}
+    else if(!flashAnswered[flashIdx]&&ok){flashWrong--;flashCorrect++;}
+    flashAnswered[flashIdx]=ok;
+  }
+  updateFlashStats(); updateWeakCnt();
+  saveMidSession(flashCat, flashIdx, flashAnswered, flashCorrect, flashWrong);
+  if (!isRestart) saveCatProgress(flashCat, flashAnswered, flashCorrect, flashWrong);
+
+  const answeredCount = flashAnswered.filter(a => a !== null).length;
+  const allDone = answeredCount === flashCards.length;
+
+  setTimeout(() => {
+    document.querySelectorAll('.nav-btn').forEach(b => b.disabled = false);
+    document.getElementById('card').onclick = flipCard;
+    if (allDone) {
+      showFlashDone();
+    } else {
+      nextFlash();
+    }
+  }, 600);
+}
+
+function nextFlash() {
+  // 全問回答済みなら完了
+  if (flashAnswered.every(a => a !== null)) { showFlashDone(); return; }
+  if (flashIdx < flashCards.length - 1) {
+    flashIdx++;
+    // 次のカードが最後(idx===length-1)で、他が全部回答済みなら完了画面へ
+    const othersAllDone = flashAnswered.every((a, i) => i === flashIdx || a !== null);
+    if (flashIdx === flashCards.length - 1 && othersAllDone) {
+      showFlashDone(); return;
+    }
+    goFlash();
+  } else {
+    showFlashDone();
+  }
+}
+function prev() { if(flashIdx>0){flashIdx--;goFlash();} }
+function next() { nextFlash(); }
+
+function goFlash() {
+  // transitionを一瞬無効にして即座に表向きへ戻す（答えが透けて見えないように）
+  flashFlipped = false;
+  const cardEl = document.getElementById('card');
+  cardEl.style.transition = 'none';
+  cardEl.classList.remove('flipped');
+  document.getElementById('sentence-display').innerHTML = '';
+  document.getElementById('kanji-label').textContent = '';
+  document.getElementById('back-reading-line').textContent = '';
+  document.getElementById('bmean').textContent = '';
+  document.getElementById('ans-row').style.display = 'none';
+  document.getElementById('tap-hint').textContent = 'カードをタップして答えを確認';
+
+  // 次フレームでtransitionを復活させてから内容をセット
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => {
+      cardEl.style.transition = '';
+      const thisIdx = flashIdx;
+      if (flashAnswered[flashIdx] !== null) {
+        updateFlashCard();
+        setTimeout(() => {
+          if (flashIdx !== thisIdx) return;
+          flashFlipped = true;
+          cardEl.classList.add('flipped');
+          document.getElementById('ans-row').style.display = 'flex';
+          document.getElementById('tap-hint').textContent = '正解でしたか？';
+        }, 150);
+      } else {
+        updateFlashCard();
+      }
+    });
+  });
+
+  updateFlashProg();
+  saveMidSession(flashCat, flashIdx, flashAnswered, flashCorrect, flashWrong);
+}
+
+function shuffleCards() {
+  const orig=[...ALL_DATA[flashCat]];
+  const shuffled=sfl([...orig]);
+  const oldAns={}; orig.forEach((c,i)=>{oldAns[c.k]=flashAnswered[i];});
+  flashCards=shuffled;
+  flashAnswered=shuffled.map(c=>oldAns[c.k]!==undefined?oldAns[c.k]:null);
+  flashIdx=0; goFlash();
+}
+
+function updateFlashStats() {
+  const tot=flashCorrect+flashWrong;
+  document.getElementById('s-tot').textContent=tot;
+  document.getElementById('s-ok').textContent=flashCorrect;
+  document.getElementById('s-ng').textContent=flashWrong;
+  document.getElementById('s-rate').textContent=tot>0?Math.round(flashCorrect/tot*100)+'%':'-';
+}
+function updateFlashProg() {
+  const done=flashAnswered.filter(a=>a!==null).length;
+  const pct=Math.round(done/flashCards.length*100);
+  document.getElementById('pbar').style.width=pct+'%';
+  document.getElementById('plabel-l').textContent=done+' / '+flashCards.length+' 枚完了';
+  document.getElementById('plabel-r').textContent=weakSet.size>0?'⭐'+weakSet.size+'個':'';
+  // 最後のカードかつ未回答の場合は「→」をグレーアウト
+  const nextBtn = document.querySelector('.nav-row .nav-btn:last-child');
+  if (nextBtn) {
+    const isLastUnanswered = flashIdx === flashCards.length - 1 && flashAnswered[flashIdx] === null;
+    nextBtn.disabled = isLastUnanswered;
+    nextBtn.style.opacity = isLastUnanswered ? '0.3' : '';
+  }
+}
+function showFlashDone() {
+  isRestart = false;
+  document.getElementById('study-area').style.display = 'none';
+  document.getElementById('done-flash').style.display = 'flex';
+  const tot = flashCorrect + flashWrong;
+  const rate = tot > 0 ? Math.round(flashCorrect / tot * 100) : 0;
+  document.getElementById('done-flash-msg').textContent =
+    flashCat + '完了！\n正解率 ' + rate + '% (' + flashCorrect + '/' + tot + ')\n' +
+    (rate >= 80 ? 'すばらしい！' : rate >= 60 ? 'よく頑張りました！' : 'もう少し練習してみましょう。');
+  saveCatProgress(flashCat, flashAnswered, flashCorrect, flashWrong);
+  saveSession(flashCat, 'フラッシュ', flashCorrect, flashWrong);
+  if (savedProgress.lastSession) savedProgress.lastSession[currentLevel] = null;
+  saveProgress();
+}
+function goNextCatFromQuiz() {
+  const currentIdx = CATS.indexOf(quizCat);
+  const nextCat = CATS[currentIdx + 1];
+  if (nextCat) {
+    flashCat = nextCat;
+    quizCat = nextCat;
+    setMode('flash');
+  } else {
+    setMode('home');
+  }
+}
+function startQuizForCurrentCat() {
+  // フラッシュカードと同じカテゴリでクイズを開始
+  quizCat = flashCat;
+  setMode('quiz');
+}
+function restartFlash() {
+  document.getElementById('done-flash').style.display = 'none';
+  document.getElementById('study-area').style.display = '';
+  document.getElementById('card').onclick = flipCard;
+  isRestart = true;
+  flashAnswered = new Array(ALL_DATA[flashCat].length).fill(null);
+  flashCorrect = 0; flashWrong = 0; flashIdx = 0;
+  flashCards = [...ALL_DATA[flashCat]];
+  updateFlashCard(); updateFlashStats(); updateFlashProg();
+}
+
+// ===================== QUIZ =====================
+function sfl(arr){for(let i=arr.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[arr[i],arr[j]]=[arr[j],arr[i]];}return arr;}
+
+function initQuiz(cat) {
+  if (cat) {
+    quizCat = cat;
+  } else {
+    // カテゴリ未指定の場合、直前のフラッシュカードと同じカテゴリを引き継ぐ
+    // （flashCatが設定済みなら合わせる、未設定なら未完了の最初のカテゴリ）
+    quizCat = flashCat || quizCat;
+  }
+  quizCards=sfl([...ALL_DATA[quizCat]]);
+  quizIdx=0; quizCorrect=0; quizWrong=0; quizAnsweredMap={};
+  document.getElementById('done-quiz').classList.remove('active');
+  document.getElementById('quiz-area').style.display='';
+  buildCatTabs('qcat-tabs', quizCat, c=>initQuiz(c));
+  buildQuiz();
+}
+function buildQuiz() {
+  if (quizIdx>=quizCards.length){showQuizDone();return;}
+  const c=quizCards[quizIdx];
+  const mReadMatch2 = c.m.match(/（([^）]+)）/);
+  const mR2 = mReadMatch2 ? mReadMatch2[1] : undefined;
+  document.getElementById('q-kanji').innerHTML=buildSentenceHTML(c.s,c.k,'target',mR2);
+  document.getElementById('q-question').textContent='下線部「'+getHighlightedWord(c.s, c.k, mR2)+'」の読み方は？';
+  document.getElementById('q-fb').style.display='none';
+  quizAnswered=false;
+  const correctR = getFullReading(c.s, c.k, c.r, c.tr, c.m);
+  // Draw wrong options from ALL categories for more variety
+  const allPool = CATS.flatMap(cat => ALL_DATA[cat]).filter(x => x.k !== c.k);
+  // Prefer options with different readings to avoid confusingly similar choices
+  const shuffled = sfl([...allPool]);
+  // Filter out options with same reading as correct answer
+  const differentR = shuffled.filter(x => getFullReading(x.s,x.k,x.r,x.tr,x.m) !== correctR);
+  const sameR = shuffled.filter(x => getFullReading(x.s,x.k,x.r,x.tr,x.m) === correctR && x.k !== c.k);
+  const wrong3 = differentR.slice(0, 3);
+  const opts=sfl([c,...wrong3]);
+  const container=document.getElementById('q-opts'); container.innerHTML='';
+  opts.forEach(opt=>{
+    const b=document.createElement('button'); b.className='opt-btn';
+    b.textContent=getFullReading(opt.s, opt.k, opt.r, opt.tr, opt.m);
+    b.onclick=()=>selectOpt(b,opt.k===c.k,c,correctR);
+    container.appendChild(b);
+  });
+  updateQuizStats();
+}
+function selectOpt(btn,isCorrect,card,correctR) {
+  if(quizAnswered)return;
+  quizAnswered=true;
+  document.querySelectorAll('.opt-btn').forEach(b=>b.disabled=true);
+  if(isCorrect){
+    btn.classList.add('correct'); quizCorrect++; weakSet.delete(card.k);
+    quizAnsweredMap[card.k] = true;
+    document.getElementById('q-fb').className='quiz-feedback fb-ok';
+    document.getElementById('q-fb').textContent='正解！　'+card.tr;
+  } else {
+    btn.classList.add('wrong'); quizWrong++; weakSet.add(card.k);
+    quizAnsweredMap[card.k] = false;
+    const fb=document.getElementById('q-fb');
+    fb.className='quiz-feedback fb-ng';
+    fb.textContent='不正解。正解：「'+correctR+'」　'+card.tr;
+    document.querySelectorAll('.opt-btn').forEach(b=>{if(b.textContent===correctR)b.classList.add('correct');});
+  }
+  document.getElementById('q-fb').style.display='block';
+  updateQuizStats(); updateWeakCnt(); saveProgress();
+  const nb=document.createElement('button'); nb.className='quiz-next';
+  nb.textContent=quizIdx<quizCards.length-1?'次の問題 →':'結果を見る';
+  nb.onclick=()=>{quizIdx++;buildQuiz();nb.remove();};
+  document.getElementById('q-opts').after(nb);
+}
+function updateQuizStats() {
+  const tot=quizCorrect+quizWrong;
+  document.getElementById('qs-tot').textContent=quizIdx+1;
+  document.getElementById('qs-ok').textContent=quizCorrect;
+  document.getElementById('qs-ng').textContent=quizWrong;
+  document.getElementById('qs-rate').textContent=tot>0?Math.round(quizCorrect/tot*100)+'%':'-';
+}
+function showQuizDone() {
+  document.getElementById('quiz-area').style.display='none';
+  document.getElementById('done-quiz').classList.add('active');
+  const tot=quizCorrect+quizWrong;
+  const rate=tot>0?Math.round(quizCorrect/tot*100):0;
+  document.getElementById('done-quiz-msg').textContent=
+    quizCat+' クイズ完了！\n正解率 '+rate+'% ('+quizCorrect+'/'+tot+')\n'+
+    (rate>=80?'すばらしい！':rate>=60?'よく頑張りました！':'苦手を復習してみましょう。');
+  // 次のカテゴリがあればボタンを表示
+  const nextBtn = document.getElementById('quiz-next-cat-btn');
+  if (nextBtn) {
+    const currentIdx = CATS.indexOf(quizCat);
+    const nextCat = CATS[currentIdx + 1];
+    if (nextCat) {
+      nextBtn.textContent = '「' + nextCat + '」へ →';
+      nextBtn.style.display = '';
+    } else {
+      nextBtn.style.display = 'none';
+    }
+  }
+  // クイズ結果をカテゴリ進捗に保存
+  const quizAnsweredArr = quizCards.map(c => quizAnsweredMap[c.k] !== undefined ? quizAnsweredMap[c.k] : null);
+  saveCatProgress(quizCat, quizAnsweredArr, quizCorrect, quizWrong);
+  saveSession(quizCat,'クイズ',quizCorrect,quizWrong);
+}
+function restartQuiz(){document.getElementById('done-quiz').classList.remove('active');document.getElementById('quiz-area').style.display='';initQuiz();}
+
+// ===================== WEAK =====================
+function initWeak() {
+  weakCards=[];
+  CATS.forEach(cat=>{ALL_DATA[cat].forEach(c=>{if(weakSet.has(c.k))weakCards.push(c);});});
+  weakCards=sfl([...weakCards]);
+  weakIdx=0; weakFlipped=false; weakCorrect=0; weakWrong=0;
+  weakAnswered=new Array(weakCards.length).fill(null);
+  document.getElementById('done-weak').classList.remove('active');
+  renderWeakList();
+}
+function renderWeakList() {
+  const area=document.getElementById('weak-list-area'); area.innerHTML='';
+  if(weakCards.length===0){
+    area.innerHTML='<div class="weak-empty">⭐ まだ苦手な漢字がありません。<br>フラッシュカードやクイズで<br>間違えた漢字がここに追加されます。</div>';
+    return;
+  }
+  const startBtn=document.createElement('button'); startBtn.className='weak-start-btn';
+  startBtn.textContent='苦手'+weakCards.length+'字をフラッシュカードで復習';
+  startBtn.onclick=startWeakFlash; area.appendChild(startBtn);
+  weakCards.forEach(c=>{
+    const fullR = getFullReading(c.s, c.k, c.r, c.tr, c.m);
+    const d=document.createElement('div'); d.className='weak-item';
+    d.innerHTML='<div class="weak-k">'+c.k+'</div><div style="flex:1"><div style="font-size:13px;font-weight:500;">'+fullR+'</div><div style="font-size:12px;color:var(--muted)">'+c.m+'</div></div><span class="weak-badge">苦手</span>';
+    area.appendChild(d);
+  });
+}
+function startWeakFlash(){
+  weakIdx=0; weakFlipped=false; weakCorrect=0; weakWrong=0;
+  weakAnswered=new Array(weakCards.length).fill(null);
+  buildWeakFlash();
+}
+function buildWeakFlash(){
+  const area=document.getElementById('weak-list-area'); area.innerHTML='';
+  if(weakCards.length===0){renderWeakList();return;}
+  const c=weakCards[weakIdx];
+  const fullR=getFullReading(c.s,c.k,c.r,c.tr,c.m);
+  const frontSent=buildSentenceHTML(c.s,c.k,'target',fullR);
+  const backSent=buildReadingSentence(c.tr,fullR);
+  area.innerHTML=`
+    <div class="stats-row" style="margin-bottom:9px">
+      <div class="stat-box"><div class="stat-num">${weakCards.length}</div><div class="stat-lbl">苦手数</div></div>
+      <div class="stat-box"><div class="stat-num c-ok">${weakCorrect}</div><div class="stat-lbl">正解</div></div>
+      <div class="stat-box"><div class="stat-num c-ng">${weakWrong}</div><div class="stat-lbl">不正解</div></div>
+      <div class="stat-box"><div class="stat-num">${weakIdx+1}/${weakCards.length}</div><div class="stat-lbl">進捗</div></div>
+    </div>
+    <div class="card-scene">
+      <div class="card-wrap" id="wcard" onclick="flipWeak()">
+        <div class="card-face">
+          <span style="font-size:11px;color:var(--weak);margin-bottom:7px;">⭐苦手</span>
+          <div class="hint-sm" style="margin-bottom:8px;">下線部の読み方は？</div>
+          <div class="sentence-display">${frontSent}</div>
+          <div class="kanji-label">「${getHighlightedWord(c.s, c.k, fullR)}」の読み方は？</div>
+        </div>
+        <div class="card-face card-back">
+          <div class="back-sentence">${backSent}</div>
+          <div class="back-reading-line">${fullR}</div>
+          <div class="back-mean">${c.m}</div>
+        </div>
+      </div>
+    </div>
+    <div class="tap-hint" id="w-tap">カードをタップして答えを確認</div>
+    <div class="answer-row" id="w-ans" style="display:none">
+      <button class="abtn abtn-ng" onclick="answerWeak(false)">❌ まだ苦手</button>
+      <button class="abtn abtn-ok" onclick="answerWeak(true)">✓ 覚えた！</button>
+    </div>`;
+  weakFlipped=false;
+}
+function flipWeak(){
+  weakFlipped=!weakFlipped;
+  const wc=document.getElementById('wcard'); if(wc)wc.classList.toggle('flipped',weakFlipped);
+  const wr=document.getElementById('w-ans'); if(wr)wr.style.display=weakFlipped?'flex':'none';
+  const wt=document.getElementById('w-tap'); if(wt)wt.textContent=weakFlipped?'覚えましたか？':'カードをタップして答えを確認';
+}
+function answerWeak(ok){
+  const c=weakCards[weakIdx];
+  if(ok){weakSet.delete(c.k);weakCorrect++;}else{weakWrong++;}
+  weakAnswered[weakIdx]=ok; updateWeakCnt(); saveProgress();
+  if(weakIdx<weakCards.length-1){weakIdx++;setTimeout(()=>buildWeakFlash(),300);}
+  else{setTimeout(()=>showWeakDone(),300);}
+}
+function showWeakDone(){
+  document.getElementById('weak-list-area').style.display='none';
+  document.getElementById('done-weak').classList.add('active');
+  const rate=weakCards.length>0?Math.round(weakCorrect/weakCards.length*100):0;
+  document.getElementById('done-weak-msg').textContent=
+    '苦手'+weakCards.length+'字の復習完了！\n正解率 '+rate+'%\n'+
+    (rate>=80?'よく頑張りました！':rate>=60?'着実に上達しています！':'繰り返し練習しましょう！');
+  saveSession('苦手復習','苦手',weakCorrect,weakWrong);
+}
+function restartWeak(){
+  document.getElementById('done-weak').classList.remove('active');
+  document.getElementById('weak-list-area').style.display='';
+  initWeak();
+}
+function updateWeakCnt(){
+  const el=document.getElementById('weak-cnt');
+  el.textContent=weakSet.size>0?' ('+weakSet.size+')':'';
+}
+
+// ===================== HOME =====================
+function calcStreak(days){
+  if(!days||days.length===0)return 0;
+  const sorted=[...days].sort().reverse();
+  const today=new Date().toLocaleDateString('ja-JP');
+  const yesterday=new Date(Date.now()-86400000).toLocaleDateString('ja-JP');
+  if(sorted[0]!==today&&sorted[0]!==yesterday)return 0;
+  let streak=1;
+  for(let i=1;i<sorted.length;i++){
+    const prev=new Date(new Date(sorted[i-1].replace(/\//g,'-')).getTime()-86400000).toLocaleDateString('ja-JP');
+    if(sorted[i]===prev)streak++;else break;
+  }
+  return streak;
+}
+
+function renderHome(){
+  // Always reload latest saved data before rendering
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (raw) {
+      const p = JSON.parse(raw);
+      savedProgress = { weakSet:{}, catProgress:{}, sessions:[], lastSession:{}, totalStudyDays:[], ...p };
+    }
+  } catch(e) {}
+
+  const body=document.getElementById('home-body');
+  const sessions=savedProgress.sessions||[];
+  const catProgress=(savedProgress.catProgress&&savedProgress.catProgress[currentLevel])||{};
+  const studyDays=savedProgress.totalStudyDays||[];
+  let totalCorrect=0,totalWrong=0;
+  sessions.filter(s=>s.level===currentLevel).forEach(s=>{totalCorrect+=s.correct;totalWrong+=s.wrong;});
+  const totalAnswered=totalCorrect+totalWrong;
+  const overallRate=totalAnswered>0?Math.round(totalCorrect/totalAnswered*100):0;
+  const streak=calcStreak(studyDays);
+  const totalKanji=Object.values(ALL_DATA).reduce((s,a)=>s+a.length,0);
+  let learnedKanji=0;
+  CATS.forEach(cat=>{
+    const cp=catProgress[cat];
+    const total=ALL_DATA[cat].length;
+    if(cp&&cp.answered) learnedKanji+=Math.min(cp.answered.filter(a=>a!==null).length, total);
+  });
+  const lv=LEVELS[currentLevel];
+  const lvClass='lv-tag lv-tag-'+currentLevel;
+
+  const hour=new Date().getHours();
+  const greet=hour<12?'おはようございます！':hour<18?'こんにちは！':'こんばんは！';
+
+  let html=`
+    <div style="padding:4px 0 12px;display:flex;justify-content:space-between;align-items:center;">
+      <div>
+        <div style="font-size:17px;font-weight:700;font-family:'Noto Serif JP',serif;margin-bottom:3px;">${greet} 📚</div>
+        <div style="font-size:12px;color:var(--muted);">現在のレベル：<span class="${lvClass}">${lv.label}</span>JLPT合格に向けて頑張りましょう！</div>
+      </div>
+    </div>`;
+
+  // Streak
+  html+=`<div class="streak-row">
+    <div class="streak-fire">${streak>0?'🔥':'📅'}</div>
+    <div>
+      <div class="streak-num">${streak}日</div>
+      <div class="streak-lbl">連続学習ストリーク（合計 ${studyDays.length} 日）</div>
+    </div>
+  </div>`;
+
+  // Summary
+  html+=`<div class="summary-grid">
+    <div class="summary-card"><div class="summary-num">${learnedKanji}<span style="font-size:12px;color:var(--muted)">/${totalKanji}</span></div><div class="summary-lbl">学習済み漢字</div></div>
+    <div class="summary-card"><div class="summary-num c-ok">${overallRate}%</div><div class="summary-lbl">累計正解率</div></div>
+    <div class="summary-card"><div class="summary-num">${totalAnswered}</div><div class="summary-lbl">累計回答数</div></div>
+    <div class="summary-card"><div class="summary-num c-wk">${weakSet.size}</div><div class="summary-lbl">苦手漢字数</div></div>
+  </div>`;
+
+  // Learning advice
+  let advice = '';
+  if (totalAnswered === 0) {
+    advice = `<div style="background:var(--info-bg);border:1px solid #b3c8f0;border-radius:12px;padding:12px 14px;margin-bottom:14px;font-size:13px;color:var(--info);line-height:1.7;">👋 ようこそ！まずは「フラッシュカード」からスタートしましょう。カードをタップして読み方を確認し、正解・不正解を記録してください。</div>`;
+  } else if (overallRate < 60) {
+    advice = `<div style="background:var(--weak-bg);border:1px solid #f0d080;border-radius:12px;padding:12px 14px;margin-bottom:14px;font-size:13px;color:var(--weak);line-height:1.7;">📖 正解率 ${overallRate}% — フラッシュカードで繰り返し確認しましょう。「苦手復習」モードで集中練習するのが効果的です。</div>`;
+  } else if (overallRate < 80) {
+    advice = `<div style="background:var(--correct-bg);border:1px solid #a8d5b5;border-radius:12px;padding:12px 14px;margin-bottom:14px;font-size:13px;color:var(--correct);line-height:1.7;">📝 正解率 ${overallRate}% — 順調です！「クイズモード」で試験形式の練習もしてみましょう。</div>`;
+  } else {
+    advice = `<div style="background:var(--correct-bg);border:1px solid #a8d5b5;border-radius:12px;padding:12px 14px;margin-bottom:14px;font-size:13px;color:var(--correct);line-height:1.7;">🌟 正解率 ${overallRate}% — 素晴らしい！次のレベルや別カテゴリにもチャレンジしましょう。</div>`;
+  }
+  html += advice;
+
+  // Quick start
+  html+=`<div class="section-label">学習を始める</div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-bottom:16px;">
+    <button onclick="setMode('flash')" style="padding:13px 8px;border-radius:12px;border:1px solid var(--border);background:var(--card-bg);font-size:12px;font-weight:500;cursor:pointer;font-family:'Noto Sans JP',sans-serif;display:flex;flex-direction:column;align-items:center;gap:3px;">
+      <span style="font-size:20px;">📖</span>フラッシュカード
+    </button>
+    <button onclick="setMode('quiz')" style="padding:13px 8px;border-radius:12px;border:1px solid var(--border);background:var(--card-bg);font-size:12px;font-weight:500;cursor:pointer;font-family:'Noto Sans JP',sans-serif;display:flex;flex-direction:column;align-items:center;gap:3px;">
+      <span style="font-size:20px;">❓</span>クイズ
+    </button>
+    ${weakSet.size>0?`<button onclick="setMode('weak')" style="padding:13px 8px;border-radius:12px;border:1px solid #f0d080;background:var(--weak-bg);font-size:12px;font-weight:500;cursor:pointer;font-family:'Noto Sans JP',sans-serif;display:flex;flex-direction:column;align-items:center;gap:3px;grid-column:span 2;">
+      <span style="font-size:20px;">⭐</span>苦手復習（${weakSet.size}字）
+    </button>`:''}
+  </div>`;
+
+  // Category progress
+  html+=`<div class="section-label">カテゴリ別進捗</div>`;
+  CATS.forEach(cat=>{
+    const cp=catProgress[cat];
+    const total=ALL_DATA[cat].length;
+    // answered array length may differ from total if cards were added; use total as reference
+    const done=cp&&cp.answered?cp.answered.filter(a=>a!==null).length:0;
+    const ok=cp?(cp.correct||0):0;
+    const ng=cp?(cp.wrong||0):0;
+    const tot=ok+ng;
+    const rate=tot>0?Math.round(ok/tot*100):0;
+    // clamp pctDone to max 100
+    const pctDone=Math.min(100,Math.round(done/total*100));
+    const pctOk=tot>0?Math.round(ok/tot*100):0;
+    const isComplete=pctDone>=100;
+    const completeBadge=isComplete?`<span style="font-size:10px;background:var(--correct-bg);color:var(--correct);border-radius:10px;padding:1px 7px;margin-left:6px;">完了✓</span>`:'';
+    html+=`<div class="cat-progress-item" onclick="startFlashFromHome('${cat}')" style="cursor:pointer;">
+      <div class="cat-progress-header">
+        <span class="cat-progress-name">${cat}${completeBadge}</span>
+        <span class="cat-progress-pct">${Math.min(done,total)}/${total}枚 ${pctDone>0?'('+pctDone+'%)':''}</span>
+      </div>
+      <div style="height:4px;background:var(--border);border-radius:2px;overflow:hidden;display:flex;">
+        <div style="width:${pctDone*pctOk/100}%;background:var(--correct);"></div>
+        <div style="width:${pctDone*(100-pctOk)/100}%;background:var(--wrong);"></div>
+      </div>
+      <div class="cat-progress-detail">
+        ${tot>0?`<span>✓ ${ok}</span><span>✗ ${ng}</span><span>${rate}%</span>`:'<span>未学習</span>'}
+        ${isComplete
+          ? `<span onclick="event.stopPropagation();quizCat='${cat}';setMode('quiz')" style="margin-left:auto;font-size:10px;background:var(--accent);color:#fff;padding:2px 8px;border-radius:10px;cursor:pointer;">クイズ →</span>`
+          : `<span style="margin-left:auto;font-size:10px;">タップして学習 →</span>`
+        }
+      </div>
+    </div>`;
+  });
+
+  // Recent sessions
+  const lvSessions=sessions.filter(s=>s.level===currentLevel).slice(0,5);
+  if(lvSessions.length>0){
+    html+=`<div class="section-label">最近のセッション</div>`;
+    lvSessions.forEach(s=>{
+      const col=s.rate>=80?'var(--correct)':s.rate>=60?'var(--weak)':'var(--wrong)';
+      html+=`<div class="session-item">
+        <div class="session-date">${s.date} <span class="lv-tag lv-tag-${s.level||currentLevel}">${LEVELS[s.level||currentLevel].label}</span></div>
+        <div style="display:flex;justify-content:space-between;align-items:center;">
+          <div class="session-info">${s.cat} — ${s.mode}</div>
+          <div style="font-size:15px;font-weight:700;color:${col};">${s.rate}%</div>
+        </div>
+        <div class="session-detail">${s.correct}/${s.total}問正解</div>
+      </div>`;
+    });
+  }
+
+  html+=`<button class="clear-btn" onclick="clearAllData()">🗑 全データをリセット</button>`;
+  body.innerHTML=html;
+}
+
+function clearAllData(){
+  // confirm/alertはスマートフォンのWebViewでブロックされる場合があるため独自UIを使用
+  const overlay = document.createElement('div');
+  overlay.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:100;display:flex;align-items:center;justify-content:center;padding:24px;';
+  overlay.innerHTML = `
+    <div style="background:#fff;border-radius:16px;padding:24px;max-width:320px;width:100%;text-align:center;">
+      <div style="font-size:28px;margin-bottom:10px;">🗑</div>
+      <div style="font-size:15px;font-weight:700;margin-bottom:8px;">全データをリセット</div>
+      <div style="font-size:13px;color:var(--muted);margin-bottom:20px;line-height:1.7;">全ての学習進捗・苦手漢字・セッション記録が削除されます。この操作は元に戻せません。</div>
+      <div style="display:flex;gap:10px;">
+        <button id="reset-cancel" style="flex:1;padding:12px;border-radius:10px;border:1px solid var(--border);background:none;font-size:14px;cursor:pointer;font-family:'Noto Sans JP',sans-serif;">キャンセル</button>
+        <button id="reset-ok" style="flex:1;padding:12px;border-radius:10px;border:none;background:var(--wrong);color:#fff;font-size:14px;font-weight:600;cursor:pointer;font-family:'Noto Sans JP',sans-serif;">リセット</button>
+      </div>
+    </div>`;
+  document.body.appendChild(overlay);
+  document.getElementById('reset-cancel').onclick = () => overlay.remove();
+  document.getElementById('reset-ok').onclick = () => {
+    overlay.remove();
+    localStorage.removeItem(STORAGE_KEY);
+    savedProgress={weakSet:{},catProgress:{},sessions:[],lastSession:{},totalStudyDays:[]};
+    weakSet=new Set();
+    updateWeakCnt();
+    setMode('home');
+  };
+}
+
+// ===================== INIT =====================
+loadProgress();
+setMode('home');
+</script>
+</body>
+</html>
